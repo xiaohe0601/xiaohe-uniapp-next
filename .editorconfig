@@ -1,0 +1,14 @@
+# [EditorConfig](https://editorconfig.org)
+# [配置项](https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties)
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = false
+max_line_length = 120
+indent_style = space
+indent_size = 2
+tab_width = 2

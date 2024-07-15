@@ -1,0 +1,49 @@
+$color-white: 255, 255, 255; // #ffffff
+$color-black: 0, 0, 0; // #000000
+
+$color-primary: 20, 115, 255; // #1473ff
+
+$color-success: 86, 202, 105; // #56ca69
+$color-warning: 230, 162, 60; // #e6a23c
+$color-danger: 255, 77, 79; // #ff4d4f
+$color-error: 255, 77, 79; // #ff4d4f
+$color-info: 144, 147, 153; // #909399
+$color-disabled: 204, 204, 204; // #cccccc
+$color-required: 250, 44, 25; // #fa2c19
+
+$color-t1: 31, 31, 31; // #1f1f1f
+$color-t2: 89, 89, 89; // #595959
+$color-t3: 140, 140, 140; // #8c8c8c
+$color-t4: 191, 191, 191; // #bfbfbf
+
+$color-b1: 247, 247, 247; // #f7f7f7
+
+$color-d1: 240, 240, 240; // #f0f0f0
+
+$font-global: MiSans, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Segoe UI, Arial, Roboto, "PingFang SC", "miui", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+
+:root, page {
+  --color-white: #{$color-white};
+  --color-black: #{$color-black};
+
+  --color-primary: #{$color-primary};
+
+  --color-success: #{$color-success};
+  --color-warning: #{$color-warning};
+  --color-danger: #{$color-danger};
+  --color-error: #{$color-error};
+  --color-info: #{$color-info};
+  --color-disabled: #{$color-disabled};
+  --color-required: #{$color-required};
+
+  --color-t1: #{$color-t1};
+  --color-t2: #{$color-t2};
+  --color-t3: #{$color-t3};
+  --color-t4: #{$color-t4};
+
+  --color-b1: #{$color-b1};
+
+  --color-d1: #{$color-d1};
+
+  --font-global: #{$font-global};
+}

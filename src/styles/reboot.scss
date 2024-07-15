@@ -1,0 +1,39 @@
+@import "./mixins.scss";
+
+text, view, button, scroll-view {
+  box-sizing: border-box;
+}
+
+view, button, image {
+  flex-shrink: 0;
+}
+
+input, textarea {
+  font-family: var(--font-global);
+}
+
+/* #ifdef H5 */
+
+body {
+  @include hide-scrollbar;
+}
+
+uni-toast {
+  z-index: 9000;
+}
+
+uni-tabbar {
+  display: none;
+}
+
+.uni-app--showtabbar {
+  uni-page-wrapper {
+    height: 100%;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+/* #endif */
