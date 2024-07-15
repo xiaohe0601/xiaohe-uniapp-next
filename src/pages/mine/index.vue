@@ -1,6 +1,8 @@
 <template>
   <app-page>
-    <text>我的</text>
+    <app-navbar title="我的" border :show-left="false"></app-navbar>
+
+    <app-tabbar-default active="/pages/mine/index"></app-tabbar-default>
   </app-page>
 </template>
 

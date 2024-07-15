@@ -62,6 +62,9 @@ importers:
       lodash-miniprogram-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+      nutui-uniapp:
+        specifier: ^1.7.12
+        version: 1.7.12(@uni-helper/uni-app-types@0.5.13(typescript@5.5.3))(vue@3.4.31(typescript@5.5.3))
       pinia:
         specifier: ^2.1.7
         version: 2.1.7(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3))
@@ -74,6 +77,9 @@ importers:
       vue:
         specifier: ^3.4.31
         version: 3.4.31(typescript@5.5.3)
+      z-paging:
+        specifier: ^2.7.11
+        version: 2.7.11
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.22.2
@@ -4190,6 +4196,12 @@ packages:
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
+  nutui-uniapp@1.7.12:
+    resolution: {integrity: sha512-oD50+mRU72Ubxak7fC26UT0KzbbsTGt1YoK4WcrAr85HjlAz7EwMZ66yA1AHocstEBRKVc3EUahY1ybas33rHQ==}
+    peerDependencies:
+      '@uni-helper/uni-app-types': '>=0.5.12'
+      vue: '>=3.2.0'
+
   nwsapi@2.2.12:
     resolution: {integrity: sha512-qXDmcVlZV4XRtKFzddidpfVP4oMSGhga+xdMc25mv8kaLUHtgzCDhUxkrN8exkGdTlLNaXj7CV3GtON7zuGZ+w==}
 
@@ -5524,6 +5536,10 @@ packages:
   yocto-queue@1.1.1:
     resolution: {integrity: sha512-b4JR1PFR10y1mKjhHY9LaGo6tmrgjit7hxVIeAmyMw3jegXR4dhYqLaQF5zMXZxY7tLpMyJeLjr1C4rLmkVe8g==}
     engines: {node: '>=12.20'}
+
+  z-paging@2.7.11:
+    resolution: {integrity: sha512-fqUBvgvsyjYIB4x0R0xm4x9NKuyF4uPt3NMCSAuHFMCvY25+DFCnw3hoiPjA1lyibRhXZGon/ZK7k2g4jKojqQ==}
+    engines: {HBuilderX: ^3.0.7}
 
 snapshots:
 
@@ -10768,6 +10784,11 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
+  nutui-uniapp@1.7.12(@uni-helper/uni-app-types@0.5.13(typescript@5.5.3))(vue@3.4.31(typescript@5.5.3)):
+    dependencies:
+      '@uni-helper/uni-app-types': 0.5.13(typescript@5.5.3)
+      vue: 3.4.31(typescript@5.5.3)
+
   nwsapi@2.2.12: {}
 
   nypm@0.3.9:
@@ -12128,3 +12149,5 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   yocto-queue@1.1.1: {}
+
+  z-paging@2.7.11: {}

@@ -2,6 +2,7 @@ $color-white: 255, 255, 255; // #ffffff
 $color-black: 0, 0, 0; // #000000
 
 $color-primary: 20, 115, 255; // #1473ff
+$color-primary-end: 20, 115, 255; // #1473ff
 
 $color-success: 86, 202, 105; // #56ca69
 $color-warning: 230, 162, 60; // #e6a23c
@@ -27,6 +28,7 @@ $font-global: MiSans, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helve
   --color-black: #{$color-black};
 
   --color-primary: #{$color-primary};
+  --color-primary-end: #{$color-primary-end};
 
   --color-success: #{$color-success};
   --color-warning: #{$color-warning};
@@ -46,4 +48,58 @@ $font-global: MiSans, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helve
   --color-d1: #{$color-d1};
 
   --font-global: #{$font-global};
+
+  --nut-white: rgb(#{$color-white});
+  --nut-black: rgb(#{$color-black});
+
+  --nut-primary-color: rgb(#{$color-primary});
+  --nut-primary-color-end: rgb(#{$color-primary-end});
+
+  --nut-disable-color: rgb(#{$color-disabled});
+  --nut-required-color: rgb(#{$color-required});
+
+  --nut-title-color: rgb(#{$color-t1});
+  --nut-title-color2: rgb(#{$color-t2});
+  --nut-text-color: rgb(#{$color-t3});
+  --nut-help-color: rgb(#{$color-t4});
+
+  --nut-font-family: #{$font-global};
+  --nut-font-size-0: 20rpx;
+  --nut-font-size-1: 24rpx;
+  --nut-font-size-2: 28rpx;
+  --nut-font-size-3: 32rpx;
+  --nut-font-size-4: 36rpx;
+  --nut-font-weight-bold: 500;
+  --nut-font-size-small: var(--nut-font-size-1);
+  --nut-font-size-base: var(--nut-font-size-2);
+  --nut-font-size-large: var(--nut-font-size-3);
+  --nut-line-height-base: 1.25;
+
+  --nut-animation-duration: 0.25s;
+  --nut-animation-timing-fun: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+
+  --nut-cell-after-border-bottom: 1px solid #191919;
+
+  --nut-address-region-tab-line: linear-gradient(90deg, rgb(#{$color-primary}) 0%, rgba(#{$color-primary}, 0.15) 100%);
+  --nut-tabs-horizontal-tab-line-color: linear-gradient(90deg, rgb(#{$color-primary}) 0%, rgba(#{$color-primary}, 0.15) 100%);
+  --nut-tabs-vertical-tab-line-color: linear-gradient(180deg, rgb(#{$color-primary}) 0%, rgba(#{$color-primary}, 0.15) 100%);
+
+  --nut-button-default-color: rgb(#{$color-t1});
+  --nut-button-default-border-color: rgb(#{$color-d1});
+  --nut-button-default-bg-color: rgb(#{$color-white});
+  --nut-button-primary-color: rgb(#{$color-white});
+  --nut-button-primary-border-color: rgb(#{$color-primary});
+  --nut-button-primary-background-color: rgb(#{$color-primary});
+  --nut-button-success-color: rgb(#{$color-white});
+  --nut-button-success-border-color: rgb(#{$color-success});
+  --nut-button-success-background-color: rgb(#{$color-success});
+  --nut-button-warning-color: rgb(#{$color-white});
+  --nut-button-warning-border-color: rgb(#{$color-warning});
+  --nut-button-warning-background-color: rgb(#{$color-warning});
+  --nut-button-danger-color: rgb(#{$color-white});
+  --nut-button-danger-border-color: rgb(#{$color-danger});
+  --nut-button-danger-background-color: rgb(#{$color-danger});
+  --nut-button-info-color: rgb(#{$color-white});
+  --nut-button-info-border-color: rgb(#{$color-info});
+  --nut-button-info-background-color: rgb(#{$color-info});
 }

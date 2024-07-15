@@ -1,5 +1,8 @@
 import type { PageMetaDatum, SubPageMetaDatum, TabBar, TabBarItem } from "@uni-helper/vite-plugin-uni-pages";
 import PAGES_JSON from "@/pages.json";
+import type { Inst as PageInst } from "@/components/AppPage/types.ts";
+import { last } from "@/plugins/lodash.ts";
+import { sleep } from "@/utils/helper.ts";
 
 export interface PagesConfig {
   pages?: PageMetaDatum[];
@@ -7,6 +10,10 @@ export interface PagesConfig {
   tabBar?: TabBar;
 
   [key: string]: any;
+}
+
+export interface MagicPageInstance extends Page.PageInstance {
+  $magic?: PageInst;
 }
 
 /**
@@ -171,6 +178,38 @@ export default class PagesManager {
     }
 
     return path.startsWith(page.path);
+  }
+
+  /**
+   * 获取栈顶页面实例
+   */
+  public static getStackTopPage(): NullableValue<MagicPageInstance> {
+    const page: NullableValue<MagicPageInstance> = last(getCurrentPages()) ?? null;
+
+    if (page == null) {
+      return null;
+    }
+
+    if (page.$magic == null) {
+      page.$magic = page.$vm?.$magic;
+    }
+
+    return page;
+  }
+
+  /**
+   * 获取栈顶页面实例
+   */
+  public static async requireStackTopPage(): Promise<NullableValue<MagicPageInstance>> {
+    const page: NullableValue<MagicPageInstance> = PagesManager.getStackTopPage();
+
+    if (page != null) {
+      return page;
+    }
+
+    await sleep(1);
+
+    return PagesManager.getStackTopPage();
   }
 
 }

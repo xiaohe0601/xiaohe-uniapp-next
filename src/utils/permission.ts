@@ -1,5 +1,7 @@
 // noinspection JSUnresolvedReference
 
+import DialogManager from "@/utils/dialog.ts";
+
 // #ifdef APP-PLUS
 const OS = plus.os.name;
 // #endif
@@ -374,24 +376,22 @@ export async function requestUnifiedPermission(scope: RequestUnifiedPermissionSc
   // #endif
 
   if (settings) {
-    const { confirm } = await uni.showModal({
+    await DialogManager.confirm({
       title: modalTitle,
       content: modalContent
     });
 
-    if (confirm) {
-      // #ifdef MP-WEIXIN
-      const { authSetting } = await uni.openSetting();
+    // #ifdef MP-WEIXIN
+    const { authSetting } = await uni.openSetting();
 
-      if (authSetting[scope.mpWeixin]) {
-        return;
-      }
-      // #endif
-
-      // #ifdef APP-PLUS
-      gotoAppPermissionSetting();
-      // #endif
+    if (authSetting[scope.mpWeixin]) {
+      return;
     }
+    // #endif
+
+    // #ifdef APP-PLUS
+    gotoAppPermissionSetting();
+    // #endif
   }
 
   return Promise.reject("权限申请被拒绝");

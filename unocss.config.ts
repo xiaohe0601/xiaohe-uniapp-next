@@ -7,6 +7,7 @@ export default defineConfig({
       white: "rgba(var(--color-white), <alpha-value>)",
       black: "rgba(var(--color-black), <alpha-value>)",
       primary: "rgba(var(--color-primary), <alpha-value>)",
+      "primary-end": "rgba(var(--color-primary-end), <alpha-value>)",
       success: "rgba(var(--color-success), <alpha-value>)",
       warning: "rgba(var(--color-warning), <alpha-value>)",
       danger: "rgba(var(--color-danger), <alpha-value>)",

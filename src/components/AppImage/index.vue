@@ -140,7 +140,7 @@ function onError(event: ImageOnErrorEvent): void {
 
 .app-image__error,
 .app-image__loading {
-  --at-apply: "absolute inset-x-0 inset-y-0 flex items-center justify-center text-#595959 bg-gray-100 overflow-hidden";
+  --at-apply: absolute inset-x-0 inset-y-0 flex items-center justify-center text-t2 bg-gray-100 overflow-hidden;
 }
 
 .app-image__icon {

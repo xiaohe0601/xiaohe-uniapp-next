@@ -10,7 +10,8 @@
       "vite/client",
       "@dcloudio/types",
       "@uni-helper/uni-app-types",
-      "miniprogram-api-typings"
+      "miniprogram-api-typings",
+      "z-paging/global.d.ts"
     ],
     "allowImportingTsExtensions": true,
     "noEmit": true,

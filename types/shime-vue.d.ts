@@ -20,5 +20,10 @@ declare module "vue" {
 
   type PageComponentInstance = ComponentPublicInstance & {
     getOpenerEventChannel?: () => OptionalValue<EventChannel>;
+
+    /**
+     * 用于挂载app-page组件实例（请勿手动修改！）
+     */
+    $magic?: any;
   }
 }

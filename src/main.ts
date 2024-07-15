@@ -6,6 +6,7 @@ import "virtual:uno.css";
 import "@/assets/xh-iconfont/xh-iconfont.css";
 import "@/assets/iconfont/iconfont.css";
 import "@/plugins/dayjs.ts";
+import "@/plugins/z-paging.ts";
 // #ifdef H5
 import "@/plugins/vconsole.ts";
 // #endif

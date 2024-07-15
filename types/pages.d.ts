@@ -11,6 +11,17 @@ declare module "@uni-helper/vite-plugin-uni-pages" {
      */
     isLoginPage?: boolean;
   }
+
+  interface TabBarItem {
+    /**
+     * 默认图标
+     */
+    icon?: string;
+    /**
+     * 选中图标
+     */
+    selectedIcon?: string;
+  }
 }
 
 declare global {

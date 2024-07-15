@@ -1,6 +1,8 @@
 <template>
   <app-page>
-    <text>首页</text>
+    <app-navbar title="首页" border :show-left="false"></app-navbar>
+
+    <app-tabbar-default active="/pages/home/index"></app-tabbar-default>
   </app-page>
 </template>
 
