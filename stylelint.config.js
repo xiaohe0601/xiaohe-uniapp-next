@@ -49,7 +49,7 @@ export default {
     "declaration-block-no-redundant-longhand-properties": [true, {
       ignoreShorthands: ["inset"]
     }],
-    "scss/at-import-partial-extension": ["always"],
+    "scss/load-partial-extension": ["always"],
     "scss/at-extend-no-missing-placeholder": null
   }
 };
