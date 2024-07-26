@@ -39,11 +39,11 @@ const emit = defineEmits<Emits>();
 
 defineSlots<Slots>();
 
-const activeKey = computed<OptionalString>({
+const activeKey = computed({
   get() {
     return props.active;
   },
-  set(value?: string) {
+  set(value) {
     emit("update:active", value);
   }
 });
@@ -52,10 +52,14 @@ const deviceStore = useDeviceStore();
 const { safeareaInsets } = storeToRefs(deviceStore);
 
 const classes = computed<Record<string, boolean>>(() => {
-  return { "is-visible": props.visible, "is-fixed": props.fixed, "has-border": props.border };
+  return {
+    "is-visible": props.visible,
+    "is-fixed": props.fixed,
+    "has-border": props.border
+  };
 });
 
-const itemsStyles = computed<CSSProperties>(() => {
+const itemsStyles = computed(() => {
   const value: CSSProperties = {};
 
   value.height = withUnit(props.height);
@@ -63,7 +67,7 @@ const itemsStyles = computed<CSSProperties>(() => {
   return eliminateUndefined(value, true);
 });
 
-const placeholderStyles = computed<CSSProperties>(() => {
+const placeholderStyles = computed(() => {
   const value: CSSProperties = {};
 
   value.height = `calc(${itemsStyles.value.height} + ${safeareaInsets.value.bottom}px)`;
@@ -75,7 +79,7 @@ const placeholderStyles = computed<CSSProperties>(() => {
   return eliminateUndefined(value, true);
 });
 
-const styles = computed<CSSProperties>(() => {
+const styles = computed(() => {
   const value: CSSProperties = {};
 
   if (!props.visible) {

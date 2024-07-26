@@ -108,10 +108,14 @@ const { navbar } = storeToRefs(deviceStore);
 const systemStore = useSystemStore();
 
 const classes = computed<Record<string, boolean>>(() => {
-  return { "is-visible": props.visible, "is-fixed": props.fixed, "has-border": props.border };
+  return {
+    "is-visible": props.visible,
+    "is-fixed": props.fixed,
+    "has-border": props.border
+  };
 });
 
-const styles = computed<CSSProperties>(() => {
+const styles = computed(() => {
   const value: CSSProperties = {};
 
   if (!props.visible) {
@@ -121,7 +125,7 @@ const styles = computed<CSSProperties>(() => {
   return eliminateUndefined(value, true);
 });
 
-const placeholderStyles = computed<CSSProperties>(() => {
+const placeholderStyles = computed(() => {
   const value: CSSProperties = {};
 
   value.height = `${navbar.value.height}px`;
@@ -133,7 +137,7 @@ const placeholderStyles = computed<CSSProperties>(() => {
   return eliminateUndefined(value, true);
 });
 
-const finalNativeTitle = computed<string>(() => {
+const finalNativeTitle = computed(() => {
   return props.nativeTitle ?? props.title ?? "";
 });
 
@@ -152,7 +156,7 @@ watch(() => props.statusFrontColor, async (value) => {
   });
 }, { immediate: true });
 
-const shouldBackToHome = ref<boolean>(false);
+const shouldBackToHome = ref(false);
 
 async function updateShouldBackToHome(): Promise<void> {
   const pages: Page.PageInstance[] = getCurrentPages();

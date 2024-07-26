@@ -38,15 +38,17 @@ const emit = defineEmits<Emits>();
 
 const { activeKey, updateActiveKey } = inject(TABBAR_CONTEXT_KEY)!;
 
-const selected = computed<boolean>(() => {
+const selected = computed(() => {
   return props.path === activeKey.value;
 });
 
 const classes = computed<Record<string, boolean>>(() => {
-  return { "is-selected": selected.value };
+  return {
+    "is-selected": selected.value
+  };
 });
 
-const icon = computed<OptionalString>(() => {
+const icon = computed(() => {
   if (selected.value) {
     return props.selectedIcon ?? props.icon;
   }

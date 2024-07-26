@@ -31,7 +31,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 defineSlots<Slots>();
 
-const styles = computed<CSSProperties>(() => {
+const styles = computed(() => {
   const value: CSSProperties = {};
 
   value.top = withUnit(props.top);

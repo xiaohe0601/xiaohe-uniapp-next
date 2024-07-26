@@ -56,7 +56,7 @@ const emit = defineEmits<Emits>();
 
 defineSlots<Slots>();
 
-const styles = computed<CSSProperties>(() => {
+const styles = computed(() => {
   const value: CSSProperties = {};
 
   value.borderRadius = withUnit(props.radius);

@@ -105,20 +105,20 @@ const mergedProps = computed<Props>(() => {
   return merge({}, props, customProps.value);
 });
 
-const innerVisible = computed<boolean>({
+const innerVisible = computed({
   get() {
     return mergedProps.value.visible!;
   },
-  set(value: boolean) {
+  set(value) {
     emit("update:visible", value);
   }
 });
 
-const popupClass = computed<string>(() => {
+const popupClass = computed(() => {
   return `app-dialog ${mergedProps.value.popClass}`;
 });
 
-const overlayClass = computed<string>(() => {
+const overlayClass = computed(() => {
   return `app-dialog-overlay ${mergedProps.value.overlayClass}`;
 });
 
