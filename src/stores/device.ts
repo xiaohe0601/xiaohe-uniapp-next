@@ -81,7 +81,7 @@ export const useDeviceStore = defineStore("device", () => {
   /**
    * 是否已准备完毕
    */
-  const readied = ref<boolean>(false);
+  const readied = ref(false);
 
   /**
    * 屏幕尺寸信息

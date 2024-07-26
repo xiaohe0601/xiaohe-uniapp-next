@@ -64,14 +64,17 @@ const emit = defineEmits<Emits>();
 
 defineSlots<Slots>();
 
-const error = ref<boolean>(false);
-const loading = ref<boolean>(false);
+const error = ref(false);
+const loading = ref(false);
 
 const classes = computed<Record<string, boolean>>(() => {
-  return { "is-error": error.value, "is-loading": loading.value };
+  return {
+    "is-error": error.value,
+    "is-loading": loading.value
+  };
 });
 
-const styles = computed<CSSProperties>(() => {
+const styles = computed(() => {
   const value: CSSProperties = {};
 
   value.width = withUnit(props.width);
@@ -80,11 +83,11 @@ const styles = computed<CSSProperties>(() => {
   return eliminateUndefined(value, true);
 });
 
-const url = computed<OptionalString>(() => {
+const url = computed(() => {
   return $sources(props.src);
 });
 
-const feature = computed<boolean>(() => {
+const feature = computed(() => {
   return props.forceEnableFeature || isUrl(url.value) || isEmpty(url.value);
 });
 
