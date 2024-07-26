@@ -33,7 +33,10 @@ const deviceStore = useDeviceStore();
 const classes = computed<Record<string, boolean>>(() => {
   const { fullscreen, enableFlex, useScrollView } = props;
 
-  return { "is-fullscreen": fullscreen || useScrollView, "is-flex": enableFlex };
+  return {
+    "is-fullscreen": fullscreen || useScrollView,
+    "is-flex": enableFlex
+  };
 });
 
 onMounted(() => {

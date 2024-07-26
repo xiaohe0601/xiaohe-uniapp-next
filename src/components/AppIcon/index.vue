@@ -30,7 +30,7 @@ const props = withDefaults(defineProps<Props>(), {
   fontPrefix: "icon"
 });
 
-const assertImage = computed<boolean>(() => {
+const assertImage = computed(() => {
   return props.name?.includes("/") ?? false;
 });
 
@@ -42,7 +42,7 @@ const classes = computed<string[]>(() => {
   }
 });
 
-const styles = computed<CSSProperties>(() => {
+const styles = computed(() => {
   const value: CSSProperties = {};
 
   if (!assertImage.value) {

@@ -24,7 +24,7 @@ const props = withDefaults(defineProps<Props>(), {
 const deviceStore = useDeviceStore();
 const { safeareaInsets } = storeToRefs(deviceStore);
 
-const styles = computed<CSSProperties>(() => {
+const styles = computed(() => {
   const value: CSSProperties = {};
 
   const size: string = `calc(${safeareaInsets.value[props.direction]}px + ${withUnit(props.addition)})`;
