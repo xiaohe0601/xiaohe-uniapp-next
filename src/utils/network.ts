@@ -213,6 +213,10 @@ instance.interceptors.response.use(async (res: UnResponse) => {
   const response = res as NetworkResponse;
 
   if (response.config == null) {
+    if (response.errMsg) {
+      ToastManager.text(response.errMsg);
+    }
+
     return Promise.reject(response);
   }
 
