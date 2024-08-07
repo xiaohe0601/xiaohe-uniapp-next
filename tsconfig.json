@@ -1,7 +1,7 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
-    "lib": ["ESNext", "DOM"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
@@ -9,8 +9,8 @@
     "types": [
       "vite/client",
       "@dcloudio/types",
-      "@uni-helper/uni-app-types",
       "miniprogram-api-typings",
+      "@uni-helper/uni-app-types",
       "z-paging/global.d.ts"
     ],
     "allowImportingTsExtensions": true,
