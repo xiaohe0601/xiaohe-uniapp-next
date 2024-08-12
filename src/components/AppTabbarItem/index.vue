@@ -1,5 +1,8 @@
 <template>
-  <app-badge class="app-tabbar-item" :class="[classes]" :value="props.badge" @tap="onTap">
+  <app-badge class="app-tabbar-item"
+             :class="[classes]"
+             :value="props.badge"
+             @tap="onTap">
     <app-icon v-if="icon != null"
               class="app-tabbar-item__icon"
               :name="icon"

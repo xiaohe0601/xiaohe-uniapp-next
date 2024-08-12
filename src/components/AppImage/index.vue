@@ -1,5 +1,8 @@
 <template>
-  <view class="app-image" :class="[classes]" :style="[styles]" @tap="onTap">
+  <view class="app-image"
+        :class="[classes]"
+        :style="[styles]"
+        @tap="onTap">
     <image class="app-image__inner"
            :src="url"
            :mode="props.mode"

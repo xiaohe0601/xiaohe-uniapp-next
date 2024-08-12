@@ -2,7 +2,11 @@
   <nut-config-provider class="app-page" :class="[classes]">
     <slot v-if="!props.useScrollView"></slot>
 
-    <scroll-view v-else class="app-page__scroller" scroll-y enhanced :show-scrollbar="false">
+    <scroll-view v-else
+                 class="app-page__scroller"
+                 scroll-y
+                 enhanced
+                 :show-scrollbar="false">
       <slot></slot>
     </scroll-view>
 
