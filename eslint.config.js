@@ -91,6 +91,12 @@ export default defineConfig({
       singleline: "beside",
       multiline: "beside"
     }],
+    "vue/max-attributes-per-line": ["error", {
+      singleline: {
+        max: 3
+      },
+      multiline: 1
+    }],
     "vue/html-closing-bracket-newline": ["error", {
       singleline: "never",
       multiline: "never"
