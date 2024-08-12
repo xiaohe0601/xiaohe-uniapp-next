@@ -8,7 +8,10 @@
                :width="props.width"
                :height="props.height"></app-image>
 
-    <text v-else class="app-icon__icon" :class="[classes]" :style="[styles]"></text>
+    <text v-else
+          class="app-icon__icon"
+          :class="[classes]"
+          :style="[styles]"></text>
   </view>
 </template>
 
