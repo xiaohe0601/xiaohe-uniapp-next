@@ -118,7 +118,7 @@ export const useSystemStore = defineStore("system", () => {
       await deviceStore.awaitReadied();
 
       // @ts-expect-error whatever
-      authorityInterceptPage.value = last(getCurrentPages())!.$page.fullPath;
+      authorityInterceptPage.value = last(getCurrentPages()).$page.fullPath;
 
       await Router.redirect(url);
     } else {

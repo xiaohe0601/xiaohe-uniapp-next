@@ -27,7 +27,9 @@ export default class ToastManager {
 
   public static async hide(): Promise<void> {
     // @ts-expect-error whatever
-    await uni.hideToast({ noConflict: true });
+    await uni.hideToast({
+      noConflict: true
+    });
   }
 
 }
