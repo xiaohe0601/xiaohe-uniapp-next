@@ -40,8 +40,9 @@ const props = withDefaults(defineProps<TabbarProps>(), {
 const pages: TabBarItem[] = PagesManager.tabbarPages();
 
 function onItemClick(item: TabBarItem): void {
-  // @ts-ignore
-  uni.switchTab({ url: item.pagePath });
+  uni.switchTab({
+    url: item.pagePath
+  });
 }
 </script>
 
