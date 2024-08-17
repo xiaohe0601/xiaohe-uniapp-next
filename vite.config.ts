@@ -34,7 +34,9 @@ export default defineConfig(({ mode }) => {
         dirs: ["src/components"],
         directoryAsNamespace: true,
         collapseSamePrefixes: true,
-        resolvers: [NutResolver()]
+        resolvers: [
+          NutResolver()
+        ]
       }),
       AutoImport({
         dts: "types/auto-imports.d.ts",
