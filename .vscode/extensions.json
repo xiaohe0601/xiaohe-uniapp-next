@@ -5,7 +5,6 @@
     "stylelint.vscode-stylelint",
     "editorConfig.editorConfig",
     "antfu.unocss",
-    "uni-helper.uni-helper-vscode",
-    "uni-helper.uni-highlight-vscode"
+    "uni-helper.uni-helper-vscode"
   ]
 }
