@@ -242,13 +242,13 @@ export function gotoAppPermissionSetting(): void {
     const Settings = plus.android.importClass("android.provider.Settings");
     const Uri = plus.android.importClass("android.net.Uri");
     const main = plus.android.runtimeMainActivity();
-    // @ts-ignore
+    // @ts-expect-error whatever
     const intent = new Intent();
-    // @ts-ignore
+    // @ts-expect-error whatever
     intent.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-    // @ts-ignore
+    // @ts-expect-error whatever
     intent.setData(Uri.fromParts("package", main.getPackageName(), null));
-    // @ts-ignore
+    // @ts-expect-error whatever
     main.startActivity(intent);
   }
 }
@@ -266,7 +266,7 @@ export function checkSystemEnableLocation(): boolean {
     const Context = plus.android.importClass("android.content.Context");
     const LocationManager = plus.android.importClass("android.location.LocationManager");
     const main = plus.android.runtimeMainActivity();
-    // @ts-ignore
+    // @ts-expect-error whatever
     return main.getSystemService(Context.LOCATION_SERVICE).isProviderEnabled(LocationManager.GPS_PROVIDER);
   }
 }
@@ -280,7 +280,7 @@ export function checkSystemEnableLocation(): boolean {
 export async function authorizeMpWeixinPermission(permission: MpWeixinPermission | string): Promise<boolean> {
   const { authSetting } = await uni.getSetting();
 
-  // @ts-ignore
+  // @ts-expect-error whatever
   if (authSetting[permission]) {
     return true;
   }

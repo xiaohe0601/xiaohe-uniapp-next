@@ -333,7 +333,7 @@ export async function $request<T = UnData, D = UnData>(url: string, cfg?: Networ
       LoadingManager.show(config.loadingText, { mask: true });
       loading.instance = true;
     } else {
-      // @ts-ignore
+      // @ts-expect-error whatever
       loading.timer = setTimeout(() => {
         LoadingManager.show(config.loadingText, { mask: true });
         loading.instance = true;
