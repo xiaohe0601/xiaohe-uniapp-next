@@ -39,7 +39,7 @@ export default defineConfig(({ mode }) => {
         imports: ["vue", "uni-app", "pinia"]
       }),
       UnoCSS(),
-      // @ts-ignore
+      // @ts-expect-error whatever
       UniApp.default()
     ],
     server: {

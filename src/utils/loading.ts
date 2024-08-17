@@ -7,7 +7,7 @@ export default class LoadingManager {
   }
 
   public static async hide(): Promise<void> {
-    // @ts-ignore
+    // @ts-expect-error whatever
     await uni.hideLoading({ noConflict: true });
   }
 
