@@ -14,7 +14,7 @@
 [![Gitee stars](https://gitee.com/xiaohe0601/xiaohe-uniapp-next/badge/star.svg?theme=dark)](https://gitee.com/xiaohe0601/xiaohe-uniapp-next/stargazers)
 [![Gitee forks](https://gitee.com/xiaohe0601/xiaohe-uniapp-next/badge/fork.svg?theme=dark)](https://gitee.com/xiaohe0601/xiaohe-uniapp-next/members)
 
-小何同学 / [github@xiaohe0601](https://github.com/xiaohe0601) / [gitee@xiaohe0601](https://gitee.com/xiaohe0601)
+小何 / [github@xiaohe0601](https://github.com/xiaohe0601) / [gitee@xiaohe0601](https://gitee.com/xiaohe0601)
 
 ### 🎉 特性
 
@@ -38,7 +38,7 @@
 
 - ❓：若有疑问或BUG反馈，可提交[issues](https://github.com/xiaohe0601/xiaohe-uniapp-next/issues)
 
-- 📫：[HeDianGeng0601@outlook.com](mailto:HeDianGeng0601@outlook.com)
+- 📫：[xiaohe0601@outlook.com](mailto:xiaohe0601@outlook.com)
 
 - 🐧：暂未开通
 
