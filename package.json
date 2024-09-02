@@ -76,7 +76,7 @@
     "@dcloudio/vite-plugin-uni": "3.0.0-4020420240722002",
     "@types/fs-extra": "^11.0.4",
     "@types/lodash-es": "^4.17.12",
-    "@types/node": "^20.16.2",
+    "@types/node": "^20.16.3",
     "@types/qs": "^6.9.15",
     "@uni-helper/uni-app-types": "^1.0.0-alpha.3",
     "@uni-helper/unocss-preset-uni": "^0.2.9",
@@ -90,7 +90,7 @@
     "esno": "^4.7.0",
     "fs-extra": "^11.2.0",
     "husky": "^9.1.5",
-    "lint-staged": "^15.2.9",
+    "lint-staged": "^15.2.10",
     "miniprogram-api-typings": "^3.12.3",
     "sass": "^1.77.8",
     "stylelint": "^16.9.0",
@@ -106,7 +106,7 @@
     "unocss": "^0.62.3",
     "unplugin-auto-import": "^0.18.2",
     "vite": "^5.4.2",
-    "vue-tsc": "2.0.26"
+    "vue-tsc": "^2.1.4"
   },
   "lint-staged": {
     "*.{js,ts,vue}": "eslint --fix",
