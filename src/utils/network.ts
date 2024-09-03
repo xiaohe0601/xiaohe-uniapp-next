@@ -226,8 +226,8 @@ instance.interceptors.response.use(async (res: UnResponse) => {
   if (typeof response.data === "string") {
     try {
       response.data = JSON.parse(response.data);
-    } catch (e) {
-      console.error("JSON解析异常", e);
+    } catch (error) {
+      console.error("JSON解析异常", error);
       return Promise.reject(response);
     }
   }
