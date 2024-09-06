@@ -105,6 +105,22 @@ export default defineConfig({
     "vue/singleline-html-element-content-newline": ["off"],
     "vue/multiline-html-element-content-newline": ["off"],
     "node/prefer-global/process": ["error", "always"],
+    "unicorn/consistent-function-scoping": ["off"],
+    "perfectionist/sort-imports": ["error", {
+      internalPattern: ["@/**"],
+      newlinesBetween: "never",
+      groups: [
+        ["builtin-type", "builtin"],
+        ["external-type", "external"],
+        ["parent-type", "parent"],
+        ["sibling-type", "sibling"],
+        ["index-type", "index"],
+        ["internal-type", "internal"],
+        "style",
+        "object",
+        "unknown"
+      ]
+    }],
     "antfu/consistent-list-newline": ["off"]
   }
 });

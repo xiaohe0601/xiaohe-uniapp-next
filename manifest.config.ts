@@ -1,6 +1,6 @@
-import { loadEnv } from "vite";
 import type { H5 as H5Config } from "@uni-helper/vite-plugin-uni-manifest";
 import { defineManifestConfig } from "@uni-helper/vite-plugin-uni-manifest";
+import { loadEnv } from "vite";
 
 const env: Record<string, string> = loadEnv(process.env.NODE_ENV, process.cwd());
 

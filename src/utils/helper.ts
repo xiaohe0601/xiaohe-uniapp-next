@@ -1,7 +1,7 @@
-import { isNumber } from "@/utils/validate.ts";
 import { castArray } from "@/plugins/lodash.ts";
 import { $download } from "@/utils/network.ts";
 import ToastManager from "@/utils/toast.ts";
+import { isNumber } from "@/utils/validate.ts";
 
 /**
  * Promise版setTimeout

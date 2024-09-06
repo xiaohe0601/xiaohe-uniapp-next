@@ -1,8 +1,6 @@
 import type { UnCancelTokenSource, UnConfig, UnData, UnInstance, UnParams, UnResponse } from "@uni-helper/uni-network";
 import UniNetwork from "@uni-helper/uni-network";
 import QS from "qs";
-import type { AjaxEntity } from "@/entities/AjaxEntity.ts";
-import { isAjaxEntity } from "@/entities/AjaxEntity.ts";
 import {
   DEFAULT_NETWORK_CONFIG,
   REQUEST_CONTENT_TYPE,
@@ -12,12 +10,14 @@ import {
   RESPONSE_STATUS_SUCCESS,
   RESPONSE_STATUS_UNAUTHORIZED
 } from "@/constants/network.ts";
+import type { AjaxEntity } from "@/entities/AjaxEntity.ts";
+import { isAjaxEntity } from "@/entities/AjaxEntity.ts";
 import { merge } from "@/plugins/lodash.ts";
-import TokenManager from "@/utils/token.ts";
-import ToastManager from "@/utils/toast.ts";
-import LoadingManager from "@/utils/loading.ts";
 import { useSystemStore } from "@/stores/system.ts";
 import { uuid } from "@/utils/helper.ts";
+import LoadingManager from "@/utils/loading.ts";
+import ToastManager from "@/utils/toast.ts";
+import TokenManager from "@/utils/token.ts";
 
 /**
  * 网络请求配置
