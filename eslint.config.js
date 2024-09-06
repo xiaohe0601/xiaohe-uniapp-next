@@ -122,6 +122,7 @@ export default defineConfig({
         "unknown"
       ]
     }],
+    "antfu/consistent-chaining": ["off"],
     "antfu/consistent-list-newline": ["off"]
   }
 });
