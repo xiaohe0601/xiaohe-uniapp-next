@@ -117,6 +117,7 @@ export default defineConfig({
         ["index-type", "index"],
         ["internal-type", "internal"],
         "style",
+        ["side-effect", "side-effect-style"],
         "object",
         "unknown"
       ]
