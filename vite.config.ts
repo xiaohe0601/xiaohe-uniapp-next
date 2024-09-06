@@ -3,11 +3,11 @@ import UniApp from "@dcloudio/vite-plugin-uni";
 import UniComponents from "@uni-helper/vite-plugin-uni-components";
 import UniManifest from "@uni-helper/vite-plugin-uni-manifest";
 import UniPages from "@uni-helper/vite-plugin-uni-pages";
+import { NutResolver } from "nutui-uniapp";
 import UnoCSS from "unocss/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import type { PluginOption, TerserOptions } from "vite";
 import { defineConfig, loadEnv } from "vite";
-import { NutResolver } from "nutui-uniapp";
 
 function r(...paths: string[]) {
   return path.resolve(process.cwd(), ".", ...paths);

@@ -1,4 +1,3 @@
-import type { ButtonFormType, ButtonShape, ButtonSize, ButtonType } from "nutui-uniapp";
 import type {
   BaseEvent,
   ButtonOnAgreeprivacyauthorizationEvent,
@@ -8,6 +7,7 @@ import type {
   ButtonOnOpensettingEvent,
   ButtonOpenType
 } from "@uni-helper/uni-app-types";
+import type { ButtonFormType, ButtonShape, ButtonSize, ButtonType } from "nutui-uniapp";
 
 export interface Props {
   /**

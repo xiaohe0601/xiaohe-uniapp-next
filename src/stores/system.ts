@@ -1,10 +1,10 @@
 import type { UserProfile } from "@/entities/account/UserProfile.ts";
+import { debounce, isEmpty, last } from "@/plugins/lodash.ts";
 import { useDeviceStore } from "@/stores/device.ts";
-import TokenManager from "@/utils/token.ts";
 import PagesManager from "@/utils/pages.ts";
 import type { RouteOptions } from "@/utils/router.ts";
 import Router from "@/utils/router.ts";
-import { debounce, isEmpty, last } from "@/plugins/lodash.ts";
+import TokenManager from "@/utils/token.ts";
 
 /**
  * 平台信息

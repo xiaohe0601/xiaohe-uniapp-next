@@ -28,8 +28,8 @@
 </template>
 
 <script lang="ts" setup>
-import type { CSSProperties } from "vue";
 import type { BaseEvent } from "@uni-helper/uni-app-types";
+import type { CSSProperties } from "vue";
 import type { Emits, Props, Slots } from "./types.ts";
 import { debounce } from "@/plugins/lodash.ts";
 import { eliminateUndefined, withUnit } from "@/utils/helper.ts";

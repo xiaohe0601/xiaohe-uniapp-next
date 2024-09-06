@@ -1,6 +1,6 @@
 import type { PageMetaDatum, SubPageMetaDatum, TabBar, TabBarItem } from "@uni-helper/vite-plugin-uni-pages";
-import PAGES_JSON from "@/pages.json";
 import type { Inst as PageInst } from "@/components/AppPage/types.ts";
+import PAGES_JSON from "@/pages.json";
 import { last } from "@/plugins/lodash.ts";
 import { sleep } from "@/utils/helper.ts";
 

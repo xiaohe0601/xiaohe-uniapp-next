@@ -37,8 +37,8 @@
 </template>
 
 <script lang="ts" setup>
-import type { CSSProperties } from "vue";
 import type { ImageOnErrorEvent, ImageOnLoadEvent } from "@uni-helper/uni-app-types";
+import type { CSSProperties } from "vue";
 import type { Emits, Props, Slots } from "./types.ts";
 import { isEmpty } from "@/plugins/lodash.ts";
 import { $sources } from "@/utils/filter.ts";

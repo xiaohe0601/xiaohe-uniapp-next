@@ -1,5 +1,5 @@
-import type { CSSProperties } from "vue";
 import type { FooterDirection, NutAnimationName, TextAlign } from "nutui-uniapp";
+import type { CSSProperties } from "vue";
 
 export interface Props {
   /**
