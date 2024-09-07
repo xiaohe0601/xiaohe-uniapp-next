@@ -88,7 +88,7 @@
     "@uni-helper/volar-service-uni-pages": "^0.2.27",
     "@vue/runtime-core": "~3.4.38",
     "@vue/tsconfig": "^0.5.1",
-    "eslint": "^9.9.1",
+    "eslint": "^9.10.0",
     "esno": "^4.7.0",
     "fs-extra": "^11.2.0",
     "husky": "^9.1.5",
