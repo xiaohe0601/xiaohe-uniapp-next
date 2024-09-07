@@ -15,7 +15,6 @@
 </template>
 
 <script lang="ts" setup>
-import type { PageComponentInstance } from "vue";
 import type { Inst as DialogInst } from "../AppDialog/types.ts";
 import type { Inst, Props, Slots } from "./types.ts";
 import { useDeviceStore } from "@/stores/device.ts";
@@ -36,6 +35,8 @@ const props = withDefaults(defineProps<Props>(), {
 
 defineSlots<Slots>();
 
+const instance = getCurrentInstance();
+
 const deviceStore = useDeviceStore();
 
 const dialog = ref<NullableValue<DialogInst>>(null);
@@ -54,7 +55,7 @@ const INSTANCE: Inst = {
 };
 
 function mountInstToPageProxy(): void {
-  const page: OptionalValue<NullableValue<PageComponentInstance>> = getCurrentInstance()?.parent?.proxy;
+  const page: OptionalValue<NullableValue<PageComponentInstance>> = instance?.parent?.proxy;
 
   if (page != null) {
     page.$magic = INSTANCE;
