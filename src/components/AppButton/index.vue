@@ -1,30 +1,34 @@
 <template>
-  <nut-button class="app-button"
-              :style="[styles]"
-              :type="props.type"
-              :size="props.size"
-              :shape="props.shape"
-              :plain="props.plain"
-              :disabled="props.disabled"
-              :block="props.block"
-              :loading="props.loading"
-              :form-type="props.formType"
-              :open-type="props.openType"
-              :session-from="props.sessionFrom"
-              :send-message-title="props.sendMessageTitle"
-              :send-message-path="props.sendMessagePath"
-              :send-message-img="props.sendMessageImg"
-              :show-message-card="props.showMessageCard"
-              @click="debounceOnClick"
-              @contact="emit('contact', $event)"
-              @getphonenumber="emit('getphonenumber', $event)"
-              @getrealtimephonenumber="emit('getrealtimephonenumber', $event)"
-              @opensetting="emit('opensetting', $event)"
-              @chooseavatar="emit('chooseavatar', $event)"
-              @agreeprivacyauthorization="emit('agreeprivacyauthorization', $event)"
-              @error="emit('error', $event)">
+  <wd-button class="app-button"
+             :style="[styles]"
+             :type="props.type"
+             :size="props.size"
+             :plain="props.plain"
+             :round="props.round"
+             :disabled="props.disabled"
+             :hairline="props.hairline"
+             :block="props.block"
+             :loading="props.loading"
+             :loading-color="props.loadingColor"
+             :icon="props.icon"
+             :class-prefix="props.classPrefix"
+             :hover-stop-propagation="props.hoverStopPropagation"
+             :open-type="props.openType"
+             :session-from="props.sessionFrom"
+             :send-message-title="props.sendMessageTitle"
+             :send-message-path="props.sendMessagePath"
+             :send-message-img="props.sendMessageImg"
+             :show-message-card="props.showMessageCard"
+             :button-id="props.buttonId"
+             @click="debounceOnClick"
+             @contact="emit('contact', $event)"
+             @getphonenumber="emit('getphonenumber', $event)"
+             @opensetting="emit('opensetting', $event)"
+             @chooseavatar="emit('chooseavatar', $event)"
+             @agreeprivacyauthorization="emit('agreeprivacyauthorization', $event)"
+             @error="emit('error', $event)">
     <slot></slot>
-  </nut-button>
+  </wd-button>
 </template>
 
 <script lang="ts" setup>
@@ -44,10 +48,13 @@ defineOptions({
 
 const props = withDefaults(defineProps<Props>(), {
   plain: false,
+  round: true,
   disabled: false,
+  hairline: false,
   block: false,
   loading: false,
   radius: "16rpx",
+  hoverStopPropagation: false,
   showMessageCard: false,
   debounceTime: 0
 });
@@ -59,7 +66,9 @@ defineSlots<Slots>();
 const styles = computed(() => {
   const value: CSSProperties = {};
 
-  value.borderRadius = withUnit(props.radius);
+  if (props.round) {
+    value.borderRadius = withUnit(props.radius);
+  }
 
   return eliminateUndefined(value, true);
 });

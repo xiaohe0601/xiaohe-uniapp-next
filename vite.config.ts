@@ -1,9 +1,9 @@
 import path from "node:path";
 import UniApp from "@dcloudio/vite-plugin-uni";
 import UniComponents from "@uni-helper/vite-plugin-uni-components";
+import { WotResolver } from "@uni-helper/vite-plugin-uni-components/resolvers";
 import UniManifest from "@uni-helper/vite-plugin-uni-manifest";
 import UniPages from "@uni-helper/vite-plugin-uni-pages";
-import { NutResolver } from "nutui-uniapp";
 import UnoCSS from "unocss/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import type { PluginOption, TerserOptions } from "vite";
@@ -26,7 +26,7 @@ function buildPlugins(): PluginOption[] {
       directoryAsNamespace: true,
       collapseSamePrefixes: true,
       resolvers: [
-        NutResolver()
+        WotResolver()
       ]
     }),
     AutoImport({

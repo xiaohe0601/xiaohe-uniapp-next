@@ -1,3 +1,5 @@
+import type { BadgeType } from "wot-design-uni/components/wd-badge/types.ts";
+
 export interface Props {
   /**
    * 数值
@@ -8,10 +10,6 @@ export interface Props {
    */
   max?: number;
   /**
-   * 是否为气泡形状
-   */
-  bubble?: boolean;
-  /**
    * 上下偏移量
    */
   top?: number | string;
@@ -20,9 +18,21 @@ export interface Props {
    */
   right?: number | string;
   /**
-   * 颜色
+   * 是否隐藏
    */
-  color?: string;
+  hidden?: boolean;
+  /**
+   * 类型
+   */
+  type?: BadgeType;
+  /**
+   * 当数值为0时，是否展示徽标
+   */
+  showZero?: boolean;
+  /**
+   * 背景颜色
+   */
+  bgColor?: string;
 }
 
 export interface Slots {

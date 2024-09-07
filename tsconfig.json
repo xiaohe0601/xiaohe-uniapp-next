@@ -11,7 +11,7 @@
       "@dcloudio/types",
       "miniprogram-api-typings",
       "@uni-helper/uni-app-types",
-      "nutui-uniapp/global.d.ts",
+      "wot-design-uni/global",
       "z-paging/global.d.ts"
     ],
     "allowImportingTsExtensions": true,

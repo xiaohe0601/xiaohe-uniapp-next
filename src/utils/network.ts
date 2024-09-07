@@ -14,7 +14,6 @@ import type { AjaxEntity } from "@/entities/AjaxEntity.ts";
 import { isAjaxEntity } from "@/entities/AjaxEntity.ts";
 import { merge } from "@/plugins/lodash.ts";
 import { useSystemStore } from "@/stores/system.ts";
-import DialogManager from "@/utils/dialog.ts";
 import { uuid } from "@/utils/helper.ts";
 import LoadingManager from "@/utils/loading.ts";
 import ToastManager from "@/utils/toast.ts";
@@ -39,7 +38,7 @@ export interface NetworkConfig<T = UnData, D = UnData> extends UnConfig<T, D> {
   /**
    * 错误信息提示方式
    */
-  promptMethod?: "toast" | "alert";
+  promptMethod?: "toast";
   /**
    * 是否启用等待动画
    */
@@ -310,13 +309,6 @@ export function promptError(data: NullableValue<AjaxEntity>, config: NetworkConf
       ToastManager.toast({
         title: message,
         icon: message.length <= 7 ? "error" : "none"
-      });
-      break;
-    }
-    case "alert": {
-      DialogManager.alert({
-        title: "错误",
-        content: message
       });
       break;
     }

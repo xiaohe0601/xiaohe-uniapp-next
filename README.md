@@ -22,7 +22,7 @@
 
 - [Uni Helper](https://uni-helper.js.org)、[Pinia](https://pinia.vuejs.org)、[UnoCSS](https://unocss.dev)
 
-- [nutui-uniapp](https://nutui-uniapp.pages.dev)、[z-paging](https://z-paging.zxlee.cn)
+- [wot-design-uni](https://wot-design-uni.pages.dev)、[z-paging](https://z-paging.zxlee.cn)
 
 - ESLint、StyleLint、Husky、LintStaged
 

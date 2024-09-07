@@ -7,7 +7,7 @@ import type {
   ButtonOnOpensettingEvent,
   ButtonOpenType
 } from "@uni-helper/uni-app-types";
-import type { ButtonFormType, ButtonShape, ButtonSize, ButtonType } from "nutui-uniapp";
+import type { ButtonSize, ButtonType } from "wot-design-uni/components/wd-button/types.ts";
 
 export interface Props {
   /**
@@ -19,33 +19,49 @@ export interface Props {
    */
   size?: ButtonSize;
   /**
-   * 形状
-   */
-  shape?: ButtonShape;
-  /**
    * 是否为朴素按钮
    */
   plain?: boolean;
+  /**
+   * 是否为圆角按钮
+   */
+  round?: boolean;
   /**
    * 是否禁用
    */
   disabled?: boolean;
   /**
+   * 是否细边框
+   */
+  hairline?: boolean;
+  /**
    * 是否为块级元素
    */
   block?: boolean;
-  /**
-   * 是否为加载中状态
-   */
-  loading?: boolean;
   /**
    * 圆角大小
    */
   radius?: number | string;
   /**
-   * form-type
+   * 是否为加载中状态
    */
-  formType?: ButtonFormType;
+  loading?: boolean;
+  /**
+   * 加载图标颜色
+   */
+  loadingColor?: string;
+  /**
+   * 图标类名
+   */
+  icon?: string;
+  /**
+   * 图标类名前缀
+   */
+  classPrefix?: string;
+  /**
+   * 指定是否阻止本节点的祖先节点出现点击态
+   */
+  hoverStopPropagation?: boolean;
   /**
    * 小程序开放能力
    */
@@ -71,6 +87,10 @@ export interface Props {
    */
   showMessageCard?: boolean;
   /**
+   * 按钮的唯一标识，可用于设置隐私同意授权按钮的id
+   */
+  buttonId?: string;
+  /**
    * 防抖延时
    */
   debounceTime?: number;
@@ -91,11 +111,6 @@ export interface Emits {
    * 手机号快速验证回调
    */
   (e: "getphonenumber", event: ButtonOnGetphonenumberEvent): void;
-
-  /**
-   * 手机号实时验证回调
-   */
-  (e: "getrealtimephonenumber", event: ButtonOnGetphonenumberEvent): void;
 
   /**
    * 在打开授权设置页后回调
