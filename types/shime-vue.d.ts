@@ -1,5 +1,3 @@
-import type { ComponentPublicInstance } from "vue";
-
 declare module "*.vue" {
   import type { DefineComponent } from "vue";
 
@@ -15,10 +13,4 @@ declare module "@vue/runtime-dom" {
   interface HTMLAttributes extends AttributifyAttributes {}
 }
 
-declare module "vue" {
-  import type { EventChannel } from "@dcloudio/uni-shared";
-
-  type PageComponentInstance = ComponentPublicInstance & {
-    getOpenerEventChannel?: () => OptionalValue<EventChannel>;
-  }
-}
+export {};
