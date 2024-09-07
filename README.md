@@ -24,8 +24,13 @@
 
 - ESLint、StyleLint、Husky、LintStaged
 
-> 提示：当前分支未集成UI框架及其他组件，若有需要请移步 [nutui](https://github.com/xiaohe0601/xiaohe-uniapp-next/tree/nutui) 分支（包含
+> 提示：当前分支未集成UI框架及其他组件，若有需要请移步以下分支
+>
+> - [nutui](https://github.com/xiaohe0601/xiaohe-uniapp-next/tree/nutui) 分支（包含
 > [nutui-uniapp](https://nutui-uniapp.pages.dev) 和 [z-paging](https://z-paging.zxlee.cn)）
+>
+> - [wotd](https://github.com/xiaohe0601/xiaohe-uniapp-next/tree/wotd) 分支（包含
+> [wot-design-uni](https://wot-design-uni.pages.dev) 和 [z-paging](https://z-paging.zxlee.cn)）
 
 ### 🛩️ 在线文档
 
