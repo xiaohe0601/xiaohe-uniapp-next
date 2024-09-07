@@ -4,7 +4,7 @@
 
     <scroll-view v-else
                  class="app-page__scroller"
-                 scroll-y
+                 :scroll-y="true"
                  enhanced
                  :show-scrollbar="false">
       <slot></slot>
