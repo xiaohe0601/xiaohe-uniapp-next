@@ -55,6 +55,7 @@ export default defineConfig(({ mode }) => {
   const env: Record<string, string> = loadEnv(mode, process.cwd());
 
   return {
+    base: process.env.UNI_PLATFORM === "h5" ? env.VITE_H5_BASE_URL : "/",
     resolve: {
       alias: {
         "@": r("src")
