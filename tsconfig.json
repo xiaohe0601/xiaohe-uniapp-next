@@ -13,6 +13,8 @@
       "@uni-helper/uni-app-types"
     ],
     "allowImportingTsExtensions": true,
+    "allowJs": true,
+    "checkJs": false,
     "noEmit": true,
     "sourceMap": true,
     "isolatedModules": true
