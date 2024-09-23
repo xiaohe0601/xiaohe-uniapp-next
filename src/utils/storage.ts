@@ -7,7 +7,7 @@ export default class StorageManager {
     try {
       return (await uni.getStorage({ key, encrypt })).data;
     } catch (error) {
-      console.error(error);
+      console.warn(error);
 
       return null;
     }

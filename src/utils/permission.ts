@@ -290,7 +290,7 @@ export async function authorizeMpWeixinPermission(permission: MpWeixinPermission
       scope: permission
     });
   } catch (error) {
-    console.error(error);
+    console.warn(error);
 
     return false;
   }
