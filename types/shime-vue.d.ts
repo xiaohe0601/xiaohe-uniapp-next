@@ -7,10 +7,4 @@ declare module "*.vue" {
   export default component;
 }
 
-declare module "@vue/runtime-dom" {
-  import type { AttributifyAttributes } from "@unocss/preset-attributify";
-
-  interface HTMLAttributes extends AttributifyAttributes {}
-}
-
 export {};
