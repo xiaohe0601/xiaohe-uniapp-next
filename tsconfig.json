@@ -1,7 +1,6 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.json",
+  "extends": "@xiaohe01/tsconfig/app-vue",
   "compilerOptions": {
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
@@ -11,13 +10,7 @@
       "@dcloudio/types",
       "miniprogram-api-typings",
       "@uni-helper/uni-app-types"
-    ],
-    "allowImportingTsExtensions": true,
-    "allowJs": true,
-    "checkJs": false,
-    "noEmit": true,
-    "sourceMap": true,
-    "isolatedModules": true
+    ]
   },
   "vueCompilerOptions": {
     "plugins": [
