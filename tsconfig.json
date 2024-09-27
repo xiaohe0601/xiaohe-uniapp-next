@@ -1,7 +1,6 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.json",
+  "extends": "@xiaohe01/tsconfig/app-vue",
   "compilerOptions": {
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
@@ -13,13 +12,7 @@
       "@uni-helper/uni-app-types",
       "nutui-uniapp/global.d.ts",
       "z-paging/global.d.ts"
-    ],
-    "allowImportingTsExtensions": true,
-    "allowJs": true,
-    "checkJs": false,
-    "noEmit": true,
-    "sourceMap": true,
-    "isolatedModules": true
+    ]
   },
   "vueCompilerOptions": {
     "plugins": [
