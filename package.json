@@ -68,7 +68,6 @@
     "vue": "~3.4.38"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.7.3",
     "@dcloudio/types": "^3.4.12",
     "@dcloudio/uni-automator": "3.0.0-4020420240722002",
     "@dcloudio/uni-cli-shared": "3.0.0-4020420240722002",
@@ -85,6 +84,7 @@
     "@uni-helper/vite-plugin-uni-pages": "^0.2.27",
     "@uni-helper/volar-service-uni-pages": "^0.2.27",
     "@vue/runtime-core": "~3.4.38",
+    "@xiaohe01/eslint-config": "^0.0.2",
     "@xiaohe01/tsconfig": "^0.0.2",
     "eslint": "^9.11.1",
     "esno": "^4.7.0",

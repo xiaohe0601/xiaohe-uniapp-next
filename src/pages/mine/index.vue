@@ -1,7 +1,7 @@
 <template>
-  <app-page>
+  <AppPage>
     <text>我的</text>
-  </app-page>
+  </AppPage>
 </template>
 
 <script lang="ts" setup>

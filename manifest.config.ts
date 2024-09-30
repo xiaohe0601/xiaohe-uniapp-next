@@ -1,3 +1,4 @@
+import process from "node:process";
 import type { H5 as H5Config } from "@uni-helper/vite-plugin-uni-manifest";
 import { defineManifestConfig } from "@uni-helper/vite-plugin-uni-manifest";
 import { loadEnv } from "vite";
