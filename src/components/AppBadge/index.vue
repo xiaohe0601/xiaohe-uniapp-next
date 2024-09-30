@@ -1,14 +1,15 @@
 <template>
-  <nut-badge class="app-badge"
-             :value="badge.value"
-             :max="props.max"
-             :dot="badge.dot"
-             :bubble="props.bubble"
-             :top="styles.top"
-             :right="styles.right"
-             :custom-color="props.color">
+  <NutBadge
+    class="app-badge"
+    :value="badge.value"
+    :max="props.max"
+    :dot="badge.dot"
+    :bubble="props.bubble"
+    :top="styles.top"
+    :right="styles.right"
+    :custom-color="props.color">
     <slot></slot>
-  </nut-badge>
+  </NutBadge>
 </template>
 
 <script lang="ts" setup>

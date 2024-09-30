@@ -1,4 +1,5 @@
 import path from "node:path";
+import process from "node:process";
 import UniApp from "@dcloudio/vite-plugin-uni";
 import UniComponents from "@uni-helper/vite-plugin-uni-components";
 import UniManifest from "@uni-helper/vite-plugin-uni-manifest";

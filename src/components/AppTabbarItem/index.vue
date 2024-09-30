@@ -1,19 +1,21 @@
 <template>
-  <app-badge class="app-tabbar-item"
-             :class="[classes]"
-             :value="props.badge"
-             @tap="onTap">
-    <app-icon v-if="icon != null"
-              class="app-tabbar-item__icon"
-              :name="icon"
-              :size="props.iconSize"
-              :width="props.iconWidth"
-              :height="props.iconHeight"
-              :font-class="props.iconFontClass"
-              :font-prefix="props.iconFontPrefix"></app-icon>
+  <AppBadge
+    class="app-tabbar-item"
+    :class="[classes]"
+    :value="props.badge"
+    @tap="onTap">
+    <AppIcon
+      v-if="icon != null"
+      class="app-tabbar-item__icon"
+      :name="icon"
+      :size="props.iconSize"
+      :width="props.iconWidth"
+      :height="props.iconHeight"
+      :font-class="props.iconFontClass"
+      :font-prefix="props.iconFontPrefix"></AppIcon>
 
     <text v-if="props.text != null" class="app-tabbar-item__text">{{ props.text }}</text>
-  </app-badge>
+  </AppBadge>
 </template>
 
 <script lang="ts" setup>

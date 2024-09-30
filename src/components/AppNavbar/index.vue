@@ -12,21 +12,23 @@
 
               <template v-else>
                 <view v-if="shouldBackToHome" class="app-navbar__home" @tap.stop="redirectToHomePage">
-                  <app-icon class="app-navbar__home__icon"
-                            name="home"
-                            font-class="xh-iconfont"
-                            font-prefix="xh-icon"></app-icon>
+                  <AppIcon
+                    class="app-navbar__home__icon"
+                    name="home"
+                    font-class="xh-iconfont"
+                    font-prefix="xh-icon"></AppIcon>
                 </view>
 
                 <template v-else>
-                  <app-icon v-if="!isEmpty(props.leftIcon)"
-                            class="app-navbar__left__icon"
-                            :name="props.leftIcon"
-                            :size="props.leftIconSize"
-                            :width="props.leftIconWidth"
-                            :height="props.leftIconHeight"
-                            :font-class="props.leftIconFontClass"
-                            :font-prefix="props.leftIconFontPrefix"></app-icon>
+                  <AppIcon
+                    v-if="!isEmpty(props.leftIcon)"
+                    class="app-navbar__left__icon"
+                    :name="props.leftIcon"
+                    :size="props.leftIconSize"
+                    :width="props.leftIconWidth"
+                    :height="props.leftIconHeight"
+                    :font-class="props.leftIconFontClass"
+                    :font-prefix="props.leftIconFontPrefix"></AppIcon>
                   <text v-if="!isEmpty(props.leftText)" class="app-navbar__left__text">{{ props.leftText }}</text>
                 </template>
               </template>
@@ -47,14 +49,15 @@
 
               <template v-else>
                 <text v-if="!isEmpty(props.rightText)" class="app-navbar__right__text">{{ props.rightText }}</text>
-                <app-icon v-if="!isEmpty(props.rightIcon)"
-                          class="app-navbar__right__icon"
-                          :name="props.rightIcon"
-                          :size="props.rightIconSize"
-                          :width="props.rightIconWidth"
-                          :height="props.rightIconHeight"
-                          :font-class="props.rightIconFontClass"
-                          :font-prefix="props.rightIconFontPrefix"></app-icon>
+                <AppIcon
+                  v-if="!isEmpty(props.rightIcon)"
+                  class="app-navbar__right__icon"
+                  :name="props.rightIcon"
+                  :size="props.rightIconSize"
+                  :width="props.rightIconWidth"
+                  :height="props.rightIconHeight"
+                  :font-class="props.rightIconFontClass"
+                  :font-prefix="props.rightIconFontPrefix"></AppIcon>
               </template>
             </template>
           </view>

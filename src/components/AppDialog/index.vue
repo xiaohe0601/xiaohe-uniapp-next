@@ -1,29 +1,30 @@
 <template>
-  <nut-dialog ref="dialog"
-              v-model:visible="innerVisible"
-              :title="mergedProps.title"
-              :content="mergedProps.content"
-              :ok-text="mergedProps.okText"
-              :cancel-text="mergedProps.cancelText"
-              :text-align="mergedProps.textAlign"
-              :footer-direction="mergedProps.footerDirection"
-              :no-ok-btn="mergedProps.noOkBtn"
-              :no-cancel-btn="mergedProps.noCancelBtn"
-              :no-footer="mergedProps.noFooter"
-              :lock-scroll="mergedProps.lockScroll"
-              :cancel-auto-close="mergedProps.cancelAutoClose"
-              :close-on-click-overlay="mergedProps.closeOnClickOverlay"
-              :z-index="mergedProps.zIndex"
-              :overlay-class="overlayClass"
-              :overlay-style="mergedProps.overlayStyle"
-              :pop-class="popupClass"
-              :pop-style="mergedProps.popStyle"
-              :transition="mergedProps.transition"
-              :before-close="mergedProps.beforeClose"
-              @ok="onOk"
-              @cancel="onCancel"
-              @opened="onOpened"
-              @closed="onClosed">
+  <NutDialog
+    ref="dialog"
+    v-model:visible="innerVisible"
+    :title="mergedProps.title"
+    :content="mergedProps.content"
+    :ok-text="mergedProps.okText"
+    :cancel-text="mergedProps.cancelText"
+    :text-align="mergedProps.textAlign"
+    :footer-direction="mergedProps.footerDirection"
+    :no-ok-btn="mergedProps.noOkBtn"
+    :no-cancel-btn="mergedProps.noCancelBtn"
+    :no-footer="mergedProps.noFooter"
+    :lock-scroll="mergedProps.lockScroll"
+    :cancel-auto-close="mergedProps.cancelAutoClose"
+    :close-on-click-overlay="mergedProps.closeOnClickOverlay"
+    :z-index="mergedProps.zIndex"
+    :overlay-class="overlayClass"
+    :overlay-style="mergedProps.overlayStyle"
+    :pop-class="popupClass"
+    :pop-style="mergedProps.popStyle"
+    :transition="mergedProps.transition"
+    :before-close="mergedProps.beforeClose"
+    @ok="onOk"
+    @cancel="onCancel"
+    @opened="onOpened"
+    @closed="onClosed">
     <template #header>
       <view class="app-dialog__header__wrapper">
         <slot v-if="$slots.header" name="header"></slot>
@@ -43,22 +44,24 @@
         <slot v-if="$slots.footer" name="footer"></slot>
 
         <view v-else class="app-dialog__footer" :class="[`is-${mergedProps.footerDirection}`]">
-          <app-button v-if="!mergedProps.noCancelBtn"
-                      class="app-dialog__footer__button is-cancel"
-                      type="primary"
-                      plain
-                      @click="cancel">{{ mergedProps.cancelText }}
-          </app-button>
+          <AppButton
+            v-if="!mergedProps.noCancelBtn"
+            class="app-dialog__footer__button is-cancel"
+            type="primary"
+            plain
+            @click="cancel">{{ mergedProps.cancelText }}
+          </AppButton>
 
-          <app-button v-if="!mergedProps.noOkBtn"
-                      class="app-dialog__footer__button is-ok"
-                      type="primary"
-                      @click="ok">{{ mergedProps.okText }}
-          </app-button>
+          <AppButton
+            v-if="!mergedProps.noOkBtn"
+            class="app-dialog__footer__button is-ok"
+            type="primary"
+            @click="ok">{{ mergedProps.okText }}
+          </AppButton>
         </view>
       </view>
     </template>
-  </nut-dialog>
+  </NutDialog>
 </template>
 
 <script lang="ts" setup>

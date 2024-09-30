@@ -54,6 +54,6 @@ export interface Context {
   updateActiveKey: (key?: string) => void;
 }
 
-export const CONTEXT_KEY: InjectionKey<Context> = Symbol();
+export const CONTEXT_KEY: InjectionKey<Context> = Symbol("TabbarContext");
 
 export {};

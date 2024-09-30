@@ -1,30 +1,31 @@
 <template>
-  <nut-button class="app-button"
-              :style="[styles]"
-              :type="props.type"
-              :size="props.size"
-              :shape="props.shape"
-              :plain="props.plain"
-              :disabled="props.disabled"
-              :block="props.block"
-              :loading="props.loading"
-              :form-type="props.formType"
-              :open-type="props.openType"
-              :session-from="props.sessionFrom"
-              :send-message-title="props.sendMessageTitle"
-              :send-message-path="props.sendMessagePath"
-              :send-message-img="props.sendMessageImg"
-              :show-message-card="props.showMessageCard"
-              @click="debounceOnClick"
-              @contact="emit('contact', $event)"
-              @getphonenumber="emit('getphonenumber', $event)"
-              @getrealtimephonenumber="emit('getrealtimephonenumber', $event)"
-              @opensetting="emit('opensetting', $event)"
-              @chooseavatar="emit('chooseavatar', $event)"
-              @agreeprivacyauthorization="emit('agreeprivacyauthorization', $event)"
-              @error="emit('error', $event)">
+  <NutButton
+    class="app-button"
+    :style="[styles]"
+    :type="props.type"
+    :size="props.size"
+    :shape="props.shape"
+    :plain="props.plain"
+    :disabled="props.disabled"
+    :block="props.block"
+    :loading="props.loading"
+    :form-type="props.formType"
+    :open-type="props.openType"
+    :session-from="props.sessionFrom"
+    :send-message-title="props.sendMessageTitle"
+    :send-message-path="props.sendMessagePath"
+    :send-message-img="props.sendMessageImg"
+    :show-message-card="props.showMessageCard"
+    @click="debounceOnClick"
+    @contact="emit('contact', $event)"
+    @getphonenumber="emit('getphonenumber', $event)"
+    @getrealtimephonenumber="emit('getrealtimephonenumber', $event)"
+    @opensetting="emit('opensetting', $event)"
+    @chooseavatar="emit('chooseavatar', $event)"
+    @agreeprivacyauthorization="emit('agreeprivacyauthorization', $event)"
+    @error="emit('error', $event)">
     <slot></slot>
-  </nut-button>
+  </NutButton>
 </template>
 
 <script lang="ts" setup>
