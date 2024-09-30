@@ -1,16 +1,17 @@
 <template>
-  <wd-badge class="app-badge"
-            :model-value="badge.value"
-            :is-dot="badge.dot"
-            :max="props.max"
-            :top="badgeStyles.top"
-            :right="badgeStyles.right"
-            :hidden="props.hidden"
-            :type="props.type"
-            :show-zero="props.showZero"
-            :bg-color="props.bgColor">
+  <WdBadge
+    class="app-badge"
+    :model-value="badge.value"
+    :is-dot="badge.dot"
+    :max="props.max"
+    :top="badgeStyles.top"
+    :right="badgeStyles.right"
+    :hidden="props.hidden"
+    :type="props.type"
+    :show-zero="props.showZero"
+    :bg-color="props.bgColor">
     <slot></slot>
-  </wd-badge>
+  </WdBadge>
 </template>
 
 <script lang="ts" setup>

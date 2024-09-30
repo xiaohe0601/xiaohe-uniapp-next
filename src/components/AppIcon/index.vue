@@ -1,17 +1,19 @@
 <template>
   <view class="app-icon" :class="[assertImage ? 'as-image' : 'as-icon']">
-    <app-image v-if="assertImage"
-               class="app-icon__image"
-               :class="[classes]"
-               :style="[styles]"
-               :src="props.name"
-               :width="props.width"
-               :height="props.height"></app-image>
+    <AppImage
+      v-if="assertImage"
+      class="app-icon__image"
+      :class="[classes]"
+      :style="[styles]"
+      :src="props.name"
+      :width="props.width"
+      :height="props.height"></AppImage>
 
-    <text v-else
-          class="app-icon__icon"
-          :class="[classes]"
-          :style="[styles]"></text>
+    <text
+      v-else
+      class="app-icon__icon"
+      :class="[classes]"
+      :style="[styles]"></text>
   </view>
 </template>
 

@@ -1,19 +1,21 @@
 <template>
-  <app-tabbar class="app-tabbar-default"
-              :visible="props.visible"
-              :active="props.active"
-              :fixed="props.fixed"
-              :placeholder="props.placeholder"
-              :border="props.border"
-              :height="props.height">
-    <app-tabbar-item v-for="(item) in pages"
-                     :key="item.pagePath"
-                     :path="item.pagePath!"
-                     :text="item.text"
-                     :icon="item.iconPath ?? item.icon"
-                     :selected-icon="item.selectedIconPath ?? item.selectedIcon"
-                     @click="onItemClick(item)"></app-tabbar-item>
-  </app-tabbar>
+  <AppTabbar
+    class="app-tabbar-default"
+    :visible="props.visible"
+    :active="props.active"
+    :fixed="props.fixed"
+    :placeholder="props.placeholder"
+    :border="props.border"
+    :height="props.height">
+    <AppTabbarItem
+      v-for="(item) in pages"
+      :key="item.pagePath"
+      :path="item.pagePath!"
+      :text="item.text"
+      :icon="item.iconPath ?? item.icon"
+      :selected-icon="item.selectedIconPath ?? item.selectedIcon"
+      @click="onItemClick(item)"></AppTabbarItem>
+  </AppTabbar>
 </template>
 
 <script lang="ts" setup>

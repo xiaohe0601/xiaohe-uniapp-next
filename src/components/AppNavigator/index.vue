@@ -1,10 +1,11 @@
 <template>
-  <view class="app-navigator"
-        :hover-class="props.hoverClass"
-        :hover-start-time="props.hoverStartTime"
-        :hover-stay-time="props.hoverStayTime"
-        :hover-stop-propagation="props.hoverStopPropagation"
-        @tap="onTap">
+  <view
+    class="app-navigator"
+    :hover-class="props.hoverClass"
+    :hover-start-time="props.hoverStartTime"
+    :hover-stay-time="props.hoverStayTime"
+    :hover-stop-propagation="props.hoverStopPropagation"
+    @tap="onTap">
     <slot></slot>
   </view>
 </template>

@@ -1,36 +1,40 @@
 <template>
-  <view class="app-image"
-        :class="[classes]"
-        :style="[styles]"
-        @tap="onTap">
-    <image class="app-image__inner"
-           :src="url"
-           :mode="props.mode"
-           :webp="props.webp"
-           :lazy-load="props.lazyLoad"
-           :show-menu-by-longpress="props.showMenuByLongpress"
-           @load="onLoad"
-           @error="onError"></image>
+  <view
+    class="app-image"
+    :class="[classes]"
+    :style="[styles]"
+    @tap="onTap">
+    <image
+      class="app-image__inner"
+      :src="url"
+      :mode="props.mode"
+      :webp="props.webp"
+      :lazy-load="props.lazyLoad"
+      :show-menu-by-longpress="props.showMenuByLongpress"
+      @load="onLoad"
+      @error="onError"></image>
 
     <template v-if="feature">
       <view v-if="showError && error" class="app-image__error">
         <slot v-if="$slots.error" name="error"></slot>
 
-        <app-icon v-else
-                  class="app-image__icon"
-                  name="picture"
-                  font-class="xh-iconfont"
-                  font-prefix="xh-icon"></app-icon>
+        <AppIcon
+          v-else
+          class="app-image__icon"
+          name="picture"
+          font-class="xh-iconfont"
+          font-prefix="xh-icon"></AppIcon>
       </view>
 
       <view v-if="showLoading && loading" class="app-image__loading">
         <slot v-if="$slots.loading" name="loading"></slot>
 
-        <app-icon v-else
-                  class="app-image__icon animate-spin"
-                  name="loading"
-                  font-class="xh-iconfont"
-                  font-prefix="xh-icon"></app-icon>
+        <AppIcon
+          v-else
+          class="app-image__icon animate-spin"
+          name="loading"
+          font-class="xh-iconfont"
+          font-prefix="xh-icon"></AppIcon>
       </view>
     </template>
   </view>

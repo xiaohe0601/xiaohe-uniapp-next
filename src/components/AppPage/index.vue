@@ -1,15 +1,16 @@
 <template>
-  <wd-config-provider class="app-page" :class="[classes]">
+  <WdConfigProvider class="app-page" :class="[classes]">
     <slot v-if="!props.useScrollView"></slot>
 
-    <scroll-view v-else
-                 class="app-page__scroller"
-                 :scroll-y="true"
-                 enhanced
-                 :show-scrollbar="false">
+    <scroll-view
+      v-else
+      class="app-page__scroller"
+      :scroll-y="true"
+      enhanced
+      :show-scrollbar="false">
       <slot></slot>
     </scroll-view>
-  </wd-config-provider>
+  </WdConfigProvider>
 </template>
 
 <script lang="ts" setup>
