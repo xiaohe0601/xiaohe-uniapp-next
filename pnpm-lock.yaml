@@ -4,9 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  unocss-applet: 0.8.2
-
 importers:
 
   .:
@@ -109,8 +106,8 @@ importers:
         specifier: ^1.0.0-alpha.4
         version: 1.0.0-alpha.4(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
       '@uni-helper/unocss-preset-uni':
-        specifier: ^0.2.9
-        version: 0.2.9(@unocss/preset-mini@0.63.3)(@unocss/rule-utils@0.63.3)(@unocss/vite@0.63.3(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))(unocss-applet@0.8.2(@unocss/core@0.63.3)(@unocss/preset-mini@0.63.3)(@unocss/preset-uno@0.63.3)(magic-string@0.30.11)(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1))))(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))
+        specifier: ^0.2.10
+        version: 0.2.10(@unocss/preset-mini@0.63.3)(@unocss/rule-utils@0.63.3)(@unocss/vite@0.63.3(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))(unocss-applet@0.8.4(@unocss/core@0.63.3)(@unocss/preset-mini@0.63.3)(@unocss/preset-uno@0.63.3)(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1))))(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))
       '@uni-helper/vite-plugin-uni-components':
         specifier: ^0.1.0
         version: 0.1.0(rollup@4.24.0)
@@ -2017,14 +2014,14 @@ packages:
       vue:
         optional: true
 
-  '@uni-helper/unocss-preset-uni@0.2.9':
-    resolution: {integrity: sha512-DeM2V4ste8PWcCIYBUlLMmA/rbJz1KTfgH2Ns0iIXWrDHYx9Oab7Yr4RSPzShf+VKOLv9FbdxZRoevi14sf1ZQ==}
+  '@uni-helper/unocss-preset-uni@0.2.10':
+    resolution: {integrity: sha512-BogtrMZNo4LJRiCncHTNgWcPRknzbbI9Z9GrPlG6liWfomvMl9Ph+NYVjrFUN3Ab8xzLiXac3meXwyXdzac7CA==}
     peerDependencies:
       '@unocss/preset-mini': '>=0.58'
       '@unocss/rule-utils': '>=0.58'
       '@unocss/vite': '>=0.58'
       unocss: '>=0.58'
-      unocss-applet: 0.8.2
+      unocss-applet: '>=0.7'
     peerDependenciesMeta:
       '@unocss/preset-mini':
         optional: true
@@ -2045,13 +2042,12 @@ packages:
   '@uni-helper/volar-service-uni-pages@0.2.27':
     resolution: {integrity: sha512-4b0Wn9yCS5kwwjBGdzf2qqPAUaZ7ZoJuiq3Ocm22a0U0Crsbik7+MSYy+fklcIrro0xqgJaHPHLYWj9VV99D+A==}
 
-  '@unocss-applet/preset-applet@0.8.2':
-    resolution: {integrity: sha512-6ixMNqzk4/YYE0r27u8QtT/n34HC3oDVJ9lO6JWT3IQd+DsbR5stmZf9BvTVb7kZmfViPOI+WSTj7tLRPBmQiA==}
+  '@unocss-applet/preset-applet@0.8.4':
+    resolution: {integrity: sha512-BCGGDqwdT/XYlhvVVCmCLF9LXjrH+ZrMIL5BJ/Qe1Ksnv9ajTWE5i5csPzxhd8hScbwNjTunwl0WH1Ag1hVYRg==}
     peerDependencies:
-      '@unocss/core': '>=0.59'
-      '@unocss/preset-mini': '>=0.59'
-      '@unocss/preset-uno': '>=0.59'
-      unocss: '>=0.59'
+      '@unocss/core': '>=0.62'
+      '@unocss/preset-mini': '>=0.62'
+      '@unocss/preset-uno': '>=0.62'
     peerDependenciesMeta:
       '@unocss/core':
         optional: true
@@ -2060,18 +2056,17 @@ packages:
       '@unocss/preset-uno':
         optional: true
 
-  '@unocss-applet/preset-rem-rpx@0.8.2':
-    resolution: {integrity: sha512-Mlhfw7yllFkD7vadVDbUjtu60z7IDOR7ZrskzogNlF3912/O+A3F+0E4YwcZojxQwoaWPa5zFbubnB9QzJqWRw==}
+  '@unocss-applet/preset-rem-rpx@0.8.4':
+    resolution: {integrity: sha512-qxF3a2SCDK2YcnVDJf8wtCOb13tCjGHJzvgJxiqZdExc6AaiQXetBtJeZLOp2H1utsQUhlt3PJZ29DWAzEoqNg==}
     peerDependencies:
-      unocss: '>=0.59'
+      '@unocss/core': '>=0.62'
 
-  '@unocss-applet/transformer-attributify@0.8.2':
-    resolution: {integrity: sha512-dp6YI1G8y4x+lwLhZBLmP+E7yZjjc07zo2ZmaJQp84aX6VbHN/3a8c3Npdpu1vX42UsPmw5VVgQ3r3wYoXa0Kg==}
+  '@unocss-applet/transformer-attributify@0.8.4':
+    resolution: {integrity: sha512-j89Vo9sYzWkKWP0IJGANaz7gleC39/pIwRUv+mIOCPbvxEmKoQpmIwislp2SGtbDHN3gn0Q1dsBOayxhs5ZP9Q==}
     peerDependencies:
-      magic-string: ^0.30.0
-      unocss: '>=0.59'
+      '@unocss/core': '>=0.62'
     peerDependenciesMeta:
-      magic-string:
+      '@unocss/core':
         optional: true
 
   '@unocss/astro@0.63.3':
@@ -5360,11 +5355,11 @@ packages:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
 
-  unocss-applet@0.8.2:
-    resolution: {integrity: sha512-CMNav2StH1H8i2ef2zlf0z9pth7b2/ftpJYTwX0A57UiAdOFx8iLcClP6P0xyTW8q0oFwn1C8O/CG54QRhctXQ==}
+  unocss-applet@0.8.4:
+    resolution: {integrity: sha512-RCPkshyPYCZwnzGRUg6cdq5bNKafaDxaQy/XHhWhW7bCh3QI6f6ATFNuOB0o/udadfoP+1y6sHKBew48VBR9UQ==}
     peerDependencies:
-      '@unocss/preset-uno': '>=0.59'
-      unocss: '>=0.59'
+      '@unocss/preset-uno': '>=0.62'
+      unocss: '>=0.62'
     peerDependenciesMeta:
       '@unocss/preset-uno':
         optional: true
@@ -8244,12 +8239,12 @@ snapshots:
     optionalDependencies:
       vue: 3.4.38(typescript@5.5.4)
 
-  '@uni-helper/unocss-preset-uni@0.2.9(@unocss/preset-mini@0.63.3)(@unocss/rule-utils@0.63.3)(@unocss/vite@0.63.3(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))(unocss-applet@0.8.2(@unocss/core@0.63.3)(@unocss/preset-mini@0.63.3)(@unocss/preset-uno@0.63.3)(magic-string@0.30.11)(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1))))(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))':
+  '@uni-helper/unocss-preset-uni@0.2.10(@unocss/preset-mini@0.63.3)(@unocss/rule-utils@0.63.3)(@unocss/vite@0.63.3(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))(unocss-applet@0.8.4(@unocss/core@0.63.3)(@unocss/preset-mini@0.63.3)(@unocss/preset-uno@0.63.3)(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1))))(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))':
     dependencies:
       '@uni-helper/uni-env': 0.1.4
       '@unocss/rule-utils': 0.63.3
       unocss: 0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1))
-      unocss-applet: 0.8.2(@unocss/core@0.63.3)(@unocss/preset-mini@0.63.3)(@unocss/preset-uno@0.63.3)(magic-string@0.30.11)(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))
+      unocss-applet: 0.8.4(@unocss/core@0.63.3)(@unocss/preset-mini@0.63.3)(@unocss/preset-uno@0.63.3)(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))
     optionalDependencies:
       '@unocss/preset-mini': 0.63.3
       '@unocss/vite': 0.63.3(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1))
@@ -8300,23 +8295,21 @@ snapshots:
       vscode-languageserver-textdocument: 1.0.12
       yaml-language-server: 1.15.0
 
-  '@unocss-applet/preset-applet@0.8.2(@unocss/core@0.63.3)(@unocss/preset-mini@0.63.3)(@unocss/preset-uno@0.63.3)(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))':
-    dependencies:
-      unocss: 0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1))
+  '@unocss-applet/preset-applet@0.8.4(@unocss/core@0.63.3)(@unocss/preset-mini@0.63.3)(@unocss/preset-uno@0.63.3)':
     optionalDependencies:
       '@unocss/core': 0.63.3
       '@unocss/preset-mini': 0.63.3
       '@unocss/preset-uno': 0.63.3
 
-  '@unocss-applet/preset-rem-rpx@0.8.2(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))':
+  '@unocss-applet/preset-rem-rpx@0.8.4(@unocss/core@0.63.3)':
     dependencies:
-      unocss: 0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1))
+      '@unocss/core': 0.63.3
 
-  '@unocss-applet/transformer-attributify@0.8.2(magic-string@0.30.11)(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))':
+  '@unocss-applet/transformer-attributify@0.8.4(@unocss/core@0.63.3)':
     dependencies:
-      unocss: 0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1))
-    optionalDependencies:
       magic-string: 0.30.11
+    optionalDependencies:
+      '@unocss/core': 0.63.3
 
   '@unocss/astro@0.63.3(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1))':
     dependencies:
@@ -12260,18 +12253,17 @@ snapshots:
 
   universalify@2.0.1: {}
 
-  unocss-applet@0.8.2(@unocss/core@0.63.3)(@unocss/preset-mini@0.63.3)(@unocss/preset-uno@0.63.3)(magic-string@0.30.11)(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1))):
+  unocss-applet@0.8.4(@unocss/core@0.63.3)(@unocss/preset-mini@0.63.3)(@unocss/preset-uno@0.63.3)(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1))):
     dependencies:
-      '@unocss-applet/preset-applet': 0.8.2(@unocss/core@0.63.3)(@unocss/preset-mini@0.63.3)(@unocss/preset-uno@0.63.3)(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))
-      '@unocss-applet/preset-rem-rpx': 0.8.2(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))
-      '@unocss-applet/transformer-attributify': 0.8.2(magic-string@0.30.11)(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)))
+      '@unocss-applet/preset-applet': 0.8.4(@unocss/core@0.63.3)(@unocss/preset-mini@0.63.3)(@unocss/preset-uno@0.63.3)
+      '@unocss-applet/preset-rem-rpx': 0.8.4(@unocss/core@0.63.3)
+      '@unocss-applet/transformer-attributify': 0.8.4(@unocss/core@0.63.3)
       unocss: 0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1))
     optionalDependencies:
       '@unocss/preset-uno': 0.63.3
     transitivePeerDependencies:
       - '@unocss/core'
       - '@unocss/preset-mini'
-      - magic-string
 
   unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@20.16.11)(sass@1.78.0)(terser@5.34.1)):
     dependencies:

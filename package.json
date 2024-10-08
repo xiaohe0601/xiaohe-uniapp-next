@@ -78,7 +78,7 @@
     "@types/node": "^20.16.11",
     "@types/qs": "^6.9.16",
     "@uni-helper/uni-app-types": "^1.0.0-alpha.4",
-    "@uni-helper/unocss-preset-uni": "^0.2.9",
+    "@uni-helper/unocss-preset-uni": "^0.2.10",
     "@uni-helper/vite-plugin-uni-components": "^0.1.0",
     "@uni-helper/vite-plugin-uni-manifest": "^0.2.7",
     "@uni-helper/vite-plugin-uni-pages": "^0.2.27",
@@ -107,11 +107,6 @@
     "unplugin-auto-import": "^0.18.3",
     "vite": "^5.4.8",
     "vue-tsc": "^2.1.6"
-  },
-  "pnpm": {
-    "overrides": {
-      "unocss-applet": "0.8.2"
-    }
   },
   "lint-staged": {
     "*.{js,ts,vue}": "eslint --fix",
