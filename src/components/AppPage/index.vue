@@ -1,5 +1,5 @@
 <template>
-  <NutConfigProvider class="app-page" :class="[classes]">
+  <nut-config-provider class="app-page" :class="[classes]">
     <slot v-if="!props.useScrollView"></slot>
 
     <scroll-view
@@ -11,8 +11,8 @@
       <slot></slot>
     </scroll-view>
 
-    <AppDialog ref="dialog"></AppDialog>
-  </NutConfigProvider>
+    <app-dialog ref="dialog"></app-dialog>
+  </nut-config-provider>
 </template>
 
 <script lang="ts" setup>

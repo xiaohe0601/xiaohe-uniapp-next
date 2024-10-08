@@ -1,5 +1,5 @@
 <template>
-  <AppTabbar
+  <app-tabbar
     class="app-tabbar-default"
     :visible="props.visible"
     :active="props.active"
@@ -7,15 +7,15 @@
     :placeholder="props.placeholder"
     :border="props.border"
     :height="props.height">
-    <AppTabbarItem
+    <app-tabbar-item
       v-for="(item) in pages"
       :key="item.pagePath"
       :path="item.pagePath!"
       :text="item.text"
       :icon="item.iconPath ?? item.icon"
       :selected-icon="item.selectedIconPath ?? item.selectedIcon"
-      @click="onItemClick(item)"></AppTabbarItem>
-  </AppTabbar>
+      @click="onItemClick(item)"></app-tabbar-item>
+  </app-tabbar>
 </template>
 
 <script lang="ts" setup>

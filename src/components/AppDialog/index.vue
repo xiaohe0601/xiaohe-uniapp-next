@@ -1,5 +1,5 @@
 <template>
-  <NutDialog
+  <nut-dialog
     ref="dialog"
     v-model:visible="innerVisible"
     :title="mergedProps.title"
@@ -44,24 +44,24 @@
         <slot v-if="$slots.footer" name="footer"></slot>
 
         <view v-else class="app-dialog__footer" :class="[`is-${mergedProps.footerDirection}`]">
-          <AppButton
+          <app-button
             v-if="!mergedProps.noCancelBtn"
             class="app-dialog__footer__button is-cancel"
             type="primary"
             plain
             @click="cancel">{{ mergedProps.cancelText }}
-          </AppButton>
+          </app-button>
 
-          <AppButton
+          <app-button
             v-if="!mergedProps.noOkBtn"
             class="app-dialog__footer__button is-ok"
             type="primary"
             @click="ok">{{ mergedProps.okText }}
-          </AppButton>
+          </app-button>
         </view>
       </view>
     </template>
-  </NutDialog>
+  </nut-dialog>
 </template>
 
 <script lang="ts" setup>

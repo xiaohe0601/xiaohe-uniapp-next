@@ -1,5 +1,5 @@
 <template>
-  <NutBadge
+  <nut-badge
     class="app-badge"
     :value="badge.value"
     :max="props.max"
@@ -9,7 +9,7 @@
     :right="styles.right"
     :custom-color="props.color">
     <slot></slot>
-  </NutBadge>
+  </nut-badge>
 </template>
 
 <script lang="ts" setup>

@@ -1,5 +1,5 @@
 <template>
-  <NutButton
+  <nut-button
     class="app-button"
     :style="[styles]"
     :type="props.type"
@@ -25,7 +25,7 @@
     @agreeprivacyauthorization="emit('agreeprivacyauthorization', $event)"
     @error="emit('error', $event)">
     <slot></slot>
-  </NutButton>
+  </nut-button>
 </template>
 
 <script lang="ts" setup>

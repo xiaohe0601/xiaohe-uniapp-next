@@ -12,15 +12,15 @@
 
               <template v-else>
                 <view v-if="shouldBackToHome" class="app-navbar__home" @tap.stop="redirectToHomePage">
-                  <AppIcon
+                  <app-icon
                     class="app-navbar__home__icon"
                     name="home"
                     font-class="xh-iconfont"
-                    font-prefix="xh-icon"></AppIcon>
+                    font-prefix="xh-icon"></app-icon>
                 </view>
 
                 <template v-else>
-                  <AppIcon
+                  <app-icon
                     v-if="!isEmpty(props.leftIcon)"
                     class="app-navbar__left__icon"
                     :name="props.leftIcon"
@@ -28,7 +28,7 @@
                     :width="props.leftIconWidth"
                     :height="props.leftIconHeight"
                     :font-class="props.leftIconFontClass"
-                    :font-prefix="props.leftIconFontPrefix"></AppIcon>
+                    :font-prefix="props.leftIconFontPrefix"></app-icon>
                   <text v-if="!isEmpty(props.leftText)" class="app-navbar__left__text">{{ props.leftText }}</text>
                 </template>
               </template>
@@ -49,7 +49,7 @@
 
               <template v-else>
                 <text v-if="!isEmpty(props.rightText)" class="app-navbar__right__text">{{ props.rightText }}</text>
-                <AppIcon
+                <app-icon
                   v-if="!isEmpty(props.rightIcon)"
                   class="app-navbar__right__icon"
                   :name="props.rightIcon"
@@ -57,7 +57,7 @@
                   :width="props.rightIconWidth"
                   :height="props.rightIconHeight"
                   :font-class="props.rightIconFontClass"
-                  :font-prefix="props.rightIconFontPrefix"></AppIcon>
+                  :font-prefix="props.rightIconFontPrefix"></app-icon>
               </template>
             </template>
           </view>

@@ -1,9 +1,9 @@
 <template>
-  <AppPage>
-    <AppNavbar title="我的" border :show-left="false"></AppNavbar>
+  <app-page>
+    <app-navbar title="我的" border :show-left="false"></app-navbar>
 
-    <AppTabbarDefault active="/pages/mine/index"></AppTabbarDefault>
-  </AppPage>
+    <app-tabbar-default active="/pages/mine/index"></app-tabbar-default>
+  </app-page>
 </template>
 
 <script lang="ts" setup>

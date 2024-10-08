@@ -5,7 +5,7 @@
         <slot></slot>
       </view>
 
-      <AppSafearea :addition="0"></AppSafearea>
+      <app-safearea :addition="0"></app-safearea>
     </view>
 
     <view v-if="props.fixed && props.placeholder" class="app-tabbar__placeholder" :style="[placeholderStyles]"></view>
