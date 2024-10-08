@@ -1,5 +1,5 @@
 <template>
-  <WdBadge
+  <wd-badge
     class="app-badge"
     :model-value="badge.value"
     :is-dot="badge.dot"
@@ -11,7 +11,7 @@
     :show-zero="props.showZero"
     :bg-color="props.bgColor">
     <slot></slot>
-  </WdBadge>
+  </wd-badge>
 </template>
 
 <script lang="ts" setup>

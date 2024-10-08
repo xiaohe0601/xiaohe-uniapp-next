@@ -18,23 +18,23 @@
       <view v-if="showError && error" class="app-image__error">
         <slot v-if="$slots.error" name="error"></slot>
 
-        <AppIcon
+        <app-icon
           v-else
           class="app-image__icon"
           name="picture"
           font-class="xh-iconfont"
-          font-prefix="xh-icon"></AppIcon>
+          font-prefix="xh-icon"></app-icon>
       </view>
 
       <view v-if="showLoading && loading" class="app-image__loading">
         <slot v-if="$slots.loading" name="loading"></slot>
 
-        <AppIcon
+        <app-icon
           v-else
           class="app-image__icon animate-spin"
           name="loading"
           font-class="xh-iconfont"
-          font-prefix="xh-icon"></AppIcon>
+          font-prefix="xh-icon"></app-icon>
       </view>
     </template>
   </view>

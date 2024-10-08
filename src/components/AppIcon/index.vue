@@ -1,13 +1,13 @@
 <template>
   <view class="app-icon" :class="[assertImage ? 'as-image' : 'as-icon']">
-    <AppImage
+    <app-image
       v-if="assertImage"
       class="app-icon__image"
       :class="[classes]"
       :style="[styles]"
       :src="props.name"
       :width="props.width"
-      :height="props.height"></AppImage>
+      :height="props.height"></app-image>
 
     <text
       v-else

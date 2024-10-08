@@ -1,10 +1,10 @@
 <template>
-  <AppBadge
+  <app-badge
     class="app-tabbar-item"
     :class="[classes]"
     :value="props.badge"
     @tap="onTap">
-    <AppIcon
+    <app-icon
       v-if="icon != null"
       class="app-tabbar-item__icon"
       :name="icon"
@@ -12,10 +12,10 @@
       :width="props.iconWidth"
       :height="props.iconHeight"
       :font-class="props.iconFontClass"
-      :font-prefix="props.iconFontPrefix"></AppIcon>
+      :font-prefix="props.iconFontPrefix"></app-icon>
 
     <text v-if="props.text != null" class="app-tabbar-item__text">{{ props.text }}</text>
-  </AppBadge>
+  </app-badge>
 </template>
 
 <script lang="ts" setup>

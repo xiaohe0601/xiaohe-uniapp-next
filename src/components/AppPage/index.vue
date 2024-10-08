@@ -1,5 +1,5 @@
 <template>
-  <WdConfigProvider class="app-page" :class="[classes]">
+  <wd-config-provider class="app-page" :class="[classes]">
     <slot v-if="!props.useScrollView"></slot>
 
     <scroll-view
@@ -10,7 +10,7 @@
       :show-scrollbar="false">
       <slot></slot>
     </scroll-view>
-  </WdConfigProvider>
+  </wd-config-provider>
 </template>
 
 <script lang="ts" setup>

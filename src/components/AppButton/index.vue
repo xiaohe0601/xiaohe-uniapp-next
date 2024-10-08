@@ -1,5 +1,5 @@
 <template>
-  <WdButton
+  <wd-button
     class="app-button"
     :style="[styles]"
     :type="props.type"
@@ -29,7 +29,7 @@
     @agreeprivacyauthorization="emit('agreeprivacyauthorization', $event)"
     @error="emit('error', $event)">
     <slot></slot>
-  </WdButton>
+  </wd-button>
 </template>
 
 <script lang="ts" setup>
