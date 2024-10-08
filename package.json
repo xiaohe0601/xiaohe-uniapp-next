@@ -108,6 +108,11 @@
     "vite": "^5.4.8",
     "vue-tsc": "^2.1.6"
   },
+  "pnpm": {
+    "overrides": {
+      "unocss-applet": "0.8.2"
+    }
+  },
   "lint-staged": {
     "*.{js,ts,vue}": "eslint --fix",
     "*.{css,scss,vue,html}": "stylelint --aei --fix"
