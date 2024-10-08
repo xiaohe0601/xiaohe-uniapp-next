@@ -124,8 +124,8 @@ importers:
         specifier: ~3.4.38
         version: 3.4.38
       '@xiaohe01/eslint-config':
-        specifier: ^0.0.5
-        version: 0.0.5(@typescript-eslint/utils@8.8.1(eslint@9.12.0(jiti@1.21.6))(typescript@5.5.4))(@vue/compiler-sfc@3.5.11)(eslint@9.12.0(jiti@1.21.6))(typescript@5.5.4)
+        specifier: ^0.0.6
+        version: 0.0.6(@typescript-eslint/utils@8.8.1(eslint@9.12.0(jiti@1.21.6))(typescript@5.5.4))(@vue/compiler-sfc@3.5.11)(eslint@9.12.0(jiti@1.21.6))(typescript@5.5.4)
       '@xiaohe01/tsconfig':
         specifier: ^0.0.2
         version: 0.0.2
@@ -2293,8 +2293,8 @@ packages:
   '@vue/shared@3.5.11':
     resolution: {integrity: sha512-W8GgysJVnFo81FthhzurdRAWP/byq3q2qIw70e0JWblzVhjgOMiC2GyovXrZTFQJnFVryYaKGP3Tc9vYzYm6PQ==}
 
-  '@xiaohe01/eslint-config@0.0.5':
-    resolution: {integrity: sha512-xWsK8I5d9q5IRq0Jv3kcj3BbUyEfeJKCtXz4o96GiCdw1lFMq6QOC96hziFhGFBjBaLVlekXqDSUnw7BGcgQAQ==}
+  '@xiaohe01/eslint-config@0.0.6':
+    resolution: {integrity: sha512-bhDtgH8b0eckWOXVBeAkrDcjAIt2OuNfusfCNiETRUqclbCB1HS5h0lpAxrT1lNCYI81YXRGO8bu9JQQ8jV/+w==}
     hasBin: true
     peerDependencies:
       '@eslint-react/eslint-plugin': ^1.5.8
@@ -8684,7 +8684,7 @@ snapshots:
 
   '@vue/shared@3.5.11': {}
 
-  '@xiaohe01/eslint-config@0.0.5(@typescript-eslint/utils@8.8.1(eslint@9.12.0(jiti@1.21.6))(typescript@5.5.4))(@vue/compiler-sfc@3.5.11)(eslint@9.12.0(jiti@1.21.6))(typescript@5.5.4)':
+  '@xiaohe01/eslint-config@0.0.6(@typescript-eslint/utils@8.8.1(eslint@9.12.0(jiti@1.21.6))(typescript@5.5.4))(@vue/compiler-sfc@3.5.11)(eslint@9.12.0(jiti@1.21.6))(typescript@5.5.4)':
     dependencies:
       '@antfu/install-pkg': 0.4.1
       '@clack/prompts': 0.7.0
