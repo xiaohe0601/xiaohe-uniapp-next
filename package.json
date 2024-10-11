@@ -103,7 +103,7 @@
     "stylelint-order": "^6.0.4",
     "terser": "^5.34.1",
     "typescript": "~5.5.4",
-    "unocss": "^0.63.3",
+    "unocss": "^0.63.4",
     "unplugin-auto-import": "^0.18.3",
     "vite": "^5.4.8",
     "vue-tsc": "^2.1.6"
