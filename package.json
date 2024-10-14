@@ -96,7 +96,7 @@
     "lint-staged": "^15.2.10",
     "miniprogram-api-typings": "^4.0.1",
     "sass": "~1.78.0",
-    "stylelint": "^16.9.0",
+    "stylelint": "^16.10.0",
     "terser": "^5.34.1",
     "typescript": "~5.5.4",
     "unocss": "^0.63.4",
