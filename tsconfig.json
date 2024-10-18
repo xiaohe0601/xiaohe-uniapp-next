@@ -12,7 +12,8 @@
       "@uni-helper/uni-app-types",
       "nutui-uniapp/global.d.ts",
       "z-paging/global.d.ts"
-    ]
+    ],
+    "noUncheckedIndexedAccess": false
   },
   "vueCompilerOptions": {
     "plugins": [
