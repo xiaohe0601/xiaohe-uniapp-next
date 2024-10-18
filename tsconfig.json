@@ -12,7 +12,8 @@
       "@uni-helper/uni-app-types",
       "wot-design-uni/global",
       "z-paging/global.d.ts"
-    ]
+    ],
+    "noUncheckedIndexedAccess": false
   },
   "vueCompilerOptions": {
     "plugins": [
