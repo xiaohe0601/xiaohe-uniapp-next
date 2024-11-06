@@ -256,7 +256,7 @@ export interface ConvertUrlOptions {
 export function convertUrl(value?: NullableString, options: ConvertUrlOptions = {}): OptionalString {
   const { base = import.meta.env.VITE_SOURCE_BASE_URL, prefix = "" } = options;
 
-  const excludes: string[] = ["http", "ws", "udp", "tcp", "/static", "/packages"];
+  const excludes: string[] = ["http", "ws", "udp", "tcp", "/src", "/static", "/packages"];
 
   if (value == null) {
     return undefined;
