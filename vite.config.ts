@@ -13,6 +13,14 @@ function r(...paths: string[]) {
   return path.resolve(process.cwd(), ".", ...paths);
 }
 
+function buildTransformAssetUrls() {
+  return {
+    tags: {
+      "app-image": ["src"]
+    }
+  };
+}
+
 function buildPlugins(): PluginOption[] {
   return [
     UniManifest(),
@@ -32,7 +40,13 @@ function buildPlugins(): PluginOption[] {
     }),
     UnoCSS(),
     // @ts-expect-error whatever
-    UniApp.default()
+    UniApp.default({
+      vueOptions: {
+        template: {
+          transformAssetUrls: buildTransformAssetUrls()
+        }
+      }
+    })
   ];
 }
 
