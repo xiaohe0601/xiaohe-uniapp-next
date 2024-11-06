@@ -256,7 +256,25 @@ export interface ConvertUrlOptions {
 export function convertUrl(value?: NullableString, options: ConvertUrlOptions = {}): OptionalString {
   const { base = import.meta.env.VITE_SOURCE_BASE_URL, prefix = "" } = options;
 
-  const excludes: string[] = ["http", "ws", "udp", "tcp", "/src", "/static", "/packages"];
+  const excludes = ["http", "ws", "udp", "tcp", "data:", "/static", "/packages"];
+
+  // #ifdef H5
+  const BASE_URL = import.meta.env.BASE_URL;
+
+  if (["/", "./"].includes(BASE_URL)) {
+    if (import.meta.env.DEV) {
+      excludes.push("/src");
+    } else {
+      excludes.push("/assets");
+    }
+  } else {
+    if (import.meta.env.DEV) {
+      excludes.push(`${BASE_URL}src`);
+    } else {
+      excludes.push(`${BASE_URL}assets`);
+    }
+  }
+  // #endif
 
   if (value == null) {
     return undefined;
