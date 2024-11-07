@@ -1,5 +1,6 @@
 import { DEFAULT_STATUS_BAR_HEIGHT, DEFAULT_TITLE_BAR_HEIGHT } from "@/constants/layout.ts";
 import { cloneDeep } from "@/plugins/lodash.ts";
+import { getWindowInfo } from "@/utils/support.ts";
 
 /**
  * 基础尺寸
@@ -155,7 +156,7 @@ export const useDeviceStore = defineStore("device", () => {
       windowWidth, windowHeight, windowTop, windowBottom,
       statusBarHeight,
       safeArea
-    } = uni.getSystemInfoSync();
+    } = getWindowInfo();
 
     screen.value = { width: screenWidth, height: screenHeight };
     windows.value = { width: windowWidth, height: windowHeight, top: windowTop, bottom: windowBottom };
