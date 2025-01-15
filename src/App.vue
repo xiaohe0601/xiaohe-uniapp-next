@@ -33,4 +33,5 @@ onLaunch(async () => {
 <style lang="scss">
 @import "@/styles/reboot.scss";
 @import "@/styles/presets.scss";
+@import "@/styles/palette.scss";
 </style>
