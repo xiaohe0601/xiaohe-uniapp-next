@@ -1,5 +1,5 @@
+import { debounce, isEmpty, last } from "lodash-es";
 import type { UserProfile } from "@/entities/account/UserProfile.ts";
-import { debounce, isEmpty, last } from "@/plugins/lodash.ts";
 import { useDeviceStore } from "@/stores/device.ts";
 import PagesManager from "@/utils/pages.ts";
 import type { RouteOptions } from "@/utils/router.ts";

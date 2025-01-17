@@ -1,4 +1,4 @@
-import { isEmpty } from "@/plugins/lodash.ts";
+import { isEmpty } from "lodash-es";
 import type { ConvertUrlOptions } from "@/utils/helper.ts";
 import { convertUrl } from "@/utils/helper.ts";
 
