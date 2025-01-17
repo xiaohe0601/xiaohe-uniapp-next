@@ -1,5 +1,6 @@
 import type { UnCancelTokenSource, UnConfig, UnData, UnInstance, UnParams, UnResponse } from "@uni-helper/uni-network";
 import UniNetwork from "@uni-helper/uni-network";
+import { merge } from "lodash-es";
 import QS from "qs";
 import {
   DEFAULT_NETWORK_CONFIG,
@@ -12,7 +13,6 @@ import {
 } from "@/constants/network.ts";
 import type { AjaxEntity } from "@/entities/AjaxEntity.ts";
 import { isAjaxEntity } from "@/entities/AjaxEntity.ts";
-import { merge } from "@/plugins/lodash.ts";
 import { useSystemStore } from "@/stores/system.ts";
 import DialogManager from "@/utils/dialog.ts";
 import { uuid } from "@/utils/helper.ts";

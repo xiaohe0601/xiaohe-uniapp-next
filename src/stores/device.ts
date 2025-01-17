@@ -1,5 +1,5 @@
+import { cloneDeep } from "lodash-es";
 import { DEFAULT_STATUS_BAR_HEIGHT, DEFAULT_TITLE_BAR_HEIGHT } from "@/constants/layout.ts";
-import { cloneDeep } from "@/plugins/lodash.ts";
 import { getWindowInfo } from "@/utils/support.ts";
 
 /**

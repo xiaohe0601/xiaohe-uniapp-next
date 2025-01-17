@@ -30,9 +30,9 @@
 
 <script lang="ts" setup>
 import type { BaseEvent } from "@uni-helper/uni-app-types";
+import { debounce } from "lodash-es";
 import type { CSSProperties } from "vue";
 import type { Emits, Props, Slots } from "./types.ts";
-import { debounce } from "@/plugins/lodash.ts";
 import { eliminateUndefined, withUnit } from "@/utils/helper.ts";
 
 defineOptions({

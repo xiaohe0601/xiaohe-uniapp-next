@@ -70,9 +70,9 @@
 </template>
 
 <script lang="ts" setup>
+import { isEmpty, last } from "lodash-es";
 import type { CSSProperties } from "vue";
 import type { Emits, Props, Slots } from "./types.ts";
-import { isEmpty, last } from "@/plugins/lodash.ts";
 import { useDeviceStore } from "@/stores/device.ts";
 import { useSystemStore } from "@/stores/system.ts";
 import { eliminateUndefined, sleep } from "@/utils/helper.ts";

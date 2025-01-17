@@ -65,9 +65,9 @@
 </template>
 
 <script lang="ts" setup>
+import { merge } from "lodash-es";
 import type { DialogInst } from "nutui-uniapp";
 import type { Callback, Emits, Props, Slots } from "./types.ts";
-import { merge } from "@/plugins/lodash.ts";
 
 defineOptions({
   name: "AppDialog",
