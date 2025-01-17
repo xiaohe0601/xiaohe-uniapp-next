@@ -42,9 +42,9 @@
 
 <script lang="ts" setup>
 import type { ImageOnErrorEvent, ImageOnLoadEvent } from "@uni-helper/uni-app-types";
+import { isEmpty } from "lodash-es";
 import type { CSSProperties } from "vue";
 import type { Emits, Props, Slots } from "./types.ts";
-import { isEmpty } from "@/plugins/lodash.ts";
 import { $sources } from "@/utils/filter.ts";
 import { eliminateUndefined, previewImage, withUnit } from "@/utils/helper.ts";
 import { isUrl } from "@/utils/validate.ts";
