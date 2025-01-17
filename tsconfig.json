@@ -1,5 +1,5 @@
 {
-  "extends": "@xiaohe01/tsconfig/app-vue",
+  "extends": "@xiaohe01/tsconfig/tsconfig.app-vue.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
