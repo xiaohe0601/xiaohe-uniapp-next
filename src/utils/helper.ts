@@ -164,7 +164,7 @@ export function withUnit(value?: number | string, unit: "px" | "rpx" = "px"): Op
  * @param selector 选择器
  * @param fields 查询字段
  */
-export function querySelect(component: any, selector: string, fields: UniNamespace.NodeField): Promise<UniNamespace.NodeInfo> {
+export function querySelect(component: any, selector: string, fields: UniApp.NodeField): Promise<UniApp.NodeInfo> {
   return new Promise((resolve) => {
     uni.createSelectorQuery()
       .in(component)
@@ -183,7 +183,7 @@ export function querySelect(component: any, selector: string, fields: UniNamespa
  * @param selector 选择器
  * @param fields 查询字段
  */
-export function querySelectAll(component: any, selector: string, fields: UniNamespace.NodeField): Promise<UniNamespace.NodeInfo[]> {
+export function querySelectAll(component: any, selector: string, fields: UniApp.NodeField): Promise<UniApp.NodeInfo[]> {
   return new Promise((resolve) => {
     uni.createSelectorQuery()
       .in(component)
@@ -360,7 +360,7 @@ export function isDocumentSuffix(suffix?: NullableString): boolean {
 /**
  * 全屏预览图片配置项
  */
-export interface PreviewImageOptions extends Pick<UniNamespace.PreviewImageOptions, "showmenu" | "referrerPolicy"> {}
+export interface PreviewImageOptions extends Pick<UniApp.PreviewImageOptions, "showmenu" | "referrerPolicy"> {}
 
 /**
  * 全屏预览图片
@@ -387,12 +387,12 @@ export async function previewImage(
 /**
  * 图片或视频资源
  */
-export type MediaSourceLike = string | UniNamespace.MediaSource;
+export type MediaSourceLike = string | UniApp.MediaSource;
 
 /**
  * 预览图片和视频配置项
  */
-export interface PreviewMediaOptions extends Pick<UniNamespace.PreviewMediaOption, "showmenu" | "referrerPolicy"> {}
+export interface PreviewMediaOptions extends Pick<UniApp.PreviewMediaOption, "showmenu" | "referrerPolicy"> {}
 
 /**
  * 预览图片和视频（仅支持微信小程序）
@@ -406,7 +406,7 @@ export async function previewMedia(
   current: number = 0,
   options?: PreviewMediaOptions
 ): Promise<void> {
-  const sources: UniNamespace.MediaSource[] = castArray(links).map((item) => {
+  const sources: UniApp.MediaSource[] = castArray(links).map((item) => {
     if (typeof item === "string") {
       return {
         url: convertUrl(item)!,
@@ -431,7 +431,7 @@ export async function previewMedia(
 /**
  * 预览文档配置项
  */
-export interface PreviewDocumentOptions extends Pick<UniNamespace.OpenDocumentOptions, "fileType" | "showMenu"> {}
+export interface PreviewDocumentOptions extends Pick<UniApp.OpenDocumentOptions, "fileType" | "showMenu"> {}
 
 /**
  * 预览文档（不支持H5）

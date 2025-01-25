@@ -1,6 +1,6 @@
 export default class LoadingManager {
 
-  public static async show(title?: string, options?: UniNamespace.ShowLoadingOptions): Promise<void> {
+  public static async show(title?: string, options?: UniApp.ShowLoadingOptions): Promise<void> {
     await uni.showLoading(Object.assign({
       title
     }, options));
