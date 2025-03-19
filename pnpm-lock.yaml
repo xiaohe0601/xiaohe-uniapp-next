@@ -189,6 +189,9 @@ catalogs:
     vue-tsc:
       specifier: ~2.1.10
       version: 2.1.10
+    z-paging:
+      specifier: ^2.8.6
+      version: 2.8.6
 
 overrides:
   pinia: 2.2.4
@@ -279,7 +282,7 @@ importers:
         specifier: 'catalog:'
         version: 3.4.38(typescript@5.7.3)
       z-paging:
-        specifier: ^2.8.6
+        specifier: 'catalog:'
         version: 2.8.6
     devDependencies:
       '@antfu/ni':
