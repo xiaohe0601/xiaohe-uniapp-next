@@ -48,6 +48,13 @@ function buildPlugins(): PluginOption[] {
           "alova/client": [
             "useRequest"
           ]
+        },
+        {
+          "wot-design-uni": [
+            "useToast",
+            "useNotify",
+            "useMessage"
+          ]
         }
       ],
       dirs: [

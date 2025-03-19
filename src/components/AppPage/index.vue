@@ -1,7 +1,11 @@
 <template>
-  <view class="app-page" :style="styles">
+  <wd-config-provider class="app-page" :style="styles">
     <slot></slot>
-  </view>
+
+    <wd-toast></wd-toast>
+    <wd-notify></wd-notify>
+    <wd-message-box></wd-message-box>
+  </wd-config-provider>
 </template>
 
 <script lang="ts" setup>

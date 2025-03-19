@@ -63,6 +63,7 @@ catalog:
   vite-plugin-uni-polyfill: ^0.1.0
   vue: ~3.4.38
   vue-tsc: ~2.1.10
+  wot-design-uni: ^1.7.1
   z-paging: ^2.8.6
 onlyBuiltDependencies:
   - '@swc/core'

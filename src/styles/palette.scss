@@ -28,3 +28,21 @@ page {
   --opacity-active: 0.6;
   --opacity-disabled: 0.5;
 }
+
+page {
+  --wot-color-theme: rgb(var(--color-primary));
+
+  --wot-color-success: rgb(var(--color-success));
+  --wot-color-warning: rgb(var(--color-warning));
+  --wot-color-danger: rgb(var(--color-danger));
+  --wot-color-info: rgb(var(--color-info));
+
+  --wot-color-title: rgb(var(--color-t1));
+  --wot-color-content: rgb(var(--color-t2));
+  --wot-color-secondary: rgb(var(--color-t3));
+  --wot-color-aid: rgb(var(--color-t4));
+  --wot-color-tip: rgb(var(--color-t5));
+  --wot-color-bg: rgb(var(--color-b2));
+  --wot-color-border: rgb(var(--color-d1));
+  --wot-color-border-light: rgb(var(--color-d2));
+}

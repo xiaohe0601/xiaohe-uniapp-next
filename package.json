@@ -71,6 +71,7 @@
     "pinia-plugin-persistedstate": "catalog:",
     "vconsole": "catalog:",
     "vue": "catalog:",
+    "wot-design-uni": "catalog:",
     "z-paging": "catalog:"
   },
   "devDependencies": {
