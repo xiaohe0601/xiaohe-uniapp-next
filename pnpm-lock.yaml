@@ -147,6 +147,9 @@ catalogs:
     miniprogram-api-typings:
       specifier: ^4.0.5
       version: 4.0.5
+    nutui-uniapp:
+      specifier: ^1.8.3
+      version: 1.8.3
     picoquery:
       specifier: ^2.4.0
       version: 2.4.0
@@ -266,6 +269,9 @@ importers:
       lodash-es:
         specifier: 'catalog:'
         version: 4.17.21
+      nutui-uniapp:
+        specifier: 'catalog:'
+        version: 1.8.3(@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@5.7.3)(vue@3.4.38(typescript@5.7.3)))(vue@3.4.38(typescript@5.7.3))
       picoquery:
         specifier: 'catalog:'
         version: 2.4.0
@@ -4949,6 +4955,12 @@ packages:
 
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
+
+  nutui-uniapp@1.8.3:
+    resolution: {integrity: sha512-9mwYyxUODQpMpVqVXc4g1YfbaGmafSer4ASNSWMjreevTGMIRuXr2hdlIKghYAx2cLOvmuCs7L7n49tgvTKfMA==}
+    peerDependencies:
+      '@uni-helper/uni-app-types': ^1.0.0-alpha.6
+      vue: '>=3.2.0'
 
   nwsapi@2.2.19:
     resolution: {integrity: sha512-94bcyI3RsqiZufXjkr3ltkI86iEl+I7uiHVDtcq9wJUTwYQJ5odHDeSzkkrRzi80jJ8MaeZgqKjH1bAWAFw9bA==}
@@ -12199,6 +12211,11 @@ snapshots:
   nth-check@2.1.1:
     dependencies:
       boolbase: 1.0.0
+
+  nutui-uniapp@1.8.3(@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@5.7.3)(vue@3.4.38(typescript@5.7.3)))(vue@3.4.38(typescript@5.7.3)):
+    dependencies:
+      '@uni-helper/uni-app-types': 1.0.0-alpha.6(typescript@5.7.3)(vue@3.4.38(typescript@5.7.3))
+      vue: 3.4.38(typescript@5.7.3)
 
   nwsapi@2.2.19: {}
 

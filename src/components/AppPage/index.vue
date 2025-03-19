@@ -1,7 +1,10 @@
 <template>
-  <view class="app-page" :style="styles">
+  <nut-config-provider class="app-page" :style="styles">
     <slot></slot>
-  </view>
+
+    <nut-toast></nut-toast>
+    <nut-notify></nut-notify>
+  </nut-config-provider>
 </template>
 
 <script lang="ts" setup>

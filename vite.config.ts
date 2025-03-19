@@ -48,6 +48,12 @@ function buildPlugins(): PluginOption[] {
           "alova/client": [
             "useRequest"
           ]
+        },
+        {
+          "nutui-uniapp/composables": [
+            "useToast",
+            "useNotify"
+          ]
         }
       ],
       dirs: [

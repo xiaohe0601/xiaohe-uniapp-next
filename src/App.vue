@@ -26,4 +26,5 @@ onLaunch(() => {
 @import "@/styles/palette.scss";
 @import "@/styles/global.scss";
 @import "@/styles/helpers.scss";
+@import "nutui-uniapp/styles/index.scss";
 </style>

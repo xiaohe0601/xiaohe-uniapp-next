@@ -28,3 +28,23 @@ page {
   --opacity-active: 0.6;
   --opacity-disabled: 0.5;
 }
+
+page {
+  --nut-primary-color: rgb(var(--color-primary));
+  --nut-primary-color-end: rgb(var(--color-primary));
+
+  --nut-title-color: rgb(var(--color-t1));
+  --nut-title-color2: rgb(var(--color-t2));
+  --nut-text-color: rgb(var(--color-t3));
+
+  --nut-font-family: var(--font-global);
+
+  --nut-button-success-border-color: rgb(var(--color-success));
+  --nut-button-success-background-color: rgb(var(--color-success));
+  --nut-button-warning-border-color: rgb(var(--color-warning));
+  --nut-button-warning-background-color: rgb(var(--color-warning));
+  --nut-button-danger-border-color: rgb(var(--color-danger));
+  --nut-button-danger-background-color: rgb(var(--color-danger));
+  --nut-button-info-border-color: rgb(var(--color-info));
+  --nut-button-info-background-color: rgb(var(--color-info));
+}

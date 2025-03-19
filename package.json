@@ -66,6 +66,7 @@
     "await-to-js": "catalog:",
     "dayjs": "catalog:",
     "lodash-es": "catalog:",
+    "nutui-uniapp": "catalog:",
     "picoquery": "catalog:",
     "pinia": "catalog:",
     "pinia-plugin-persistedstate": "catalog:",
