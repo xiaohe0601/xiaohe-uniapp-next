@@ -78,7 +78,7 @@ onMounted(() => {
 <style lang="scss" scoped>
 .app-tabbar {
   position: relative;
-  z-index: 100;
+  z-index: 20;
 
   --tabbar-height: 60px;
 

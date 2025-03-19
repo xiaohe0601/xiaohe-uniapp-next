@@ -209,7 +209,7 @@ onMounted(() => {
 <style lang="scss" scoped>
 .app-navbar {
   position: relative;
-  z-index: 100;
+  z-index: 20;
   font-size: 16px;
   line-height: 1;
   color: rgb(var(--color-t1));
