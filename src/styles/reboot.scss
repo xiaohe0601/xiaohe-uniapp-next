@@ -1,0 +1,21 @@
+text, view {
+  box-sizing: border-box;
+}
+
+/* #ifdef WEB */
+
+uni-tabbar {
+  display: none;
+}
+
+.uni-app--showtabbar {
+  uni-page-wrapper {
+    height: 100%;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+/* #endif */
