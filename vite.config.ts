@@ -14,6 +14,14 @@ function r(...paths: string[]) {
   return path.resolve(process.cwd(), ".", ...paths);
 }
 
+function buildTransformAssetUrls() {
+  return {
+    tags: {
+      "wd-img": ["src"]
+    }
+  };
+}
+
 function buildPlugins(): PluginOption[] {
   return [
     UniManifest(),
@@ -67,7 +75,13 @@ function buildPlugins(): PluginOption[] {
     UnoCSS(),
     UniPolyfill(),
     // @ts-expect-error uni doesn't support esm
-    Uni.default()
+    Uni.default({
+      vueOptions: {
+        template: {
+          transformAssetUrls: buildTransformAssetUrls()
+        }
+      }
+    })
   ];
 }
 
