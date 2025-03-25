@@ -112,8 +112,8 @@ catalogs:
       specifier: ^1.4.0
       version: 1.4.0
     '@xiaohe01/stylelint-config':
-      specifier: ^2.2.0
-      version: 2.2.0
+      specifier: ^2.2.1
+      version: 2.2.1
     '@xiaohe01/tsconfig':
       specifier: ^1.0.4
       version: 1.0.4
@@ -338,7 +338,7 @@ importers:
         version: 1.4.0(@typescript-eslint/utils@8.28.0(eslint@9.23.0(jiti@2.4.2))(typescript@5.7.3))(@vue/compiler-sfc@3.5.13)(eslint@9.23.0(jiti@2.4.2))(typescript@5.7.3)
       '@xiaohe01/stylelint-config':
         specifier: 'catalog:'
-        version: 2.2.0(postcss@8.5.3)(stylelint@16.16.0(typescript@5.7.3))
+        version: 2.2.1(postcss@8.5.3)(stylelint@16.16.0(typescript@5.7.3))
       '@xiaohe01/tsconfig':
         specifier: 'catalog:'
         version: 1.0.4
@@ -2825,8 +2825,8 @@ packages:
       svelte-eslint-parser:
         optional: true
 
-  '@xiaohe01/stylelint-config@2.2.0':
-    resolution: {integrity: sha512-f5ye3eVti+1UUfTqgUnrh9YPeJV95xlmP2GMH2FBqFwSbgyoJTUXZ83eh6nD63hcn04N7nL8R+GLaA4+znZwWw==}
+  '@xiaohe01/stylelint-config@2.2.1':
+    resolution: {integrity: sha512-By4NswtOieTM7c7mSnc+FvTepjbrUHDx0UJ86JUeNQcylnMnHBZQVqByj7TRIjUuYFcn2GRxvyXwE4kHZqiTUA==}
     peerDependencies:
       stylelint: '>=16.13.0'
 
@@ -9506,7 +9506,7 @@ snapshots:
       - typescript
       - vitest
 
-  '@xiaohe01/stylelint-config@2.2.0(postcss@8.5.3)(stylelint@16.16.0(typescript@5.7.3))':
+  '@xiaohe01/stylelint-config@2.2.1(postcss@8.5.3)(stylelint@16.16.0(typescript@5.7.3))':
     dependencies:
       local-pkg: 1.1.1
       postcss-html: 1.8.0
