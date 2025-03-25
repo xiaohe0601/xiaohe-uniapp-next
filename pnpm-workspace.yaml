@@ -36,7 +36,7 @@ catalog:
   '@vue/runtime-core': ~3.4.38
   '@vueuse/core': ^12.8.2
   '@xiaohe01/eslint-config': ^1.4.0
-  '@xiaohe01/stylelint-config': ^2.2.0
+  '@xiaohe01/stylelint-config': ^2.2.1
   '@xiaohe01/tsconfig': ^1.0.4
   alova: ^3.2.10
   await-to-js: ^3.0.0
