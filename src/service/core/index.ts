@@ -163,10 +163,10 @@ export const alova = createAlova({
         return returnData(returnType, response);
       }
 
-      const { statusCode, errMsg } = response;
+      const { statusCode } = response;
 
       if (statusCode !== 200) {
-        triggerError(errorType, errMsg);
+        triggerError(errorType, `${statusCode} 异常`);
         throw response;
       }
 
