@@ -10,6 +10,7 @@ declare global {
   type NullableBoolean = NullableValue<boolean>;
 
   type Arrayable<T> = T | T[];
+  type Awaitable<T> = T | Promise<T>;
 
   type ExtractValue<T> = T[keyof T];
 }
