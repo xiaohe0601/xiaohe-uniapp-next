@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+const userStore = useUserStore();
+
 function registerAppUpdateListener() {
   // #ifdef MP
   const manager = uni.getUpdateManager();
@@ -18,6 +20,10 @@ function registerAppUpdateListener() {
 
 onLaunch(() => {
   registerAppUpdateListener();
+
+  if (!isEmpty(userStore.token)) {
+    userStore.fetchProfile();
+  }
 });
 </script>
 
