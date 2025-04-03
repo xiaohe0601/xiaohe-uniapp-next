@@ -16,7 +16,7 @@ export interface ExtractFileNameResult {
  * @param url 文件 URL
  */
 export function extractFileName(url: string): NullableValue<ExtractFileNameResult> {
-  const full = url.match(/\/([^/?#]+)(\?|#|$)/)?.[1];
+  const full = url.match(/([^/?#]+)(\?|#|$)/)?.[1];
 
   if (full == null || isEmpty(full)) {
     return null;
