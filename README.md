@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="https://oss.xiaohe.ink/images/xiaohe-uniapp-next.png" width="160" alt="logo"/>
   <h1>xiaohe-uniapp-next</h1>
   <span>🚀 一个开箱即用的uniapp脚手架</span>
 </div>
