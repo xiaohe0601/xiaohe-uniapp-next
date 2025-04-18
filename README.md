@@ -22,6 +22,11 @@ xiaohe0601 / [github@xiaohe0601](https://github.com/xiaohe0601) / [gitee@xiaohe0
 - 🔥 [Alova](https://alova.js.org) - 下一代请求工具
 - 📖 [z-paging](https://z-paging.zxlee.cn) - 全平台兼容的多功能分页组件
 
+> [!NOTE]
+> 当前分支未集成组件库，若有需求可查看以下分支：
+> - [wotd](https://github.com/xiaohe0601/xiaohe-uniapp-next/tree/wotd)
+> - [nutui](https://github.com/xiaohe0601/xiaohe-uniapp-next/tree/nutui)
+
 ### 🛩️ 在线文档
 
 🚧 WIP
