@@ -41,13 +41,13 @@ catalog:
   alova: ^3.2.10
   await-to-js: ^3.0.0
   dayjs: ^1.11.13
-  eslint: ^9.24.0
+  eslint: ^9.25.0
   esno: ^4.8.0
   fs-extra: ^11.3.0
   husky: ^9.1.7
   lint-staged: ^15.5.1
   lodash-es: ^4.17.21
-  miniprogram-api-typings: ^4.0.5
+  miniprogram-api-typings: ^4.0.7
   nutui-uniapp: ^1.8.3
   picoquery: ^2.4.0
   pinia: ~2.2.4
@@ -70,4 +70,5 @@ onlyBuiltDependencies:
   - '@uni-helper/unocss-preset-uni'
   - core-js
   - esbuild
+  - unrs-resolver
   - vue-demi
