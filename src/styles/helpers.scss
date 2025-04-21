@@ -51,3 +51,13 @@
     border-width: 1px 0;
   }
 }
+
+.opacity {
+  &-active {
+    opacity: var(--opacity-active);
+  }
+
+  &-disabled {
+    opacity: var(--opacity-disabled);
+  }
+}
