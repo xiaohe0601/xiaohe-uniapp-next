@@ -1,4 +1,4 @@
-import to from "await-to-js";
+import { to } from "await-to-js";
 
 type AndroidPermissionName =
   | "ACCESS_FINE_LOCATION"
