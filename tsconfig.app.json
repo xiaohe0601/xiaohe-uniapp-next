@@ -10,6 +10,7 @@
       "@dcloudio/types",
       "@uni-helper/uni-app-types",
       "miniprogram-api-typings",
+      "wot-design-uni/global",
       "z-paging/types"
     ]
   },
