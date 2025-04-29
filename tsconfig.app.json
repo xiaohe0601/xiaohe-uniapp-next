@@ -10,6 +10,7 @@
       "@dcloudio/types",
       "@uni-helper/uni-app-types",
       "miniprogram-api-typings",
+      "nutui-uniapp/global.d.ts",
       "z-paging/types"
     ]
   },
