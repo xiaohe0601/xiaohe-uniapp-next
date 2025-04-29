@@ -18,7 +18,7 @@ defineSlots<Slots>();
 
 const deviceStore = useDeviceStore();
 
-const _styles = computed(() => {
+const styles = computed(() => {
   const { windows, navbar, safeareaInsets } = deviceStore;
 
   return {
@@ -33,22 +33,6 @@ const _styles = computed(() => {
     "--safearea-inset-left": `${safeareaInsets.left}px`
   };
 });
-
-const styles = computed(() => {
-  if (isWeb) {
-    return undefined;
-  }
-
-  return _styles.value;
-});
-
-// #ifdef WEB
-watchEffect(() => {
-  for (const [key, value] of Object.entries(_styles.value)) {
-    document.documentElement.style.setProperty(key, value);
-  }
-});
-// #endif
 
 onMounted(() => {
   deviceStore.triggerReadied();
