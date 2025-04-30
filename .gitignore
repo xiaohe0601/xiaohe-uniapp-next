@@ -1,8 +1,8 @@
 # 生成文件
 src/manifest.json
 src/pages.json
-types/components.d.ts
 types/auto-imports.d.ts
+types/components.d.ts
 types/uni-pages.d.ts
 
 # 私有文件
