@@ -12,7 +12,7 @@ const { onAuthRequired, onResponseRefreshToken } = createServerTokenAuthenticati
   typeof uniappRequestAdapter
 >({
   assignToken(method) {
-    const { meta = {} } = method;
+    const { config, meta = {} } = method;
     const {
       ignoreToken = false,
       external = false
@@ -28,7 +28,7 @@ const { onAuthRequired, onResponseRefreshToken } = createServerTokenAuthenticati
       return;
     }
 
-    method.config.headers.Authorization = `Bearer ${token}`;
+    config.headers.Authorization = `Bearer ${token}`;
   },
   refreshTokenOnSuccess: {
     isExpired(response, method) {
