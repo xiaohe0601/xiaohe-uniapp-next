@@ -1,5 +1,7 @@
 import type { UserProfile } from "@/models/entities/UserProfile";
 
+const routerX = useRouterX();
+
 export const useUserStore = defineStore("user", () => {
   const token = shallowRef<NullableString>(null);
 
@@ -20,11 +22,43 @@ export const useUserStore = defineStore("user", () => {
     profile.value = null;
   }
 
+  /**
+   * 退出登录
+   */
+  async function logout(options: {
+    /** 是否调用退出登录接口 */
+    serve?: boolean;
+    /** 是否重定向至登录页 */
+    redirect?: boolean;
+    /** 是否为认证失败拦截调用 */
+    intercept?: boolean;
+  } = {}) {
+    const {
+      serve = true,
+      redirect = true,
+      intercept = false
+    } = options;
+
+    if (serve) {
+      // TODO: call logout api
+      // await logoutServe().catch(() => {});
+    }
+
+    token.value = null;
+
+    if (redirect) {
+      routerX.redirectToLogin(intercept);
+    }
+
+    clearProfile();
+  }
+
   return {
     token,
     profile,
     fetchProfile,
-    clearProfile
+    clearProfile,
+    logout
   };
 }, {
   persist: {
