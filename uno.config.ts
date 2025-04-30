@@ -1,5 +1,5 @@
 import { presetUni } from "@uni-helper/unocss-preset-uni";
-import { defineConfig, presetIcons, transformerDirectives, transformerVariantGroup } from "unocss";
+import { defineConfig, presetIcons, transformerVariantGroup } from "unocss";
 
 export default defineConfig({
   theme: {
@@ -53,7 +53,6 @@ export default defineConfig({
     })
   ],
   transformers: [
-    transformerVariantGroup(),
-    transformerDirectives()
+    transformerVariantGroup()
   ]
 });
