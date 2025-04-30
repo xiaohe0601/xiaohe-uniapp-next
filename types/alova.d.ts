@@ -60,11 +60,6 @@ declare module "alova" {
        */
       disableAuthRedirect?: boolean;
 
-      /** 是否为登录请求 */
-      login?: boolean;
-      /** 是否为退出登录请求 */
-      logout?: boolean;
-
       /** _._ 等待动画定时器 */
       loadingTimer?: OptionalValue<ReturnType<typeof setTimeout>>;
     };
