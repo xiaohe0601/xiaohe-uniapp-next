@@ -24,23 +24,6 @@ function buildTransformAssetUrls() {
 
 function buildPlugins(): PluginOption[] {
   return [
-    UniManifest(),
-    UniPages({
-      dts: "types/uni-pages.d.ts",
-      dir: "src/pages",
-      subPackages: [],
-      exclude: [
-        "**/components/**/*.*"
-      ]
-    }),
-    UniComponents({
-      dts: "types/components.d.ts",
-      dirs: [
-        "src/components"
-      ],
-      directoryAsNamespace: true,
-      collapseSamePrefixes: true
-    }),
     AutoImport({
       dts: "types/auto-imports.d.ts",
       imports: [
@@ -72,7 +55,23 @@ function buildPlugins(): PluginOption[] {
       ],
       vueTemplate: true
     }),
-    UnoCSS(),
+    UniComponents({
+      dts: "types/components.d.ts",
+      dirs: [
+        "src/components"
+      ],
+      directoryAsNamespace: true,
+      collapseSamePrefixes: true
+    }),
+    UniManifest(),
+    UniPages({
+      dts: "types/uni-pages.d.ts",
+      dir: "src/pages",
+      subPackages: [],
+      exclude: [
+        "**/components/**/*.*"
+      ]
+    }),
     UniPolyfill(),
     // @ts-expect-error uni doesn't support esm
     Uni.default({
@@ -81,7 +80,8 @@ function buildPlugins(): PluginOption[] {
           transformAssetUrls: buildTransformAssetUrls()
         }
       }
-    })
+    }),
+    UnoCSS()
   ];
 }
 
