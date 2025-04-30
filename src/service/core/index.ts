@@ -7,29 +7,10 @@ import { isString } from "lodash-es";
 import type { AjaxEntity } from "@/models/entities/AjaxEntity";
 import { isAjaxEntity } from "@/models/entities/AjaxEntity";
 
-const routerX = useRouterX();
-
 const { onAuthRequired, onResponseRefreshToken } = createServerTokenAuthentication<
   typeof VueHook,
   typeof uniappRequestAdapter
 >({
-  login: {
-    metaMatches: {
-      login: true
-    },
-    handler() {
-      // TODO save token
-      useUserStore().token = "xxx";
-    }
-  },
-  logout: {
-    metaMatches: {
-      logout: true
-    },
-    handler() {
-      useUserStore().token = null;
-    }
-  },
   assignToken(method) {
     const { meta = {} } = method;
     const {
@@ -73,12 +54,11 @@ const { onAuthRequired, onResponseRefreshToken } = createServerTokenAuthenticati
       const { meta = {} } = method;
       const { disableAuthRedirect = false } = meta;
 
-      userStore.token = null;
-      userStore.clearProfile();
-
-      if (!disableAuthRedirect) {
-        routerX.redirectToLogin(true);
-      }
+      userStore.logout({
+        serve: false,
+        redirect: !disableAuthRedirect,
+        intercept: true
+      });
 
       throw response;
     }
