@@ -208,8 +208,6 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .app-navbar {
-  position: relative;
-  z-index: 20;
   font-size: 16px;
   line-height: 1;
   color: rgb(var(--color-t1));
@@ -218,6 +216,8 @@ onMounted(() => {
   $block: &;
 
   &__inner {
+    position: relative;
+    z-index: 20;
     background-color: rgb(var(--color-b1));
     transition: top 300ms ease-out;
   }
