@@ -77,14 +77,13 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .app-tabbar {
-  position: relative;
-  z-index: 20;
-
   --tabbar-height: 60px;
 
   $block: &;
 
   &__inner {
+    position: relative;
+    z-index: 20;
     background-color: rgb(var(--color-b1));
     transition: bottom 300ms ease-out;
   }
