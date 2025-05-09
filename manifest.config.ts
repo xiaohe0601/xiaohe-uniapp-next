@@ -1,9 +1,8 @@
 import process from "node:process";
-import type { H5 as H5Config } from "@uni-helper/vite-plugin-uni-manifest";
 import { defineManifestConfig } from "@uni-helper/vite-plugin-uni-manifest";
 import { loadEnv } from "vite";
 
-const env = loadEnv(process.env.NODE_ENV, process.cwd());
+const env = loadEnv(process.env.NODE_ENV!, process.cwd());
 
 export default defineManifestConfig({
   name: env.VITE_PLATFORM_NAME,
@@ -14,7 +13,8 @@ export default defineManifestConfig({
   vueVersion: "3",
   h5: {
     router: {
-      mode: env.VITE_WEB_ROUTER_MODE as H5Config["router"]["mode"],
+      // @ts-expect-error whatever
+      mode: env.VITE_WEB_ROUTER_MODE,
       base: env.VITE_WEB_BASE_URL
     },
     optimization: {
