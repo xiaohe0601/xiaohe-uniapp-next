@@ -2,7 +2,7 @@ import process from "node:process";
 import { defineUniPages } from "@uni-helper/vite-plugin-uni-pages";
 import { loadEnv } from "vite";
 
-const env = loadEnv(process.env.NODE_ENV, process.cwd());
+const env = loadEnv(process.env.NODE_ENV!, process.cwd());
 
 export default defineUniPages({
   easycom: {
@@ -12,8 +12,12 @@ export default defineUniPages({
   },
   tabBar: {
     custom: true,
-    color: undefined,
-    selectedColor: undefined,
+    // @ts-expect-error use app-tabbar, not styles here
+    color: "",
+    // @ts-expect-error ditto
+    selectedColor: "",
+    // @ts-expect-error ditto
+    backgroundColor: "",
     list: [
       {
         key: "home",
