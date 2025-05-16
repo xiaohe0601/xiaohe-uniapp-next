@@ -5,25 +5,25 @@ catalog:
   '@alova/shared': ^1.1.2
   '@antfu/ni': ^24.3.0
   '@dcloudio/types': ^3.4.15
-  '@dcloudio/uni-app': 3.0.0-4060420250429001
-  '@dcloudio/uni-app-harmony': 3.0.0-4060420250429001
-  '@dcloudio/uni-app-plus': 3.0.0-4060420250429001
-  '@dcloudio/uni-automator': 3.0.0-4060420250429001
-  '@dcloudio/uni-cli-shared': 3.0.0-4060420250429001
-  '@dcloudio/uni-components': 3.0.0-4060420250429001
-  '@dcloudio/uni-h5': 3.0.0-4060420250429001
-  '@dcloudio/uni-mp-alipay': 3.0.0-4060420250429001
-  '@dcloudio/uni-mp-baidu': 3.0.0-4060420250429001
-  '@dcloudio/uni-mp-jd': 3.0.0-4060420250429001
-  '@dcloudio/uni-mp-kuaishou': 3.0.0-4060420250429001
-  '@dcloudio/uni-mp-lark': 3.0.0-4060420250429001
-  '@dcloudio/uni-mp-qq': 3.0.0-4060420250429001
-  '@dcloudio/uni-mp-toutiao': 3.0.0-4060420250429001
-  '@dcloudio/uni-mp-weixin': 3.0.0-4060420250429001
-  '@dcloudio/uni-mp-xhs': 3.0.0-4060420250429001
-  '@dcloudio/uni-quickapp-webview': 3.0.0-4060420250429001
-  '@dcloudio/uni-stacktracey': 3.0.0-4060420250429001
-  '@dcloudio/vite-plugin-uni': 3.0.0-4060420250429001
+  '@dcloudio/uni-app': 3.0.0-4060520250512001
+  '@dcloudio/uni-app-harmony': 3.0.0-4060520250512001
+  '@dcloudio/uni-app-plus': 3.0.0-4060520250512001
+  '@dcloudio/uni-automator': 3.0.0-4060520250512001
+  '@dcloudio/uni-cli-shared': 3.0.0-4060520250512001
+  '@dcloudio/uni-components': 3.0.0-4060520250512001
+  '@dcloudio/uni-h5': 3.0.0-4060520250512001
+  '@dcloudio/uni-mp-alipay': 3.0.0-4060520250512001
+  '@dcloudio/uni-mp-baidu': 3.0.0-4060520250512001
+  '@dcloudio/uni-mp-jd': 3.0.0-4060520250512001
+  '@dcloudio/uni-mp-kuaishou': 3.0.0-4060520250512001
+  '@dcloudio/uni-mp-lark': 3.0.0-4060520250512001
+  '@dcloudio/uni-mp-qq': 3.0.0-4060520250512001
+  '@dcloudio/uni-mp-toutiao': 3.0.0-4060520250512001
+  '@dcloudio/uni-mp-weixin': 3.0.0-4060520250512001
+  '@dcloudio/uni-mp-xhs': 3.0.0-4060520250512001
+  '@dcloudio/uni-quickapp-webview': 3.0.0-4060520250512001
+  '@dcloudio/uni-stacktracey': 3.0.0-4060520250512001
+  '@dcloudio/vite-plugin-uni': 3.0.0-4060520250512001
   '@iconify-json/carbon': ^1.2.8
   '@iconify-json/heroicons': ^1.2.2
   '@types/fs-extra': ^11.0.4
@@ -37,23 +37,23 @@ catalog:
   '@vueuse/core': ^12.8.2
   '@xiaohe01/eslint-config': ^1.5.1
   '@xiaohe01/stylelint-config': ^2.3.1
-  '@xiaohe01/tsconfig': ^1.0.4
-  alova: ^3.2.10
+  '@xiaohe01/tsconfig': ^1.1.0
+  alova: ^3.2.11
   await-to-js: ^3.0.0
   dayjs: ^1.11.13
   eslint: ^9.26.0
   esno: ^4.8.0
   fs-extra: ^11.3.0
   husky: ^9.1.7
-  lint-staged: ^15.5.2
+  lint-staged: ^16.0.0
   lodash-es: ^4.17.21
   miniprogram-api-typings: ^4.0.7
   picoquery: ^2.4.0
   pinia: ~2.2.4
-  pinia-plugin-persistedstate: ^4.2.0
+  pinia-plugin-persistedstate: ^4.3.0
   sass: ~1.78.0
   stylelint: ^16.19.1
-  terser: ^5.39.0
+  terser: ^5.39.2
   typescript: ~5.7.3
   unocss: ~66.0.0
   unocss-applet: ^0.10.0
