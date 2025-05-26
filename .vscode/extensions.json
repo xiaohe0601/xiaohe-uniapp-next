@@ -6,6 +6,7 @@
     "editorConfig.editorConfig",
     "antfu.unocss",
     "antfu.iconify",
+    "antfu.pnpm-catalog-lens",
     "uni-helper.uni-helper-vscode"
   ]
 }
