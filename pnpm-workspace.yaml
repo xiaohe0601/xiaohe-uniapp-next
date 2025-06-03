@@ -48,7 +48,7 @@ catalog:
   lint-staged: ^16.1.0
   lodash-es: ^4.17.21
   miniprogram-api-typings: ^4.0.7
-  nutui-uniapp: ^1.8.3
+  nutui-uniapp: ^1.8.4
   picoquery: ^2.4.0
   pinia: ~2.2.4
   pinia-plugin-persistedstate: ^4.3.0
