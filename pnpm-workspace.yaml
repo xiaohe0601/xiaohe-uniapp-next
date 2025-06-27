@@ -66,9 +66,7 @@ catalog:
   wot-design-uni: ^1.9.1
   z-paging: ^2.8.7
 onlyBuiltDependencies:
-  - '@swc/core'
   - '@uni-helper/unocss-preset-uni'
   - core-js
   - esbuild
-  - unrs-resolver
   - vue-demi
