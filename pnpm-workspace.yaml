@@ -65,9 +65,7 @@ catalog:
   vue-tsc: ~2.1.10
   z-paging: ^2.8.7
 onlyBuiltDependencies:
-  - '@swc/core'
   - '@uni-helper/unocss-preset-uni'
   - core-js
   - esbuild
-  - unrs-resolver
   - vue-demi
