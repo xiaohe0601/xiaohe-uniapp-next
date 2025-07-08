@@ -63,7 +63,7 @@ catalog:
   vite-plugin-uni-polyfill: ^0.1.0
   vue: ~3.4.38
   vue-tsc: ~2.1.10
-  wot-design-uni: ^1.9.1
+  wot-design-uni: ^1.10.0
   z-paging: ^2.8.7
 onlyBuiltDependencies:
   - '@uni-helper/unocss-preset-uni'
