@@ -84,6 +84,7 @@
     "@iconify-json/heroicons": "catalog:",
     "@types/fs-extra": "catalog:",
     "@types/lodash-es": "catalog:",
+    "@uni-helper/plugin-uni": "catalog:",
     "@uni-helper/uni-app-types": "catalog:",
     "@uni-helper/unocss-preset-uni": "catalog:",
     "@uni-helper/vite-plugin-uni-components": "catalog:",
