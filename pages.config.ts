@@ -12,12 +12,6 @@ export default defineUniPages({
   },
   tabBar: {
     custom: true,
-    // @ts-expect-error use app-tabbar, not styles here
-    color: "",
-    // @ts-expect-error ditto
-    selectedColor: "",
-    // @ts-expect-error ditto
-    backgroundColor: "",
     list: [
       {
         key: "home",
