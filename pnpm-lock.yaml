@@ -196,8 +196,8 @@ catalogs:
       specifier: ~2.1.10
       version: 2.1.10
     wot-design-uni:
-      specifier: ^1.12.0
-      version: 1.12.0
+      specifier: ^1.12.1
+      version: 1.12.1
     z-paging:
       specifier: ^2.8.7
       version: 2.8.7
@@ -289,7 +289,7 @@ importers:
         version: 3.4.21(typescript@5.8.3)
       wot-design-uni:
         specifier: 'catalog:'
-        version: 1.12.0(vue@3.4.21(typescript@5.8.3))
+        version: 1.12.1(vue@3.4.21(typescript@5.8.3))
       z-paging:
         specifier: 'catalog:'
         version: 2.8.7
@@ -5858,8 +5858,8 @@ packages:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
 
-  wot-design-uni@1.12.0:
-    resolution: {integrity: sha512-hecEkP+LvdAi8hPiZTa11TeUyOkhZHaknBC80Jyp6O1hFJOIpJXMwa4N7bm6IgbPgh7LGAgVQZwXkwr+j+Fngw==}
+  wot-design-uni@1.12.1:
+    resolution: {integrity: sha512-G6oTsnlNt6vbF3sa9zLapasykqhnXhBY1vM0IGJakcWtuU0jNQAHYTzXwe0asHtjxb9SFxE4Z1JqdL4yCgWvdg==}
     engines: {HBuilderX: ^3.8.7}
     peerDependencies:
       vue: '>=3.2.47'
@@ -12866,7 +12866,7 @@ snapshots:
 
   word-wrap@1.2.5: {}
 
-  wot-design-uni@1.12.0(vue@3.4.21(typescript@5.8.3)):
+  wot-design-uni@1.12.1(vue@3.4.21(typescript@5.8.3)):
     dependencies:
       vue: 3.4.21(typescript@5.8.3)
 
