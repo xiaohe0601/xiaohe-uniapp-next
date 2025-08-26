@@ -62,6 +62,8 @@ export const useUserStore = defineStore("user", () => {
   };
 }, {
   persist: {
-    pick: ["token"]
+    pick: [
+      "token"
+    ]
   }
 });
