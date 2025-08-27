@@ -82,7 +82,8 @@ const routerX = useRouterX();
 const classes = computed(() => {
   return {
     "is-visible": props.visible,
-    "is-fixed": props.fixed
+    "is-fixed": props.fixed,
+    "is-transparent": props.transparent
   };
 });
 
@@ -292,6 +293,12 @@ onMounted(() => {
       top: var(--window-top, 0);
       right: var(--window-right, 0);
       left: var(--window-left, 0);
+    }
+  }
+
+  &.is-transparent {
+    #{$block}__inner {
+      background-color: transparent;
     }
   }
 
