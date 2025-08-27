@@ -74,6 +74,7 @@ const innerText = computed(() => {
 
   &__text {
     font-size: 14px;
+    white-space: nowrap;
   }
 
   &.is-selected {
