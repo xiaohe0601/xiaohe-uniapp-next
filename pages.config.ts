@@ -17,14 +17,14 @@ export default defineUniPages({
     list: [
       {
         key: "home",
-        pagePath: "pages/home/index",
+        pagePath: "pages/home",
         text: "首页",
         iconPath: "/static/images/tabbar/home.png",
         selectedIconPath: "/static/images/tabbar/home-selected.png"
       },
       {
         key: "mine",
-        pagePath: "pages/mine/index",
+        pagePath: "pages/mine",
         text: "我的",
         iconPath: "/static/images/tabbar/mine.png",
         selectedIconPath: "/static/images/tabbar/mine-selected.png"
