@@ -15,6 +15,8 @@ export interface Props {
   titleClass?: any;
   /** 原生标题 */
   nativeTitle?: string;
+  /** 是否透明 */
+  transparent?: boolean;
   /** 是否显示下边框 */
   bordered?: boolean;
   /** 状态栏文字颜色 */
