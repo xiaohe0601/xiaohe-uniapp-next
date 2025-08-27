@@ -1,7 +1,7 @@
 import * as Pinia from "pinia";
 import { createSSRApp } from "vue";
 import App from "./App.vue";
-import { setupPinia } from "@/plugins/pinia";
+import { setupPinia } from "@/stores";
 import "virtual:uno.css";
 import "@/assets/iconfont/iconfont.css";
 import "@/plugins/dayjs";
