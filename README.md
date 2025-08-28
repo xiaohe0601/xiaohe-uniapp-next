@@ -21,7 +21,7 @@ xiaohe0601 / [github@xiaohe0601](https://github.com/xiaohe0601) / [gitee@xiaohe0
 - 🎨 [UnoCSS](https://unocss.dev) - 即时按需原子 CSS 引擎
 - 🔥 [Alova](https://alova.js.org) - 下一代请求工具
 - 📖 [z-paging](https://z-paging.zxlee.cn) - 全平台兼容的多功能分页组件
-- 🍕 [Wot Design Uni](https://wot-design-uni.pages.dev) - 高颜值、轻量化的 uni-app 组件库
+- 🍕 [Wot Design Uni](https://wot-ui.cn) - 高颜值、轻量化的 uni-app 组件库
 
 ### 🛩️ 在线文档
 
