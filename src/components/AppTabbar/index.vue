@@ -101,7 +101,7 @@ onMounted(() => {
   }
 
   &__placeholder {
-    height: var(--tabbar-height);
+    height: calc(var(--tabbar-height) + var(--safearea-inset-bottom));
     transition: height 300ms ease-out;
   }
 
@@ -116,7 +116,7 @@ onMounted(() => {
 
   &:not(.is-visible) {
     #{$block}__inner {
-      bottom: calc(0px - var(--tabbar-height));
+      bottom: calc(0px - var(--tabbar-height) - var(--safearea-inset-bottom));
     }
 
     #{$block}__placeholder {
