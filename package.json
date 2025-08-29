@@ -113,7 +113,7 @@
     "vue-tsc": "catalog:"
   },
   "lint-staged": {
-    "*.{js,ts,vue}": "eslint --fix",
+    "*": "eslint --fix",
     "*.{css,scss,html,vue}": "stylelint --fix"
   }
 }
