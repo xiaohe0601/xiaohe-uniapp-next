@@ -34,7 +34,7 @@ catalog:
   '@uni-helper/vite-plugin-uni-pages': ^0.3.9
   '@vue/runtime-core': 3.4.21
   '@vueuse/core': ^12.8.2
-  '@xiaohe01/eslint-config': ^2.2.1
+  '@xiaohe01/eslint-config': ^2.2.2
   '@xiaohe01/stylelint-config': ^2.4.0
   '@xiaohe01/tsconfig': ^2.0.0
   alova: ^3.3.4
