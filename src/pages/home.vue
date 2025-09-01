@@ -9,9 +9,7 @@
 </template>
 
 <script lang="ts" setup>
-
+definePage({
+  type: "home"
+});
 </script>
-
-<route type="home">
-{ }
-</route>
