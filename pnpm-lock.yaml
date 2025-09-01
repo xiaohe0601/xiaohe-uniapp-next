@@ -112,8 +112,8 @@ catalogs:
       specifier: ^12.8.2
       version: 12.8.2
     '@xiaohe01/eslint-config':
-      specifier: ^2.2.1
-      version: 2.2.1
+      specifier: ^2.2.2
+      version: 2.2.2
     '@xiaohe01/stylelint-config':
       specifier: ^2.4.0
       version: 2.4.0
@@ -341,7 +341,7 @@ importers:
         version: 3.4.21
       '@xiaohe01/eslint-config':
         specifier: 'catalog:'
-        version: 2.2.1(@vue/compiler-sfc@3.5.20)(eslint@9.34.0(jiti@2.5.1))(typescript@5.8.3)
+        version: 2.2.2(@vue/compiler-sfc@3.5.20)(eslint@9.34.0(jiti@2.5.1))(typescript@5.8.3)
       '@xiaohe01/stylelint-config':
         specifier: 'catalog:'
         version: 2.4.0(postcss@8.5.6)(stylelint@16.23.1(typescript@5.8.3))
@@ -2564,8 +2564,8 @@ packages:
   '@vueuse/shared@12.8.2':
     resolution: {integrity: sha512-dznP38YzxZoNloI0qpEfpkms8knDtaoQ6Y/sfS0L7Yki4zh40LFHEhur0odJC6xTHG5dxWVPiUWBXn+wCG2s5w==}
 
-  '@xiaohe01/eslint-config@2.2.1':
-    resolution: {integrity: sha512-/Vs8PyNGMcjPYZ7LbGo5CwQO8OLX8MzM4cwJpdLFACytYRTBwEyXpVZ6noKMM6IL5iw31fmCFrUs+d+LguhW3w==}
+  '@xiaohe01/eslint-config@2.2.2':
+    resolution: {integrity: sha512-Emp6K7OFH275/kLMwhSZRdVVlJ/Vyzk9TO55J7OJnB8pk8oVAosGB5hLgTZrsGXGTe4ayxZ9HfMTZoL06uVUBg==}
     peerDependencies:
       '@eslint-react/eslint-plugin': ^1.38.4
       '@next/eslint-plugin-next': ^15.4.0-canary.115
@@ -9050,7 +9050,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@xiaohe01/eslint-config@2.2.1(@vue/compiler-sfc@3.5.20)(eslint@9.34.0(jiti@2.5.1))(typescript@5.8.3)':
+  '@xiaohe01/eslint-config@2.2.2(@vue/compiler-sfc@3.5.20)(eslint@9.34.0(jiti@2.5.1))(typescript@5.8.3)':
     dependencies:
       '@antfu/install-pkg': 1.1.0
       '@clack/prompts': 0.11.0
