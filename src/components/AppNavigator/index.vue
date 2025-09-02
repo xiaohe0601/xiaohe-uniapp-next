@@ -35,7 +35,7 @@ const router = useRouter();
 function onTap(event: BaseEvent) {
   emit("click", event);
 
-  if (props.preventDefault) {
+  if (props.preventDefault || isEmpty(props.url)) {
     return;
   }
 
