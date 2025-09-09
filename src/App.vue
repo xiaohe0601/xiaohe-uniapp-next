@@ -21,9 +21,11 @@ function registerAppUpdateListener() {
 onLaunch(() => {
   registerAppUpdateListener();
 
-  if (!isEmpty(userStore.token)) {
-    userStore.fetchProfile();
+  if (userStore.isGuest) {
+    return;
   }
+
+  userStore.fetchProfile();
 });
 </script>
 
