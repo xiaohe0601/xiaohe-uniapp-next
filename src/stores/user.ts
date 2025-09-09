@@ -5,6 +5,13 @@ const routerX = useRouterX();
 export const useUserStore = defineStore("user", () => {
   const token = shallowRef<NullableString>(null);
 
+  /**
+   * 是否为访客（未登录）
+   */
+  const isGuest = computed(() => {
+    return isEmpty(token.value);
+  });
+
   /** 用户信息 */
   const profile = ref<NullableValue<UserProfile>>(null);
 
@@ -55,6 +62,7 @@ export const useUserStore = defineStore("user", () => {
 
   return {
     token,
+    isGuest,
     profile,
     fetchProfile,
     clearProfile,
