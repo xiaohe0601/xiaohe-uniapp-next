@@ -25,6 +25,7 @@ export default defineConfig({
     }
   },
   shortcuts: {
+    "flex-center": "items-center justify-center",
     "w-win": "w-[var(--window-width)]",
     "h-win": "h-[var(--window-height)]",
     "h-navbar": "h-[var(--navbar-height)]",
