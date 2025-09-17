@@ -103,8 +103,8 @@ catalogs:
       specifier: ^0.2.8
       version: 0.2.8
     '@uni-helper/vite-plugin-uni-pages':
-      specifier: ^0.3.13
-      version: 0.3.13
+      specifier: ^0.3.14
+      version: 0.3.14
     '@vue/runtime-core':
       specifier: 3.4.21
       version: 3.4.21
@@ -332,7 +332,7 @@ importers:
         version: 0.2.8(vite@5.4.20(@types/node@24.5.1)(sass@1.78.0)(terser@5.44.0))
       '@uni-helper/vite-plugin-uni-pages':
         specifier: 'catalog:'
-        version: 0.3.13(vite@5.4.20(@types/node@24.5.1)(sass@1.78.0)(terser@5.44.0))
+        version: 0.3.14(vite@5.4.20(@types/node@24.5.1)(sass@1.78.0)(terser@5.44.0))
       '@vue/runtime-core':
         specifier: 'catalog:'
         version: 3.4.21
@@ -2305,8 +2305,8 @@ packages:
     peerDependencies:
       vite: ^4.0.0 || ^5.0.0 || ^6.0.0
 
-  '@uni-helper/vite-plugin-uni-pages@0.3.13':
-    resolution: {integrity: sha512-eBP//W0iT3a8NXYF0DpXle1/LPQbGnBE9yvOGAga4wm463MMJEPQXey5gCPbMUB+zizJgETBtlfs9qxzVx11FA==}
+  '@uni-helper/vite-plugin-uni-pages@0.3.14':
+    resolution: {integrity: sha512-CR/Are/3K4KebMkNaIjS0VzrNwhEX79Ve/SBuVZSqrXVNvo8dSOP4JHbgmOPaMgPypZlO6mN7HibOP/0crySXw==}
     peerDependencies:
       vite: ^5.0.0
 
@@ -8628,7 +8628,7 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@uni-helper/vite-plugin-uni-pages@0.3.13(vite@5.4.20(@types/node@24.5.1)(sass@1.78.0)(terser@5.44.0))':
+  '@uni-helper/vite-plugin-uni-pages@0.3.14(vite@5.4.20(@types/node@24.5.1)(sass@1.78.0)(terser@5.44.0))':
     dependencies:
       '@babel/generator': 7.28.3
       '@babel/types': 7.28.4

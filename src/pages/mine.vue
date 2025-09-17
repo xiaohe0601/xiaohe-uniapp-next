@@ -9,5 +9,13 @@
 </template>
 
 <script lang="ts" setup>
-
+definePage({
+  tabBar: {
+    index: 1,
+    key: "mine",
+    text: "我的",
+    iconPath: "/static/images/tabbar/mine.png",
+    selectedIconPath: "/static/images/tabbar/mine-selected.png"
+  }
+});
 </script>

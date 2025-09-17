@@ -11,23 +11,7 @@ export default defineUniPages({
     }
   },
   tabBar: {
-    custom: true,
-    list: [
-      {
-        key: "home",
-        pagePath: "pages/home",
-        text: "首页",
-        iconPath: "/static/images/tabbar/home.png",
-        selectedIconPath: "/static/images/tabbar/home-selected.png"
-      },
-      {
-        key: "mine",
-        pagePath: "pages/mine",
-        text: "我的",
-        iconPath: "/static/images/tabbar/mine.png",
-        selectedIconPath: "/static/images/tabbar/mine-selected.png"
-      }
-    ]
+    custom: true
   },
   globalStyle: {
     navigationStyle: "custom",
