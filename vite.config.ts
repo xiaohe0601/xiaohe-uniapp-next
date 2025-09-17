@@ -119,6 +119,11 @@ export default defineConfig(({ mode }) => {
       target: "es6",
       cssTarget: "chrome61"
     },
-    esbuild: buildEsbuildOptions(env)
+    esbuild: buildEsbuildOptions(env),
+    optimizeDeps: {
+      exclude: [
+        "wot-design-uni"
+      ]
+    }
   };
 });
