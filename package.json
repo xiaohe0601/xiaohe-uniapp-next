@@ -102,7 +102,6 @@
     "miniprogram-api-typings": "catalog:",
     "sass": "catalog:",
     "stylelint": "catalog:",
-    "terser": "catalog:",
     "typescript": "catalog:",
     "unocss": "catalog:",
     "unocss-applet": "catalog:",

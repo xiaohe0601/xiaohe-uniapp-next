@@ -165,9 +165,6 @@ catalogs:
     stylelint:
       specifier: ^16.24.0
       version: 16.24.0
-    terser:
-      specifier: ^5.44.0
-      version: 5.44.0
     typescript:
       specifier: ~5.8.3
       version: 5.8.3
@@ -372,9 +369,6 @@ importers:
       stylelint:
         specifier: 'catalog:'
         version: 16.24.0(typescript@5.8.3)
-      terser:
-        specifier: 'catalog:'
-        version: 5.44.0
       typescript:
         specifier: 'catalog:'
         version: 5.8.3

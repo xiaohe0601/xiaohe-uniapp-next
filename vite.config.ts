@@ -4,9 +4,10 @@ import Uni from "@uni-helper/plugin-uni";
 import UniComponents from "@uni-helper/vite-plugin-uni-components";
 import UniManifest from "@uni-helper/vite-plugin-uni-manifest";
 import UniPages from "@uni-helper/vite-plugin-uni-pages";
+import type { Drop } from "esbuild";
 import UnoCSS from "unocss/vite";
 import AutoImport from "unplugin-auto-import/vite";
-import type { PluginOption, TerserOptions } from "vite";
+import type { ESBuildOptions, PluginOption } from "vite";
 import { defineConfig, loadEnv } from "vite";
 import UniPolyfill from "vite-plugin-uni-polyfill";
 
@@ -63,20 +64,18 @@ function buildPlugins(): PluginOption[] {
   ];
 }
 
-function buildTerserOptions(mode: string, env: Record<string, string>) {
-  const options: TerserOptions = {};
+function buildEsbuildOptions(env: Record<string, string>): ESBuildOptions {
+  const drop: Drop[] = [
+    "debugger"
+  ];
 
-  if (mode === "development") {
-    options.compress = false;
-  } else {
-    options.compress = {
-      keep_infinity: true,
-      drop_console: env.VITE_ENABLE_DROP_CONSOLE === "true",
-      drop_debugger: true
-    };
+  if (env.VITE_ENABLE_DROP_CONSOLE === "true") {
+    drop.push("console");
   }
 
-  return options;
+  return {
+    drop
+  };
 }
 
 export default defineConfig(({ mode }) => {
@@ -95,10 +94,10 @@ export default defineConfig(({ mode }) => {
       port: 5173
     },
     build: {
-      minify: "terser",
+      minify: mode === "development" ? false : "esbuild",
       target: "es6",
-      cssTarget: "chrome61",
-      terserOptions: buildTerserOptions(mode, env)
-    }
+      cssTarget: "chrome61"
+    },
+    esbuild: buildEsbuildOptions(env)
   };
 });
