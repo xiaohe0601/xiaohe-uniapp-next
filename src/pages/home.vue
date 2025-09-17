@@ -10,6 +10,13 @@
 
 <script lang="ts" setup>
 definePage({
-  type: "home"
+  type: "home",
+  tabBar: {
+    index: 0,
+    key: "home",
+    text: "首页",
+    iconPath: "/static/images/tabbar/home.png",
+    selectedIconPath: "/static/images/tabbar/home-selected.png"
+  }
 });
 </script>
