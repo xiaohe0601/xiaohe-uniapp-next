@@ -1,7 +1,7 @@
 catalog:
   '@alova/adapter-uniapp': ^2.0.14
   '@alova/shared': ^1.3.1
-  '@antfu/ni': ^25.0.0
+  '@antfu/ni': ^26.0.1
   '@dcloudio/types': ^3.4.21
   '@dcloudio/uni-app': 3.0.0-4070620250821001
   '@dcloudio/uni-app-harmony': 3.0.0-4070620250821001
@@ -23,28 +23,28 @@ catalog:
   '@dcloudio/uni-stacktracey': 3.0.0-4070620250821001
   '@dcloudio/vite-plugin-uni': 3.0.0-4070620250821001
   '@iconify-json/carbon': ^1.2.13
-  '@iconify-json/heroicons': ^1.2.2
+  '@iconify-json/heroicons': ^1.2.3
   '@types/fs-extra': ^11.0.4
   '@types/lodash-es': ^4.17.12
   '@uni-helper/plugin-uni': ^0.1.0
   '@uni-helper/uni-app-types': 1.0.0-alpha.6
   '@uni-helper/unocss-preset-uni': ^0.2.11
-  '@uni-helper/vite-plugin-uni-components': ^0.2.0
+  '@uni-helper/vite-plugin-uni-components': ^0.2.3
   '@uni-helper/vite-plugin-uni-manifest': ^0.2.8
-  '@uni-helper/vite-plugin-uni-pages': ^0.3.14
+  '@uni-helper/vite-plugin-uni-pages': ^0.3.17
   '@vue/runtime-core': 3.4.21
   '@vueuse/core': ^12.8.2
-  '@xiaohe01/eslint-config': ^2.3.0
+  '@xiaohe01/eslint-config': ^2.4.0
   '@xiaohe01/stylelint-config': ^2.4.0
   '@xiaohe01/tsconfig': ^2.0.0
   alova: ^3.3.4
   await-to-js: ^3.0.0
   dayjs: ^1.11.18
-  eslint: ^9.35.0
+  eslint: ^9.36.0
   esno: ^4.8.0
   fs-extra: ^11.3.2
   husky: ^9.1.7
-  lint-staged: ^16.1.6
+  lint-staged: ^16.2.1
   lodash-es: ^4.17.21
   miniprogram-api-typings: ^4.1.0
   picoquery: ^2.5.0
@@ -55,7 +55,7 @@ catalog:
   typescript: ~5.8.3
   unocss: ~66.0.0
   unocss-applet: ^0.11.0
-  unplugin-auto-import: ^20.1.0
+  unplugin-auto-import: ^20.2.0
   vconsole: ^3.15.1
   vite: ^5.4.20
   vite-plugin-uni-polyfill: ^0.1.0
