@@ -5,7 +5,8 @@
     :hover-start-time="props.hoverStartTime"
     :hover-stay-time="props.hoverStayTime"
     :hover-stop-propagation="props.hoverStopPropagation"
-    @tap="onTap">
+    @tap="onTap"
+  >
     <slot></slot>
   </view>
 </template>

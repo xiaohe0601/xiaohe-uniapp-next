@@ -11,7 +11,8 @@
             v-if="hasLeftEl"
             class="app-navbar__left"
             :class="leftClasses"
-            @tap="onLeftClick()">
+            @tap="onLeftClick()"
+          >
             <slot v-if="slots.left" name="left"></slot>
 
             <template v-else>
@@ -19,7 +20,8 @@
                 <text
                   v-if="shouldBackToHome"
                   class="app-navbar__home i-carbon:home"
-                  @tap="redirectToHome()"></text>
+                  @tap="redirectToHome()"
+                ></text>
 
                 <text v-else class="app-navbar__left__arrow i-carbon:chevron-left"></text>
               </template>
@@ -38,7 +40,8 @@
             v-if="hasRightEl"
             class="app-navbar__right"
             :class="rightClasses"
-            @tap="onRightClick()">
+            @tap="onRightClick()"
+          >
             <slot v-if="slots.right" name="right"></slot>
 
             <template v-else>

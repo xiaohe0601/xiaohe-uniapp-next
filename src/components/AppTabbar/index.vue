@@ -7,7 +7,8 @@
           :key="item.key"
           :data="item"
           :selected="item.key === props.active"
-          @tap="onItemClick(item)"></app-tabbar-item>
+          @tap="onItemClick(item)"
+        ></app-tabbar-item>
       </view>
 
       <app-safearea></app-safearea>
