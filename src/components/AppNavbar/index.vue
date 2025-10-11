@@ -54,7 +54,7 @@
 </template>
 
 <script lang="ts" setup>
-import { last } from "lodash-es";
+import { last } from "es-toolkit";
 import type { Emits, Props, Slots } from "./types";
 
 defineOptions({

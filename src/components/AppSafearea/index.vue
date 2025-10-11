@@ -5,7 +5,8 @@
 </template>
 
 <script lang="ts" setup>
-import { isNumber, isString } from "lodash-es";
+import { isString } from "es-toolkit";
+import { isNumber } from "es-toolkit/compat";
 import type { CSSProperties } from "vue";
 import type { Addition, Position, Props, Slots } from "./types";
 

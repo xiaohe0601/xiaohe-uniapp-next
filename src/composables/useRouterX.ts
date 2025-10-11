@@ -1,5 +1,5 @@
 import { until } from "@vueuse/core";
-import { debounce, last } from "lodash-es";
+import { debounce, last } from "es-toolkit";
 
 const router = useRouter();
 
@@ -72,8 +72,7 @@ async function _redirectToLogin(intercept = false) {
 }
 
 const redirectToLogin = debounce(_redirectToLogin, 1000, {
-  leading: true,
-  trailing: false
+  edges: ["leading"]
 });
 
 /**
