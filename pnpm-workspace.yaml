@@ -25,7 +25,6 @@ catalog:
   '@iconify-json/carbon': ^1.2.14
   '@iconify-json/heroicons': ^1.2.3
   '@types/fs-extra': ^11.0.4
-  '@types/lodash-es': ^4.17.12
   '@uni-helper/plugin-uni': ^0.1.0
   '@uni-helper/uni-app-types': 1.0.0-alpha.6
   '@uni-helper/uni-env': ^0.2.0
@@ -41,12 +40,12 @@ catalog:
   alova: ^3.3.4
   await-to-js: ^3.0.0
   dayjs: ^1.11.18
+  es-toolkit: ^1.40.0
   eslint: ^9.37.0
   esno: ^4.8.0
   fs-extra: ^11.3.2
   husky: ^9.1.7
   lint-staged: ^16.2.3
-  lodash-es: ^4.17.21
   miniprogram-api-typings: ^4.1.0
   nutui-uniapp: ^1.9.1
   picoquery: ^2.5.0

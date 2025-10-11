@@ -3,7 +3,7 @@ import AdapterUniapp from "@alova/adapter-uniapp";
 import { createAlova } from "alova";
 import { createServerTokenAuthentication } from "alova/client";
 import type VueHook from "alova/vue";
-import { isString } from "lodash-es";
+import { isString } from "es-toolkit";
 import type { AjaxEntity } from "@/models/entities/AjaxEntity";
 import { isAjaxEntity } from "@/models/entities/AjaxEntity";
 
