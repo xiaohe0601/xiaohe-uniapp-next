@@ -34,7 +34,7 @@ catalog:
   '@uni-helper/vite-plugin-uni-pages': ^0.3.19
   '@vue/runtime-core': 3.4.21
   '@vueuse/core': ^12.8.2
-  '@xiaohe01/eslint-config': ^2.4.0
+  '@xiaohe01/eslint-config': ^2.5.0
   '@xiaohe01/stylelint-config': ^2.4.0
   '@xiaohe01/tsconfig': ^2.0.0
   alova: ^3.3.4
@@ -45,7 +45,7 @@ catalog:
   esno: ^4.8.0
   fs-extra: ^11.3.2
   husky: ^9.1.7
-  lint-staged: ^16.2.3
+  lint-staged: ^16.2.4
   miniprogram-api-typings: ^4.1.0
   picoquery: ^2.5.0
   pinia: 2.2.4
