@@ -3,11 +3,13 @@
     <image
       v-if="!isEmpty(innerIcon)"
       class="app-tabbar-item__icon"
-      :src="innerIcon"></image>
+      :src="innerIcon"
+    ></image>
 
     <text
       v-if="!isEmpty(innerText)"
-      class="app-tabbar-item__text">{{ innerText }}</text>
+      class="app-tabbar-item__text"
+    >{{ innerText }}</text>
   </view>
 </template>
 
