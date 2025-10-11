@@ -1,5 +1,5 @@
 import { isWeb } from "@uni-helper/uni-env";
-import { cloneDeep } from "lodash-es";
+import { cloneDeep } from "es-toolkit";
 
 export const useDeviceStore = defineStore("device", () => {
   /** 是否已准备完毕 */

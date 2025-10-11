@@ -1,5 +1,6 @@
 import { isMpWeixin } from "@uni-helper/uni-env";
-import { castArray, isString } from "lodash-es";
+import { isString } from "es-toolkit";
+import { castArray } from "es-toolkit/compat";
 import { alova } from "@/service/core";
 
 export interface ExtractFileNameResult {

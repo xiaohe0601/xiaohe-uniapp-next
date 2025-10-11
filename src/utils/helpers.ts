@@ -1,4 +1,5 @@
-import { isArrayLike, isEmpty as isEmptyCore, isNumber, isObjectLike, isString } from "lodash-es";
+import { isString } from "es-toolkit";
+import { isArrayLike, isEmpty as isEmptyCore, isNumber, isObjectLike } from "es-toolkit/compat";
 
 /**
  * setTimeout 的 Promise 版本

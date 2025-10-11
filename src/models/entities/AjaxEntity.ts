@@ -1,4 +1,4 @@
-import { isObjectLike } from "lodash-es";
+import { isObjectLike } from "es-toolkit/compat";
 
 export interface AjaxEntity<T = any> {
   code: number;

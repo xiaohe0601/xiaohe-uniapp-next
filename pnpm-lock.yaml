@@ -84,9 +84,6 @@ catalogs:
     '@types/fs-extra':
       specifier: ^11.0.4
       version: 11.0.4
-    '@types/lodash-es':
-      specifier: ^4.17.12
-      version: 4.17.12
     '@uni-helper/plugin-uni':
       specifier: ^0.1.0
       version: 0.1.0
@@ -132,6 +129,9 @@ catalogs:
     dayjs:
       specifier: ^1.11.18
       version: 1.11.18
+    es-toolkit:
+      specifier: ^1.40.0
+      version: 1.40.0
     eslint:
       specifier: ^9.37.0
       version: 9.37.0
@@ -147,9 +147,6 @@ catalogs:
     lint-staged:
       specifier: ^16.2.3
       version: 16.2.3
-    lodash-es:
-      specifier: ^4.17.21
-      version: 4.17.21
     miniprogram-api-typings:
       specifier: ^4.1.0
       version: 4.1.0
@@ -269,9 +266,9 @@ importers:
       dayjs:
         specifier: 'catalog:'
         version: 1.11.18
-      lodash-es:
+      es-toolkit:
         specifier: 'catalog:'
-        version: 4.17.21
+        version: 1.40.0
       picoquery:
         specifier: 'catalog:'
         version: 2.5.0
@@ -318,9 +315,6 @@ importers:
       '@types/fs-extra':
         specifier: 'catalog:'
         version: 11.0.4
-      '@types/lodash-es':
-        specifier: 'catalog:'
-        version: 4.17.12
       '@uni-helper/plugin-uni':
         specifier: 'catalog:'
         version: 0.1.0(@dcloudio/vite-plugin-uni@3.0.0-4070620250821001(@vueuse/core@12.8.2(typescript@5.8.3))(postcss@8.5.6)(rollup@4.52.4)(vite@5.4.20(@types/node@24.7.1)(sass@1.78.0)(terser@5.44.0))(vue@3.4.21(typescript@5.8.3)))
@@ -2184,12 +2178,6 @@ packages:
   '@types/jsonfile@6.1.4':
     resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
 
-  '@types/lodash-es@4.17.12':
-    resolution: {integrity: sha512-0NgftHUcV4v34VhXm8QBSftKVXtbkBG3ViCjs6+eJ5a6y6Mi/jiFGPc1sC7QK+9BFhWrURE3EOggmWaSxL9OzQ==}
-
-  '@types/lodash@4.17.20':
-    resolution: {integrity: sha512-H3MHACvFUEiujabxhaI/ImO6gUrd8oOurg7LQtS7mbwIXA/cUqWrvBsaeJ23aZEPk1TAYkurjfMbSELfoCXlGA==}
-
   '@types/mdast@4.0.4':
     resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
 
@@ -3358,6 +3346,9 @@ packages:
     resolution: {integrity: sha512-j6vWzfrGVfyXxge+O0x5sh6cvxAog0a/4Rdd2K36zCMV5eJ+/+tOAngRO8cODMNWbVRdVlmGZQL2YS3yR8bIUA==}
     engines: {node: '>= 0.4'}
 
+  es-toolkit@1.40.0:
+    resolution: {integrity: sha512-8o6w0KFmU0CiIl0/Q/BCEOabF2IJaELM1T2PWj6e8KqzHv1gdx+7JtFnDwOx1kJH/isJ5NwlDG1nCr1HrRF94Q==}
+
   esbuild@0.20.2:
     resolution: {integrity: sha512-WdOOppmUNU+IbZ0PaDiTst80zjnrOkyJNHoKupIcVyU8Lvla3Ugx94VzkQ32Ijqd7UhHJy75gNWDMUekcrSJ6g==}
     engines: {node: '>=12'}
@@ -4396,9 +4387,6 @@ packages:
   locate-path@6.0.0:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
     engines: {node: '>=10'}
-
-  lodash-es@4.17.21:
-    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
 
   lodash.camelcase@4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
@@ -8506,12 +8494,6 @@ snapshots:
     dependencies:
       '@types/node': 24.7.1
 
-  '@types/lodash-es@4.17.12':
-    dependencies:
-      '@types/lodash': 4.17.20
-
-  '@types/lodash@4.17.20': {}
-
   '@types/mdast@4.0.4':
     dependencies:
       '@types/unist': 3.0.3
@@ -9855,6 +9837,8 @@ snapshots:
       get-intrinsic: 1.3.0
       has-tostringtag: 1.0.2
       hasown: 2.0.2
+
+  es-toolkit@1.40.0: {}
 
   esbuild@0.20.2:
     optionalDependencies:
@@ -11285,8 +11269,6 @@ snapshots:
   locate-path@6.0.0:
     dependencies:
       p-locate: 5.0.0
-
-  lodash-es@4.17.21: {}
 
   lodash.camelcase@4.3.0: {}
 

@@ -1,4 +1,4 @@
-import { omit } from "lodash-es";
+import { omit } from "es-toolkit";
 import { stringify } from "picoquery";
 
 export type LocationUrl = string;
@@ -114,19 +114,19 @@ export function useRouter() {
   function go(opts: RouterGoOptions) {
     switch (opts.type) {
       case "navigate": {
-        return navigate(omit(opts, "type"));
+        return navigate(omit(opts, ["type"]));
       }
       case "redirect": {
-        return redirect(omit(opts, "type"));
+        return redirect(omit(opts, ["type"]));
       }
       case "reLaunch": {
-        return reLaunch(omit(opts, "type"));
+        return reLaunch(omit(opts, ["type"]));
       }
       case "switchTab": {
-        return switchTab(omit(opts, "type"));
+        return switchTab(omit(opts, ["type"]));
       }
       case "back": {
-        return navigateBack(omit(opts, "type"));
+        return navigateBack(omit(opts, ["type"]));
       }
     }
   }
