@@ -9,8 +9,6 @@
 [![github stars][github-stars-src]][github-stars-href]
 [![License][license-src]][license-href]
 
-xiaohe0601 / [github@xiaohe0601](https://github.com/xiaohe0601) / [gitee@xiaohe0601](https://gitee.com/xiaohe0601)
-
 ### 🎉 特性
 
 - ⚡️ [Vue 3](https://vuejs.org)、[TypeScript](https://www.typescriptlang.org)、[Vite](https://vite.dev)、[PNPM](https://pnpm.io)
@@ -35,9 +33,9 @@ xiaohe0601 / [github@xiaohe0601](https://github.com/xiaohe0601) / [gitee@xiaohe0
 
 ### 🏆 开源协议
 
-- MIT [LICENSE](./LICENSE)
+MIT [LICENSE](./LICENSE)
 
-[github-stars-src]: https://img.shields.io/github/stars/xiaohe0601/xiaohe-uniapp-next?style=flat&colorA=080f12&colorB=1fa669&logo=GitHub
+[github-stars-src]: https://img.shields.io/github/stars/xiaohe0601/xiaohe-uniapp-next?style=flat&color=fb6493&labelColor=18181b&logo=github
 [github-stars-href]: https://github.com/xiaohe0601/xiaohe-uniapp-next
-[license-src]: https://img.shields.io/github/license/xiaohe0601/xiaohe-uniapp-next.svg?style=flat&colorA=080f12&colorB=1fa669
+[license-src]: https://img.shields.io/github/license/xiaohe0601/xiaohe-uniapp-next.svg?style=flat&color=fb6493&labelColor=18181b
 [license-href]: https://github.com/xiaohe0601/xiaohe-uniapp-next/blob/main/LICENSE
