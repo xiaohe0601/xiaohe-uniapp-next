@@ -1,7 +1,7 @@
 declare module "@uni-helper/vite-plugin-uni-pages" {
   interface PageMetaDatum {
-    /** 是否为登录页 */
-    isLoginPage?: boolean;
+    /** 场景 */
+    scene?: "login";
   }
 
   interface TabBarItem {
