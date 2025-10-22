@@ -39,7 +39,7 @@
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
     "lint": "eslint --cache",
     "lint:fix": "nr lint --fix",
-    "lint:type": "vue-tsc --noEmit",
+    "lint:type": "vue-tsc -b --noEmit",
     "stylelint": "stylelint **/*.{css,scss,html,vue} --cache",
     "stylelint:fix": "nr stylelint --fix"
   },
