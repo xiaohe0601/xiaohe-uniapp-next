@@ -71,7 +71,7 @@ export function isHomePage(url: string) {
 }
 
 export function getLoginPage() {
-  return getPages().find((item) => item.isLoginPage);
+  return getPages().find((item) => item.scene === "login");
 }
 
 export function isLoginPage(url: string) {
