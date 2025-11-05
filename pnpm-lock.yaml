@@ -289,7 +289,7 @@ importers:
         version: 3.4.21(typescript@5.9.3)
       wot-design-uni:
         specifier: 'catalog:'
-        version: 1.13.0(vue@3.4.21(typescript@5.8.3))
+        version: 1.13.0(vue@3.4.21(typescript@5.9.3))
       z-paging:
         specifier: 'catalog:'
         version: 2.8.8
@@ -13215,9 +13215,9 @@ snapshots:
 
   word-wrap@1.2.5: {}
 
-  wot-design-uni@1.13.0(vue@3.4.21(typescript@5.8.3)):
+  wot-design-uni@1.13.0(vue@3.4.21(typescript@5.9.3)):
     dependencies:
-      vue: 3.4.21(typescript@5.8.3)
+      vue: 3.4.21(typescript@5.9.3)
 
   wrap-ansi@7.0.0:
     dependencies:
