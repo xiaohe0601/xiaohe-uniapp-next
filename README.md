@@ -29,12 +29,6 @@
 
 🚧 WIP
 
-### 🐶 讨论交流
-
-- ❓：若有疑问或 BUG 反馈，可提交 [issues](https://github.com/xiaohe0601/xiaohe-uniapp-next/issues)
-- 📫：[xiaohe0601@outlook.com](mailto:xiaohe0601@outlook.com)
-- 🐧：暂未开通
-
 ### 🏆 开源协议
 
 MIT [LICENSE](./LICENSE)
