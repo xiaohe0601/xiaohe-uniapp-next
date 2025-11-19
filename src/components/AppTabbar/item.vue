@@ -9,7 +9,9 @@
     <text
       v-if="!isEmpty(innerText)"
       class="app-tabbar-item__text"
-    >{{ innerText }}</text>
+    >
+      {{ innerText }}
+    </text>
   </view>
 </template>
 
