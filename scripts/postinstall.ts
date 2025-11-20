@@ -1,12 +1,12 @@
-import fs from "fs-extra";
+import { ensureFile, outputFile, pathExists } from "fs-extra";
 
 async function initFile(path: string, data: string) {
-  if (await fs.pathExists(path)) {
+  if (await pathExists(path)) {
     return;
   }
 
-  await fs.ensureFile(path);
-  await fs.outputFile(path, data);
+  await ensureFile(path);
+  await outputFile(path, data);
 }
 
 async function initManifestJson() {
