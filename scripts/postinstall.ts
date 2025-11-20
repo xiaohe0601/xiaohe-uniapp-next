@@ -1,4 +1,4 @@
-import { ensureFile, outputFile, pathExists } from "fs-extra";
+import { ensureFile, outputFile, pathExists } from "fs-extra/esm";
 
 async function initFile(path: string, data: string) {
   if (await pathExists(path)) {
