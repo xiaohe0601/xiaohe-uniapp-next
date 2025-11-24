@@ -277,7 +277,7 @@ importers:
         version: 1.42.0
       nutui-uniapp:
         specifier: 'catalog:'
-        version: 1.9.4(@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(vue@3.4.21(typescript@5.9.3))
+        version: 1.9.4(@uni-helper/uni-app-types@1.0.0-alpha.7(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(vue@3.4.21(typescript@5.9.3))
       picoquery:
         specifier: 'catalog:'
         version: 2.5.0
@@ -11948,9 +11948,9 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
-  nutui-uniapp@1.9.4(@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(vue@3.4.21(typescript@5.9.3)):
+  nutui-uniapp@1.9.4(@uni-helper/uni-app-types@1.0.0-alpha.7(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(vue@3.4.21(typescript@5.9.3)):
     dependencies:
-      '@uni-helper/uni-app-types': 1.0.0-alpha.6(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3))
+      '@uni-helper/uni-app-types': 1.0.0-alpha.7(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3))
       vue: 3.4.21(typescript@5.9.3)
 
   nwsapi@2.2.22: {}
