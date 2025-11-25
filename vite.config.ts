@@ -5,6 +5,7 @@ import UniComponents from "@uni-helper/vite-plugin-uni-components";
 import UniManifest from "@uni-helper/vite-plugin-uni-manifest";
 import UniPages from "@uni-helper/vite-plugin-uni-pages";
 import type { Drop } from "esbuild";
+import { NutResolver } from "nutui-uniapp";
 import UnoCSS from "unocss/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import type { ESBuildOptions, PluginOption } from "vite";
@@ -53,7 +54,10 @@ function buildPlugins(): PluginOption[] {
         "src/components"
       ],
       directoryAsNamespace: true,
-      collapseSamePrefixes: true
+      collapseSamePrefixes: true,
+      resolvers: [
+        NutResolver()
+      ]
     }),
     UniManifest(),
     UniPages({

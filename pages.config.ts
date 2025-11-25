@@ -7,8 +7,6 @@ const env = loadEnv(process.env.NODE_ENV!, process.cwd());
 export default defineUniPages({
   easycom: {
     custom: {
-      "^nut-(.*)?-(.*)": "nutui-uniapp/components/$1$2/$1$2.vue",
-      "^nut-(.*)": "nutui-uniapp/components/$1/$1.vue",
       "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
     }
   },
