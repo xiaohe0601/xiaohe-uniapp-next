@@ -52,7 +52,7 @@ catalog:
   husky: ^9.1.7
   lint-staged: ^16.2.7
   miniprogram-api-typings: ^4.1.1
-  nutui-uniapp: ^1.9.4
+  nutui-uniapp: ^1.10.0
   picoquery: ^2.5.0
   pinia: 2.2.4
   pinia-plugin-persistedstate: ~4.1.3
