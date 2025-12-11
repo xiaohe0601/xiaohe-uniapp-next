@@ -1,9 +1,9 @@
-view {
-  -webkit-tap-highlight-color: transparent;
+:not(not) {
+  box-sizing: border-box;
 }
 
-text, view {
-  box-sizing: border-box;
+view {
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* #ifdef WEB */
