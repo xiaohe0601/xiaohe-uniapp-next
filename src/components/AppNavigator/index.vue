@@ -5,7 +5,7 @@
     :hover-start-time="props.hoverStartTime"
     :hover-stay-time="props.hoverStayTime"
     :hover-stop-propagation="props.hoverStopPropagation"
-    @tap="onTap"
+    @tap="onClick"
   >
     <slot></slot>
   </view>
@@ -33,7 +33,7 @@ defineSlots<Slots>();
 
 const router = useRouter();
 
-function onTap(event: BaseEvent) {
+function onClick(event: BaseEvent) {
   emit("click", event);
 
   if (props.preventDefault || isEmpty(props.url)) {
