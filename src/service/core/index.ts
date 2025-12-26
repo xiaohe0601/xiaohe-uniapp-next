@@ -197,14 +197,10 @@ export const alova = createAlova({
         }
 
         try {
-          // #ifdef MP-WEIXIN
-          wx.hideLoading({
+          // @ts-expect-error whatever
+          uni.hideLoading({
             noConflict: true
           });
-          // #endif
-          // #ifndef MP-WEIXIN
-          uni.hideLoading();
-          // #endif
 
           // eslint-disable-next-line unused-imports/no-unused-vars
         } catch (error) {
