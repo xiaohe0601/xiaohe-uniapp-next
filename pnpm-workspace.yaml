@@ -47,7 +47,7 @@ catalog:
   es-toolkit: ^1.43.0
   eslint: ^9.39.2
   esno: ^4.8.0
-  fs-extra: ^11.3.2
+  fs-extra: ^11.3.3
   husky: ^9.1.7
   lint-staged: ^16.2.7
   miniprogram-api-typings: ^4.1.2
