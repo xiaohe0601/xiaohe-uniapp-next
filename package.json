@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@10.26.2",
+  "packageManager": "pnpm@10.27.0",
   "scripts": {
     "prepare": "husky",
     "postinstall": "esno scripts/postinstall.ts",
@@ -75,7 +75,7 @@
     "z-paging": "^2.8.8"
   },
   "devDependencies": {
-    "@antfu/ni": "^28.0.0",
+    "@antfu/ni": "^28.1.0",
     "@dcloudio/types": "^3.4.28",
     "@dcloudio/uni-automator": "3.0.0-4080720251210001",
     "@dcloudio/uni-cli-shared": "3.0.0-4080720251210001",
@@ -88,7 +88,7 @@
     "@uni-helper/plugin-uni": "^0.1.0",
     "@uni-helper/uni-app-types": "~1.0.0-alpha.7",
     "@uni-helper/unocss-preset-uni": "^0.2.11",
-    "@uni-helper/vite-plugin-uni-components": "^0.2.3",
+    "@uni-helper/vite-plugin-uni-components": "^0.2.6",
     "@uni-helper/vite-plugin-uni-manifest": "^0.2.12",
     "@uni-helper/vite-plugin-uni-pages": "^0.3.22",
     "@vue/runtime-core": "3.4.21",
