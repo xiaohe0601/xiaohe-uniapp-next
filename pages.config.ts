@@ -5,11 +5,6 @@ import { loadEnv } from "vite";
 const env = loadEnv(process.env.NODE_ENV!, process.cwd());
 
 export default defineUniPages({
-  easycom: {
-    custom: {
-      "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
-    }
-  },
   tabBar: {
     custom: true
   },
