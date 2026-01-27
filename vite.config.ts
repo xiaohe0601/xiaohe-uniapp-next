@@ -27,7 +27,7 @@ function buildTransformAssetUrls() {
 function buildPlugins(): PluginOption[] {
   return [
     AutoImport({
-      dts: "types/auto-imports.d.ts",
+      dts: "./types/auto-imports.d.ts",
       imports: [
         "vue",
         "uni-app",
@@ -51,16 +51,16 @@ function buildPlugins(): PluginOption[] {
         }
       ],
       dirs: [
-        "src/composables",
-        "src/stores",
-        "src/utils"
+        "./src/composables",
+        "./src/stores",
+        "./src/utils"
       ],
       vueTemplate: true
     }),
     UniComponents({
-      dts: "types/components.d.ts",
+      dts: "./types/components.d.ts",
       dirs: [
-        "src/components"
+        "./src/components"
       ],
       directoryAsNamespace: true,
       collapseSamePrefixes: true,
@@ -71,8 +71,8 @@ function buildPlugins(): PluginOption[] {
     }),
     UniManifest(),
     UniPages({
-      dts: "types/uni-pages.d.ts",
-      dir: "src/pages",
+      dts: "./types/uni-pages.d.ts",
+      dir: "./src/pages",
       subPackages: [],
       exclude: [
         "**/components/**/*.*"
