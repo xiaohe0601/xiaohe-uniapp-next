@@ -2,6 +2,7 @@ import path from "node:path";
 import process from "node:process";
 import Uni from "@uni-helper/plugin-uni";
 import UniComponents from "@uni-helper/vite-plugin-uni-components";
+import { ZPagingResolver } from "@uni-helper/vite-plugin-uni-components/resolvers";
 import UniManifest from "@uni-helper/vite-plugin-uni-manifest";
 import UniPages from "@uni-helper/vite-plugin-uni-pages";
 import type { Drop } from "esbuild";
@@ -47,7 +48,10 @@ function buildPlugins(): PluginOption[] {
         "src/components"
       ],
       directoryAsNamespace: true,
-      collapseSamePrefixes: true
+      collapseSamePrefixes: true,
+      resolvers: [
+        ZPagingResolver()
+      ]
     }),
     UniManifest(),
     UniPages({
