@@ -135,7 +135,7 @@ export function withBaseUrl<T extends NullableString>(value: T): T {
     return value;
   }
 
-  return normalizeUrl(`${base}${value}`) as T;
+  return normalizeUrl(`${base}/${value}`) as T;
 }
 
 /**
