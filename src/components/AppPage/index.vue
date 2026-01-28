@@ -10,7 +10,8 @@ import type { Props, Slots } from "./types";
 defineOptions({
   name: "AppPage",
   options: {
-    virtualHost: true
+    virtualHost: true,
+    styleIsolation: "shared"
   }
 });
 
