@@ -1,11 +1,11 @@
 <template>
-  <view class="app-page" :style="styles">
+  <view class="app-page" :class="classes" :style="styles">
     <slot></slot>
   </view>
 </template>
 
 <script lang="ts" setup>
-import type { Slots } from "./types";
+import type { Props, Slots } from "./types";
 
 defineOptions({
   name: "AppPage",
@@ -14,9 +14,17 @@ defineOptions({
   }
 });
 
+const props = defineProps<Props>();
+
 defineSlots<Slots>();
 
 const deviceStore = useDeviceStore();
+
+const classes = computed(() => {
+  return {
+    "is-flex": props.enableFlex
+  };
+});
 
 const styles = computed(() => {
   const { windows, navbar, safeareaInsets } = deviceStore;
@@ -47,6 +55,11 @@ onMounted(() => {
   font-family: var(--font-global);
   color: rgb(var(--color-t1));
   background-color: rgb(var(--color-b2));
+
+  &.is-flex {
+    display: flex;
+    flex-direction: column;
+  }
 
   &::-webkit-scrollbar {
     display: none;
