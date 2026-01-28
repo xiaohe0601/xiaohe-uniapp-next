@@ -40,19 +40,23 @@ function onClick(event: BaseEvent) {
     return;
   }
 
-  router.go({
-    type: props.type,
-    url: props.url,
-    query: props.query,
-    ...(props.options as any)
-  }).then((result) => {
-    emit("success", result);
-  }).catch((error) => {
-    console.warn(error);
+  router
+    .go({
+      type: props.type,
+      url: props.url,
+      query: props.query,
+      ...(props.options as any)
+    })
+    .then((result) => {
+      emit("success", result);
+    })
+    .catch((error) => {
+      console.warn(error);
 
-    emit("fail", error);
-  }).finally(() => {
-    emit("complete");
-  });
+      emit("fail", error);
+    })
+    .finally(() => {
+      emit("complete");
+    });
 }
 </script>
