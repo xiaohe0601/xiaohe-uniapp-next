@@ -1,5 +1,3 @@
-// stylelint-disable no-duplicate-selectors
-
 page {
   --color-primary: 64, 158, 255; // #409eff
 
@@ -22,9 +20,7 @@ page {
   --color-d2: 228, 231, 237; // #e4e7ed
 
   --font-global: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Segoe UI, Arial, Roboto, "PingFang SC", MiSans, "miui", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
-}
 
-page {
   --opacity-active: 0.6;
   --opacity-disabled: 0.5;
 }
