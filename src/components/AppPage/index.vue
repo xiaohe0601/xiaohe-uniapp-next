@@ -42,5 +42,14 @@ onMounted(() => {
 <style lang="scss" scoped>
 .app-page {
   position: relative;
+  height: var(--window-height);
+  overflow-y: auto;
+  font-family: var(--font-global);
+  color: rgb(var(--color-t1));
+  background-color: rgb(var(--color-b2));
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 </style>
