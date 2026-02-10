@@ -1,17 +1,8 @@
 <template>
   <view class="app-tabbar-item" :class="classes">
-    <image
-      v-if="!isEmpty(innerIcon)"
-      class="app-tabbar-item__icon"
-      :src="innerIcon"
-    ></image>
+    <image v-if="!isEmpty(innerIcon)" class="app-tabbar-item__icon" :src="innerIcon"></image>
 
-    <text
-      v-if="!isEmpty(innerText)"
-      class="app-tabbar-item__text"
-    >
-      {{ innerText }}
-    </text>
+    <text v-if="!isEmpty(innerText)" class="app-tabbar-item__text">{{ innerText }}</text>
   </view>
 </template>
 
