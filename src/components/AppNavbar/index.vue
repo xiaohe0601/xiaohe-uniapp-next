@@ -26,18 +26,14 @@
                 <text v-else class="app-navbar__left__arrow i-carbon:chevron-left"></text>
               </template>
 
-              <text v-if="hasLeftText && !shouldBackToHome" class="app-navbar__left__text">
-                {{ props.leftText }}
-              </text>
+              <text v-if="hasLeftText && !shouldBackToHome" class="app-navbar__left__text">{{ props.leftText }}</text>
             </template>
           </view>
 
           <view class="app-navbar__center">
             <slot v-if="slots.center" name="center"></slot>
 
-            <text v-else class="app-navbar__title truncate" :class="props.titleClass">
-              {{ props.title }}
-            </text>
+            <text v-else class="app-navbar__title truncate" :class="props.titleClass">{{ props.title }}</text>
           </view>
 
           <view
@@ -49,9 +45,7 @@
             <slot v-if="slots.right" name="right"></slot>
 
             <template v-else>
-              <text v-if="hasRightText" class="app-navbar__right__text">
-                {{ props.rightText }}
-              </text>
+              <text v-if="hasRightText" class="app-navbar__right__text">{{ props.rightText }}</text>
             </template>
           </view>
         </template>
