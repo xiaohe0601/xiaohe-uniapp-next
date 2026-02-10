@@ -128,10 +128,12 @@ export function withBaseUrl<T extends NullableString>(value: T): T {
 
   const base = import.meta.env.VITE_SOURCE_BASE_URL;
 
-  if (value == null
+  if (
+    value == null
     || isEmpty(value)
     || value.startsWith(base)
-    || excludes.findIndex((it) => value.startsWith(it)) >= 0) {
+    || excludes.findIndex((it) => value.startsWith(it)) >= 0
+  ) {
     return value;
   }
 
