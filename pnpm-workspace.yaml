@@ -1,4 +1,10 @@
 shellEmulator: true
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  - "@vitejs/plugin-legacy@5.3.2"
+  - chokidar@4.0.3
+  - semver@6.3.1
+  - vite@5.4.21
 
 onlyBuiltDependencies:
   - "@uni-helper/unocss-preset-uni"
