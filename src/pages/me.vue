@@ -4,7 +4,7 @@
 
     <text>我的</text>
 
-    <app-tabbar active="mine"></app-tabbar>
+    <app-tabbar active="me"></app-tabbar>
   </app-page>
 </template>
 
@@ -12,10 +12,10 @@
 definePage({
   tabBar: {
     index: 1,
-    key: "mine",
+    key: "me",
     text: "我的",
-    iconPath: "/static/images/tabbar/mine.png",
-    selectedIconPath: "/static/images/tabbar/mine-selected.png"
+    iconPath: "/static/images/tabbar/me.png",
+    selectedIconPath: "/static/images/tabbar/me-selected.png"
   }
 });
 </script>
