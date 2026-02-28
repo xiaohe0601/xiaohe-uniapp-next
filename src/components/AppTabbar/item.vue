@@ -63,7 +63,7 @@ const innerText = computed(() => {
     height: 22px;
 
     & + #{$block}__text {
-      margin-top: 6px;
+      margin-top: 4px;
       font-size: 12px;
     }
   }
