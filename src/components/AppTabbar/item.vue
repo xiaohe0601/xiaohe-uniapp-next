@@ -16,10 +16,10 @@ defineOptions({
   }
 });
 
-const props = withDefaults(defineProps<{
+const props = defineProps<{
   data: TabBarItem;
   selected?: boolean;
-}>(), {});
+}>();
 
 const classes = computed(() => {
   return {
