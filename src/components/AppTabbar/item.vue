@@ -52,6 +52,7 @@ const innerText = computed(() => {
   align-items: center;
   justify-content: center;
   padding: 0 10px;
+  line-height: 1;
   color: rgb(var(--color-t1));
   cursor: pointer;
 
@@ -62,7 +63,7 @@ const innerText = computed(() => {
     height: 22px;
 
     & + #{$block}__text {
-      margin-top: 4px;
+      margin-top: 6px;
       font-size: 12px;
     }
   }
