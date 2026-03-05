@@ -20,7 +20,7 @@
                 <text
                   v-if="shouldBackToHome"
                   class="app-navbar__home i-carbon:home"
-                  @tap="redirectToHome()"
+                  @tap.stop="redirectToHome()"
                 ></text>
 
                 <text v-else class="app-navbar__left__arrow i-carbon:chevron-left"></text>
