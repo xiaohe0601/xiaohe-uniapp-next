@@ -92,7 +92,7 @@
     "@uni-helper/vite-plugin-uni-manifest": "^0.2.12",
     "@uni-helper/vite-plugin-uni-pages": "^0.3.23",
     "@vue/runtime-core": "3.4.21",
-    "@xiaohe01/eslint-config": "^5.5.1",
+    "@xiaohe01/eslint-config": "^5.5.2",
     "@xiaohe01/stylelint-config": "^3.5.0",
     "@xiaohe01/tsconfig": "^3.1.0",
     "eslint": "^9.39.4",
