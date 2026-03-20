@@ -78,8 +78,8 @@ importers:
         specifier: ^1.45.1
         version: 1.45.1
       nutui-uniapp:
-        specifier: ^1.11.1
-        version: 1.11.1(@uni-helper/uni-app-types@1.0.0-alpha.7(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(vue@3.4.21(typescript@5.9.3))
+        specifier: ^1.11.2
+        version: 1.11.2(@uni-helper/uni-app-types@1.0.0-alpha.7(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(vue@3.4.21(typescript@5.9.3))
       picoquery:
         specifier: ^2.5.0
         version: 2.5.0
@@ -4686,8 +4686,8 @@ packages:
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
-  nutui-uniapp@1.11.1:
-    resolution: {integrity: sha512-2/BYMcqrPXEktBEqiQ18yUEWJCWMuyOQnEfYlRAHVM6ZStzswgxfoZcksIzb3VucsMZeyJvpUVrHM66qhGWesg==}
+  nutui-uniapp@1.11.2:
+    resolution: {integrity: sha512-mnJ8QvSxryXC11BZwv7le5/HKqNKgeuhVANo3dIqg0aONmBzq+Zkh7NfG9MLME0XBKbS27ysyqdTzgyS2/vrgA==}
     peerDependencies:
       '@uni-helper/uni-app-types': ^1.0.0-alpha.6
       vue: '>=3.2.0'
@@ -11884,7 +11884,7 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
-  nutui-uniapp@1.11.1(@uni-helper/uni-app-types@1.0.0-alpha.7(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(vue@3.4.21(typescript@5.9.3)):
+  nutui-uniapp@1.11.2(@uni-helper/uni-app-types@1.0.0-alpha.7(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(vue@3.4.21(typescript@5.9.3)):
     dependencies:
       '@uni-helper/uni-app-types': 1.0.0-alpha.7(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3))
       vue: 3.4.21(typescript@5.9.3)
