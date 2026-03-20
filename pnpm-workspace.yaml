@@ -8,6 +8,5 @@ trustPolicyExclude:
 
 onlyBuiltDependencies:
   - "@uni-helper/unocss-preset-uni"
-  - core-js
   - esbuild
   - vue-demi
