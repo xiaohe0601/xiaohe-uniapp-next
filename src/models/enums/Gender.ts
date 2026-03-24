@@ -1,6 +1,4 @@
-/**
- * 性别
- */
+/** 性别 */
 export const Gender = {
   /** 未知 */
   UNKNOWN: 0,
