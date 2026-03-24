@@ -1,8 +1,6 @@
 import type { GenderType } from "@/models/enums/Gender";
 
-/**
- * 用户信息
- */
+/** 用户信息 */
 export interface UserProfile {
   id: string;
   /** 姓名 */
