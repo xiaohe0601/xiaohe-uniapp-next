@@ -10,16 +10,21 @@ export function getPages() {
     return pages;
   }
 
-  pages.push(...defaultTo<PageMetaDatum[]>(pagesConfig.pages, []).map((item) => ({
-    ...item,
-    path: `/${item.path}`
-  })));
+  pages.push(
+    ...defaultTo<PageMetaDatum[]>(pagesConfig.pages, [])
+      .map((item) => ({
+        ...item,
+        path: `/${item.path}`
+      }))
+  );
 
   for (const item of defaultTo<SubPackages>(pagesConfig.subPackages, [])) {
-    pages.push(...item.pages.map((it) => ({
-      ...it,
-      path: `/${item.root}/${it.path}`
-    })));
+    pages.push(
+      ...item.pages.map((it) => ({
+        ...it,
+        path: `/${item.root}/${it.path}`
+      }))
+    );
   }
 
   return pages;
@@ -36,10 +41,12 @@ export function getTabbarPages() {
     return tabbarPages;
   }
 
-  tabbarPages.push(...(pagesConfig.tabBar.list as TabBarItem[]).map((item) => ({
-    ...item,
-    pagePath: `/${item.pagePath}`
-  })));
+  tabbarPages.push(
+    ...pagesConfig.tabBar.list!.map((item) => ({
+      ...item,
+      pagePath: `/${item.pagePath}`
+    }))
+  );
 
   return tabbarPages;
 }
