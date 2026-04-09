@@ -17,11 +17,7 @@
 
             <template v-else>
               <template v-if="props.leftArrow">
-                <text
-                  v-if="shouldBackToHome"
-                  class="app-navbar__home i-carbon:home"
-                  @tap.stop="redirectToHome()"
-                ></text>
+                <text v-if="shouldBackToHome" class="app-navbar__home i-carbon:home"></text>
 
                 <text v-else class="app-navbar__left__arrow i-carbon:chevron-left"></text>
               </template>
@@ -187,7 +183,11 @@ function onLeftClick() {
   emit("leftClick");
 
   if (!props.disableLeftBack) {
-    router.back();
+    if (shouldBackToHome.value) {
+      routerX.redirectToHome();
+    } else {
+      router.back();
+    }
   }
 }
 
@@ -197,10 +197,6 @@ function onRightClick() {
   }
 
   emit("rightClick");
-}
-
-function redirectToHome() {
-  routerX.redirectToHome();
 }
 
 onMounted(() => {
