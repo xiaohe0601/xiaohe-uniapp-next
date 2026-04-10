@@ -262,8 +262,8 @@ onMounted(() => {
     left: 16px;
 
     &__arrow {
-      width: 1.4em;
-      height: 1.4em;
+      width: 22px;
+      height: 22px;
       margin-left: -6px;
 
       & + #{$block}__left__text {
@@ -277,8 +277,8 @@ onMounted(() => {
   }
 
   &__home {
-    width: 1.4em;
-    height: 1.4em;
+    width: 22px;
+    height: 22px;
   }
 
   &__placeholder {
