@@ -24,7 +24,9 @@ defineOptions({
 
 const props = withDefaults(defineProps<Props>(), {
   type: "navigate",
-  options: () => ({})
+  options: () => ({}),
+  hoverStartTime: 20,
+  hoverStayTime: 70
 });
 
 const emit = defineEmits<Emits>();
