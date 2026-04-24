@@ -29,7 +29,7 @@
           <view class="app-navbar__center">
             <slot v-if="slots.center" name="center"></slot>
 
-            <text v-else class="app-navbar__title truncate" :class="props.titleClass">{{ props.title }}</text>
+            <text v-else class="app-navbar__title" :class="props.titleClass">{{ props.title }}</text>
           </view>
 
           <view
