@@ -1,6 +1,6 @@
 <template>
   <view class="app-navbar" :class="classes">
-    <view class="app-navbar__inner" :class="innerClasses">
+    <view class="app-navbar__inner" :class="props.innerClass">
       <view class="app-navbar__status-bar"></view>
 
       <view class="app-navbar__title-bar">
@@ -82,17 +82,9 @@ const classes = computed(() => {
   return {
     "is-visible": props.visible,
     "is-fixed": props.fixed,
-    "is-transparent": props.transparent
+    "is-transparent": props.transparent,
+    "is-bordered": props.bordered
   };
-});
-
-const innerClasses = computed(() => {
-  return [
-    {
-      "hairline-bottom": props.bordered
-    },
-    props.innerClass
-  ];
 });
 
 const leftClasses = computed(() => {
@@ -298,6 +290,12 @@ onMounted(() => {
   &.is-transparent {
     #{$block}__inner {
       background-color: transparent;
+    }
+  }
+
+  &.is-bordered {
+    #{$block}__inner {
+      border-bottom: 1px solid rgb(var(--color-d2));
     }
   }
 

@@ -1,6 +1,6 @@
 <template>
   <view class="app-tabbar" :class="classes">
-    <view class="app-tabbar__inner" :class="innerClasses">
+    <view class="app-tabbar__inner" :class="props.innerClass">
       <view class="app-tabbar__items">
         <app-tabbar-item
           v-for="(item) in pages"
@@ -44,17 +44,9 @@ const router = useRouter();
 const classes = computed(() => {
   return {
     "is-visible": props.visible,
-    "is-fixed": props.fixed
+    "is-fixed": props.fixed,
+    "is-bordered": props.bordered
   };
-});
-
-const innerClasses = computed(() => {
-  return [
-    {
-      "hairline-top": props.bordered
-    },
-    props.innerClass
-  ];
 });
 
 const pages = getTabbarPages();
@@ -112,6 +104,12 @@ onMounted(() => {
       right: var(--window-right, 0);
       bottom: 0;
       left: var(--window-left, 0);
+    }
+  }
+
+  &.is-bordered {
+    #{$block}__inner {
+      border-top: 1px solid rgb(var(--color-d2));
     }
   }
 
