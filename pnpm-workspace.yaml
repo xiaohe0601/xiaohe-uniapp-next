@@ -3,6 +3,7 @@ shamefullyHoist: true
 shellEmulator: true
 trustPolicy: no-downgrade
 trustPolicyExclude:
+  - "@uni-helper/vite-plugin-uni-manifest@0.3.0"
   - "@vitejs/plugin-legacy@5.3.2"
   - chokidar@4.0.3
   - semver@6.3.1
