@@ -1,4 +1,5 @@
 ignoreWorkspaceRootCheck: true
+minimumReleaseAge: 0
 shamefullyHoist: true
 shellEmulator: true
 trustPolicy: no-downgrade
@@ -9,7 +10,8 @@ trustPolicyExclude:
   - semver@6.3.1
   - vite@5.4.21
 
-onlyBuiltDependencies:
-  - "@uni-helper/unocss-preset-uni"
-  - esbuild
-  - vue-demi
+allowBuilds:
+  "@uni-helper/unocss-preset-uni": true
+  core-js: false
+  esbuild: true
+  vue-demi: true
