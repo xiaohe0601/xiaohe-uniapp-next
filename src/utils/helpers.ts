@@ -105,11 +105,11 @@ export function normalizeUrl(value: string) {
 }
 
 /**
- * 将配置的 base 追加到给定的 URL 路径
+ * 为给定的路径添加配置的资源基地址
  *
  * @param value URL 路径
  */
-export function withBaseUrl<T extends NullableString>(value: T): T {
+export function withSourceBase<T extends NullableString>(value: T): T {
   const excludes = ["http", "ws", "udp", "tcp", "data:", "@"];
 
   // #ifdef WEB

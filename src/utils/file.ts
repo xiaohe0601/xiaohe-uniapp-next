@@ -81,7 +81,7 @@ export function previewImage(
   options: Omit<UniApp.PreviewImageOptions, "urls" | "current"> = {}
 ) {
   return uni.previewImage({
-    urls: castArray(urls).map((it) => withBaseUrl(it)),
+    urls: castArray(urls).map((it) => withSourceBase(it)),
     current,
     showmenu: true,
     referrerPolicy: "origin",
@@ -105,12 +105,12 @@ export function previewMedia(
     sources: castArray(sources).map((item) => {
       if (isString(item)) {
         return {
-          url: withBaseUrl(item),
+          url: withSourceBase(item),
           type: isSupportVideoSuffix(extractFileName(item)?.suffix) ? "video" : "image"
         };
       } else {
         return {
-          url: withBaseUrl(item.url),
+          url: withSourceBase(item.url),
           type: item.type,
           poster: item.poster
         };
@@ -133,7 +133,7 @@ export async function previewDocument(
   url: string,
   options: Omit<UniApp.OpenDocumentOptions, "filePath"> = {}
 ) {
-  const serve = alova.Get<UniApp.DownloadSuccessData>(url, {
+  const serve = alova.Get<UniApp.DownloadSuccessData>(withSourceBase(url), {
     requestType: "download",
     meta: {
       external: true
