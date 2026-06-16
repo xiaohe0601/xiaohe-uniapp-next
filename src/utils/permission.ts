@@ -373,5 +373,5 @@ export async function requestUnifiedPermission(
     }
   }
 
-  return Promise.reject();
+  return Promise.reject(new Error("permission rejected"));
 }
