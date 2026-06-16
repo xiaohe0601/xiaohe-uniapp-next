@@ -232,7 +232,7 @@ export function querySelect(
         if (node) {
           resolve(node);
         } else {
-          reject();
+          reject(new Error("not found"));
         }
       });
   });
