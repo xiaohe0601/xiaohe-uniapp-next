@@ -59,6 +59,7 @@ onMounted(() => {
   font-family: var(--font-global);
   color: rgb(var(--color-t1));
   background-color: rgb(var(--color-b2));
+  -webkit-overflow-scrolling: touch;
 
   &.is-flex {
     display: flex;
