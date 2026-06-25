@@ -152,20 +152,16 @@ export async function previewDocument(
  * @param url 文件链接
  */
 export function previewFile(url: string) {
-  const meta = extractFileName(url);
+  const { suffix } = extractFileName(url);
 
-  if (meta != null) {
-    const { suffix } = meta;
-
-    if (isSupportImageSuffix(suffix)) {
-      return previewImage(url);
-    } else if (isSupportVideoSuffix(suffix)) {
-      if (isMpWeixin) {
-        return previewMedia({ url, type: "video" });
-      }
-    } else if (isSupportDocumentSuffix(suffix)) {
-      return previewDocument(url);
+  if (isSupportImageSuffix(suffix)) {
+    return previewImage(url);
+  } else if (isSupportVideoSuffix(suffix)) {
+    if (isMpWeixin) {
+      return previewMedia({ url, type: "video" });
     }
+  } else if (isSupportDocumentSuffix(suffix)) {
+    return previewDocument(url);
   }
 
   uni.showToast({
