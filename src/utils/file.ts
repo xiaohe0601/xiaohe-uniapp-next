@@ -17,12 +17,8 @@ export interface ExtractFileNameResult {
  *
  * @param url 文件 URL
  */
-export function extractFileName(url: string): NullableValue<ExtractFileNameResult> {
-  const full = url.match(/([^/?#]+)(\?|#|$)/)?.[1];
-
-  if (full == null || isEmpty(full)) {
-    return null;
-  }
+export function extractFileName(url: string): ExtractFileNameResult {
+  const [_, full] = url.match(/([^/?#]+)(?:\?|#|$)/) || [];
 
   const [pure, suffix] = split(full, ".");
 
@@ -106,7 +102,7 @@ export function previewMedia(
       if (isString(item)) {
         return {
           url: withSourceBase(item),
-          type: isSupportVideoSuffix(extractFileName(item)?.suffix) ? "video" : "image"
+          type: isSupportVideoSuffix(extractFileName(item).suffix) ? "video" : "image"
         };
       } else {
         return {
