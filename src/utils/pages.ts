@@ -64,7 +64,7 @@ export function isTabbarPage(url: string) {
 }
 
 export function getHomePage() {
-  return getPages().find((item) => item.type === "home");
+  return getPages().find((item) => item.tag === "home");
 }
 
 export function isHomePage(url: string) {
