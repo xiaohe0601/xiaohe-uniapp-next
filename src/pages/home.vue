@@ -11,6 +11,7 @@
 <script lang="ts" setup>
 definePage({
   type: "home",
+  tag: "home",
   tabBar: {
     index: 0,
     key: "home",
