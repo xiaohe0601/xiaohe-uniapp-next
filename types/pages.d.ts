@@ -1,7 +1,7 @@
 declare module "@uni-helper/vite-plugin-uni-pages" {
   interface PageMetaDatum {
     /** 标识 */
-    tag?: "login";
+    tag?: "home" | "login";
   }
 
   interface TabBarItem {
