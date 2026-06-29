@@ -89,7 +89,7 @@
     "@uni-helper/unocss-preset-uni": "^0.2.11",
     "@uni-helper/vite-plugin-uni-components": "^0.3.2",
     "@uni-helper/vite-plugin-uni-manifest": "^0.4.1",
-    "@uni-helper/vite-plugin-uni-pages": "^0.4.4",
+    "@uni-helper/vite-plugin-uni-pages": "^0.4.6",
     "@vue/runtime-core": "3.4.21",
     "@xiaohe01/eslint-config": "^7.1.0",
     "@xiaohe01/stylelint-config": "^3.8.0",
