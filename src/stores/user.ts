@@ -5,9 +5,7 @@ const routerX = useRouterX();
 export const useUserStore = defineStore("user", () => {
   const token = shallowRef<NullableString>(null);
 
-  /**
-   * 是否为访客（未登录）
-   */
+  /** 是否为访客（未登录） */
   const isGuest = computed(() => {
     return isEmpty(token.value);
   });
@@ -15,23 +13,17 @@ export const useUserStore = defineStore("user", () => {
   /** 用户信息 */
   const profile = ref<NullableValue<UserProfile>>(null);
 
-  /**
-   * 拉取用户信息
-   */
+  /** 拉取用户信息 */
   async function fetchProfile() {
 
   }
 
-  /**
-   * 清除用户信息
-   */
+  /** 清除用户信息 */
   function clearProfile() {
     profile.value = null;
   }
 
-  /**
-   * 退出登录
-   */
+  /** 退出登录 */
   async function logout(options: {
     /** 是否调用退出登录接口 */
     serve?: boolean;
