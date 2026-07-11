@@ -102,7 +102,7 @@ onMounted(() => {
     #{$block}__inner {
       position: fixed;
       right: var(--window-right, 0);
-      bottom: 0;
+      bottom: var(--window-bottom, 0);
       left: var(--window-left, 0);
     }
   }
