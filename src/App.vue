@@ -1,5 +1,12 @@
 <script lang="ts" setup>
+const deviceStore = useDeviceStore();
 const userStore = useUserStore();
+
+function registerWindowResizeListener() {
+  uni.onWindowResize(() => {
+    deviceStore.updateDeviceInfo();
+  });
+}
 
 function registerAppUpdateListener() {
   // #ifdef MP
@@ -19,6 +26,7 @@ function registerAppUpdateListener() {
 }
 
 onLaunch(() => {
+  registerWindowResizeListener();
   registerAppUpdateListener();
 
   if (userStore.isGuest) {

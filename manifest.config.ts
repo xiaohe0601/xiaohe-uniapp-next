@@ -79,6 +79,7 @@ export default defineManifestConfig({
       subPackages: true
     },
     mergeVirtualHostAttributes: true,
-    lazyCodeLoading: "requiredComponents"
+    lazyCodeLoading: "requiredComponents",
+    resizable: true
   }
 });
