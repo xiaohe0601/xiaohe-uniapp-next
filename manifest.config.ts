@@ -66,7 +66,7 @@ export default defineManifestConfig({
   "mp-weixin": {
     appid: env.VITE_WEIXIN_APPID,
     setting: {
-      es6: false,
+      es6: true,
       swc: true,
       postcss: true,
       minified: true,
